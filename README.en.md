@@ -2,11 +2,37 @@
 
 <img src="public/images/brand/chuhaijianzhan-ai.png" width="380" alt="">
 
-[简体中文](README.md)
+[简体中文](README.md) · [Screenshots](#screenshots) · [Quick start](#quick-start)
 
 出海建站 AI helps Chinese export businesses build their own B2B websites, even without coding or design experience. Connect a compatible AI provider of your choice and describe your business and products in Chinese. Review the proposed site, refine the pages in a visual editor, and publish when you are ready. The self-hosted workspace includes product catalogs, multilingual content, and requests for quotes.
 
 **0.42.0 Beta** adds product comparison tables, project timelines, before-and-after images, and six reusable section layouts.
+
+## Screenshots
+
+### Manufacturing website
+
+Atlas Works is a fictional starter site. Its home page introduces the company and gives buyers access to its product catalog, project studies, and inquiry form.
+
+![Atlas Works manufacturing home page with company information, catalog navigation, and an inquiry entry point](docs/images/showcase/atlas-works.webp)
+
+### Describe the site and refine its pages
+
+After connecting your own AI provider, enter your business details and requirements. For example, ask for an English-language site for a custom component manufacturer, with a product catalog and a way for overseas buyers to request quotes for several items at once. Review the site preview, save it as a draft, and refine the pages with AI or drag-and-drop before confirming publication.
+
+![AI site builder showing input fields for a Chinese-language business brief](docs/images/showcase/ai-site-builder.webp)
+
+![Visual page editor for the manufacturing starter site, with page canvas and property controls](docs/images/showcase/visual-editor.webp)
+
+### Mobile product page
+
+<img src="docs/images/showcase/atlas-mobile.webp" width="300" alt="Mobile product detail for an Atlas Works component, showing specifications and an enquiry button">
+
+### Interior design website
+
+![Fictional North Atelier starter site with serif typography and a spatial illustration](docs/images/showcase/north-atelier.webp)
+
+Both sites are fictional examples available in the starter library. [See the starter site guide](docs/SHOWCASE_THEMES.md)
 
 ## Quick start
 
