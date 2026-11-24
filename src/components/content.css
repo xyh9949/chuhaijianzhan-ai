@@ -1,0 +1,187 @@
+.content-screen { color: var(--text, #15253d); min-width: 0; font-size: 14px; }
+.cs-page-header { margin-bottom: var(--admin-section-gap,24px); }
+.cs-page-header h1 { font-size: 26px; font-weight: 600; line-height: 1.4; margin: 0 0 8px; color: var(--text, #15253d); }
+.cs-page-header p { margin: 0; font-size: 14px; color: var(--muted, #65758b); line-height: 1.7; }
+.cs-header-action { flex-shrink: 0; padding-top: 3px; }
+.cs-header-action .ant-btn { min-height: 40px; padding-inline: 16px; font-size: 14px; border-radius: 6px; }
+.cs-main-card.ant-card, .cs-folder-card.ant-card, .cs-media-main.ant-card { border-color: var(--border, #e2e8f0); box-shadow: none; overflow: hidden; border-radius: 8px; min-width: 0; }
+/* 保持高于Ant组件重置的作用域，卡片内所有区域使用同一左右对齐线。 */
+.content-screen .cs-status-tabs { padding: 0; }
+.cs-status-tabs .ant-tabs-tab { padding-block: 12px; font-size: 14px; }
+.cs-status-tabs .ant-tabs-content-holder { display: none; }
+.cs-status-tabs .ant-tabs-nav::before { border-bottom-color: var(--border, #e2e8f0); }
+.cs-toolbar { padding: 0 0 20px; }
+.content-screen .cs-search { width: 320px; max-width: 100%; min-height: 36px; }
+.cs-search .ant-input { font-size: 14px; }
+.cs-search .ant-input-prefix { color: var(--muted, #65758b); margin-right: 8px; }
+.cs-category-select { min-width: 156px; height: 36px; font-size: 14px; }
+.cs-toolbar .ant-segmented { background: var(--bg, #f3f6fa); padding: 3px; }
+.cs-toolbar .ant-segmented-item-label { min-height: 28px; line-height: 28px; padding-inline: 12px; }
+.cs-table .ant-table { font-size: 14px; color: var(--text, #15253d); }
+.cs-table .ant-table-thead > tr > th { background: #f7f9fc; color: var(--muted, #65758b); font-size: 14px; font-weight: 500; padding-block: 13px; border-bottom-color: var(--border, #e2e8f0); }
+.cs-table .ant-table-thead > tr > th::before { display: none; }
+.cs-table .ant-table-tbody > tr > td { border-bottom-color: #edf1f6; padding-block: 10px; }
+.cs-table .ant-table-tbody > tr:hover > td { background: #f7faff; }
+.content-screen .cs-table .ant-table-pagination { margin: 20px 0 0; font-size: 14px; }
+.cs-table .ant-pagination-total-text { margin-right: auto; color: var(--muted, #65758b); }
+.cs-product-cell > .ant-image { flex-shrink: 0; }
+.cs-product-thumb { object-fit: cover; border: 1px solid var(--border, #e2e8f0); border-radius: 6px; background: var(--bg, #f3f6fa); }
+.cs-title-link.ant-btn { height: auto; padding: 0; color: var(--text, #15253d); font-size: 14px; font-weight: 500; white-space: normal; text-align: left; line-height: 1.5; display: inline-flex; gap: 8px; justify-content: flex-start; }
+.cs-title-link.ant-btn:hover { color: var(--primary, #165dff); }
+.cs-metadata { display: block; color: var(--muted, #65758b); font-size: 12px; line-height: 1.5; margin-top: 3px; }
+.cs-table-label { color: var(--text, #15253d); }
+.cs-table-muted { color: var(--muted, #65758b); }
+.cs-status-tag.ant-tag { border: 0; border-radius: 4px; padding: 1px 8px; font-size: 12px; font-weight: 400; margin: 0; line-height: 20px; }
+.cs-status-tag.ant-tag-green { background: #edf8f1; color: #267b49; }
+.cs-status-tag.ant-tag-default { background: #f0f3f7; color: #65758b; }
+.cs-status-tag.ant-tag-gold { background: #fff6df; color: #a16a14; }
+.cs-batch-bar { padding: 10px 12px; margin-bottom: 20px; background: #edf4ff; color: var(--primary, #165dff); font-size: 14px; border-top: 1px solid #dbe8ff; border-bottom: 1px solid #dbe8ff; }
+.cs-local-note { display: flex; align-items: flex-start; gap: 8px; color: var(--muted, #65758b); font-size: 12px; margin-top: 16px; line-height: 1.8; }
+.cs-local-dot { width: 5px; height: 5px; border-radius: 50%; background: #93a0b3; flex-shrink: 0; margin-top: 8px; }
+.cs-product-grid { padding: 0; }
+.cs-product-card.ant-card { border-color: var(--border, #e2e8f0); border-radius: 8px; overflow: hidden; box-shadow: none; }
+.cs-product-card.ant-card:hover { border-color: #adc7ff; box-shadow: none; }
+.cs-product-card .ant-card-cover .ant-image { width: 100%; display: block; }
+.cs-product-card .ant-card-cover img { height: 200px; width: 100%; object-fit: cover; }
+.cs-product-card .ant-card-body { padding: 16px; }
+.cs-card-category { color: var(--muted, #65758b); font-size: 12px; margin-bottom: 12px; }
+.cs-grid-product-name.ant-btn { display: block; padding: 0; height: auto; white-space: normal; text-align: left; font-size: 14px; font-weight: 500; color: var(--text, #15253d); }
+.cs-grid-product-bottom { font-size: 12px; color: var(--muted, #65758b); padding-top: 14px; }
+.cs-grid-product-bottom .ant-btn { color: var(--primary, #165dff); font-size: 14px; }
+.cs-grid-empty { grid-column: 1 / -1; padding: 40px 0; }
+/* 产品名、型号和分类允许合法长度的连续英文，卡片内换行而不是被外框悄悄裁切。 */
+.cs-products .cs-title-link.ant-btn, .cs-products .cs-grid-product-name.ant-btn { max-width: 100%; min-width: 0; overflow-wrap: anywhere; }
+.cs-products .cs-title-link.ant-btn > span, .cs-products .cs-grid-product-name.ant-btn > span { min-width: 0; }
+.cs-products .cs-card-category { align-items: flex-start; overflow-wrap: anywhere; }
+.cs-products .cs-card-category .ant-tag, .cs-products .cs-grid-product-bottom .ant-btn { flex-shrink: 0; }
+.cs-products .cs-grid-product-bottom { align-items: flex-start; }
+.cs-products .cs-grid-product-bottom > span, .cs-products .cs-metadata { min-width: 0; overflow-wrap: anywhere; }
+/* 摘要保留标题，展开后完整读取长路径、参数和留言，不隐藏业务字段。 */
+.mobile-table-details { min-width: 0; overflow-wrap: anywhere; }
+.mobile-table-details .ant-descriptions-item-content { white-space: pre-wrap; overflow-wrap: anywhere; min-width: 0; }
+.mobile-table-details .ant-descriptions-item-label { white-space: normal; overflow-wrap: anywhere; }
+@media (max-width: 767px) {
+  /* 单语言时少一项筛选，剩余分类仍需可读宽度；宁可换行也不挤成只剩箭头。 */
+  .admin-app .content-screen .cs-toolbar .ant-select { flex: 1 1 140px; min-width: 140px; max-width: 100%; }
+  .admin-app .content-screen .cs-toolbar-spacer { display: none; }
+  .admin-app .mobile-record-table .ant-table-cell { padding: 10px 8px; }
+  .admin-app .mobile-record-table .ant-table-row-expand-icon-cell,
+  .admin-app .mobile-record-table .ant-table-tbody > tr > .ant-table-selection-column { vertical-align: top; }
+  .admin-app .mobile-record-toggle.ant-btn { min-width: 44px; min-height: 44px; padding-inline: 2px; }
+  .mobile-record-table .cs-product-cell, .mobile-record-table .cs-inquiry-person { align-items: flex-start; }
+  .mobile-record-table :is(.cs-product-cell, .cs-inquiry-person, .title-cell) > div { min-width: 0; max-width: 100%; }
+  .mobile-record-table :is(.cs-title-link, .table-title).ant-btn { max-width: 100%; min-width: 0; height: auto; white-space: normal; overflow-wrap: anywhere; text-align: left; }
+  .mobile-record-table :is(.cs-metadata, .ant-typography) { overflow-wrap: anywhere; }
+  .mobile-record-table .title-cell { align-items: flex-start; }
+  .mobile-record-path.ant-typography { display: block; width: 100%; margin: 3px 0 6px; }
+}
+.cs-drawer .ant-drawer-header { padding-block: 20px; border-color: var(--border, #e2e8f0); }
+.cs-drawer .ant-drawer-title { font-size: 18px; font-weight: 600; color: var(--text, #15253d); }
+.cs-drawer .ant-drawer-body { padding: 24px; }
+.cs-drawer .ant-form-item-label label { color: var(--text, #15253d); font-size: 14px; }
+.cs-drawer .ant-form-item-extra { color: var(--muted, #65758b); font-size: 12px; margin-top: 6px; }
+/* 素材 Alt 字数统计同样位于多行控件外，为辅助文本预留空间。 */
+.cs-drawer .ant-input-textarea-show-count { margin-bottom: 18px; }
+.cs-drawer .ant-form-item { margin-bottom: 22px; }
+.cs-drawer-footer { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding-block: 6px; }
+.cs-drawer-footer > .ant-typography { font-size: 12px; }
+.cs-folder-card { min-height: 480px; }
+.cs-panel-label { padding: 0 12px 16px; font-size: 14px; font-weight: 600; color: var(--text, #15253d); }
+.cs-folder-card .ant-menu { border-inline-end: 0; background: transparent; }
+.cs-folder-card .ant-menu-item { margin: 3px 0; width: 100%; font-size: 14px; padding-left: 12px !important; height: 40px; line-height: 40px; border-radius: 6px; }
+.cs-folder-card .ant-menu-item-selected { background: #edf4ff; color: var(--primary, #165dff); }
+.cs-folder-label { display: flex; gap: 8px; align-items: center; justify-content: space-between; }
+.cs-folder-label > span { color: var(--muted, #65758b); font-size: 12px; }
+.cs-folder-tip { padding: 20px 12px 0; margin: 28px 0 0; border-top: 1px solid var(--border, #e2e8f0); }
+.cs-folder-tip > .anticon { font-size: 20px; color: var(--muted, #65758b); margin-bottom: 12px; display: block; text-align: left; }
+.cs-folder-tip strong { display: block; font-size: 14px; font-weight: 500; color: var(--text, #15253d); }
+.cs-folder-tip p { font-size: 12px; line-height: 1.8; color: var(--muted, #65758b); margin: 8px 0 12px; }
+.cs-folder-tip > span:last-child { color: var(--muted, #65758b); font-size: 12px; line-height: 1.8; }
+.cs-media-heading { margin-bottom: var(--admin-section-gap,24px); }
+.cs-media-heading h2 { margin: 0; font-size: 16px; font-weight: 600; }
+.cs-media-heading > div > span { font-size: 12px; color: var(--muted, #65758b); }
+.cs-media-heading .cs-search { width: 270px; }
+.cs-media-card.ant-card { border-color: var(--border, #e2e8f0); border-radius: 8px; overflow: hidden; box-shadow: none; }
+.cs-media-card.ant-card:hover { border-color: #adc7ff; box-shadow: none; }
+.cs-media-card .ant-card-body { padding: 14px; }
+.cs-media-card:focus-visible { outline: 2px solid var(--primary, #165dff); outline-offset: 3px; }
+.cs-media-cover { height: 172px; position: relative; background: var(--bg, #f3f6fa); overflow: hidden; }
+.cs-media-cover .ant-image { display: block; width: 100%; height: 100%; }
+.cs-media-cover img { height: 100%; width: 100%; object-fit: cover; }
+.cs-media-type { position: absolute; right: 8px; bottom: 8px; padding: 2px 7px; border-radius: 4px; font-size: 12px; background: #fffffff0; color: #52637b; }
+.cs-document-cover { height: 100%; display: flex; align-items: center; justify-content: center; gap: 12px; flex-direction: column; background: var(--bg, #f3f6fa); color: var(--muted, #65758b); }
+.cs-document-cover > .anticon { font-size: 40px; }
+.cs-document-cover > span:last-child { font-size: 12px; letter-spacing: 1px; }
+.cs-media-filename { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 14px; font-weight: 500; color: var(--text, #15253d); }
+.cs-media-meta { font-size: 12px; color: var(--muted, #65758b); margin-top: 8px; }
+.cs-media-meta > span:first-child { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.cs-media-meta > span:last-child { flex-shrink: 0; }
+.cs-detail-image { background: var(--bg, #f3f6fa); border: 1px solid var(--border, #e2e8f0); border-radius: 8px; overflow: hidden; display: flex; align-items: center; justify-content: center; min-height: 150px; }
+.cs-detail-image .ant-image { width: 100%; }
+.cs-detail-image img { max-height: 320px; width: 100%; object-fit: contain; }
+.cs-detail-image > .anticon { font-size: 60px; color: var(--muted, #65758b); padding: 60px; }
+.cs-detail-fileinfo { display: flex; align-items: center; gap: 12px; margin: 16px 0 24px; font-size: 12px; color: var(--muted, #65758b); }
+.cs-detail-fileinfo .ant-tag { font-size: 12px; border: 0; background: #edf4ff; color: var(--primary, #165dff); }
+.cs-used-label { font-size: 14px; color: var(--text, #15253d); font-weight: 500; margin-bottom: 16px; }
+.cs-used-item { display: flex; align-items: center; gap: 12px; font-size: 14px; padding: 12px; background: #f5f8fc; border-radius: 6px; margin-bottom: 6px; color: #52637b; }
+.cs-demo-tag.ant-tag { background: #f4f7fb; border: 1px solid var(--border, #e2e8f0); color: var(--muted, #65758b); font-size: 12px; padding: 5px 10px; border-radius: 4px; margin: 4px 0 0; }
+.cs-inquiry-person { display: flex; align-items: center; gap: 12px; }
+.cs-person-avatar.ant-avatar { background: #edf1f7; color: #65758b; font-size: 12px; flex-shrink: 0; }
+.cs-person-avatar.is-new.ant-avatar { background: #eaf1ff; color: var(--primary, #165dff); }
+.cs-unread-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--primary, #165dff); display: inline-block; flex-shrink: 0; }
+.cs-inquiry-unread > td { background: #fcfdff; }
+.cs-contact-heading { display: flex; align-items: center; gap: 14px; margin: 3px 0 28px; flex-wrap: wrap; }
+.cs-contact-heading h2 { font-size: 20px; margin: 0 0 6px; font-weight: 600; color: var(--text, #15253d); }
+.cs-contact-heading p { font-size: 14px; color: var(--muted, #65758b); margin: 0; }
+.cs-contact-heading > .ant-tag { margin-left: auto; border: 0; font-size: 12px; }
+.cs-contact-details .ant-descriptions-item-label { width: 100px; color: var(--muted, #65758b); font-size: 14px; }
+.cs-contact-details .ant-descriptions-item-content { font-size: 14px; color: var(--text, #15253d); overflow-wrap: anywhere; }
+.cs-message-label { font-size: 14px; color: var(--text, #15253d); font-weight: 500; margin: 24px 0 12px; }
+.cs-inquiry-message { white-space: pre-wrap; overflow-wrap: anywhere; background: #f7f9fc; border: 1px solid var(--border, #e2e8f0); padding: 20px; line-height: 1.9; font-size: 14px; color: #3f526e; border-radius: 8px; }
+.cs-inquiry-action-note { display: flex; gap: 8px; align-items: flex-start; font-size: 12px; color: var(--muted, #65758b); padding-top: 24px; line-height: 1.8; }
+.cs-inquiry-action-note > .anticon { margin-top: 4px; }
+/* 跟进只扩充详情；常用列表保留原商务密度，统计默认折叠并与主卡片共用24/16留白。 */
+.cs-follow-up-filter { width: 150px; min-width: 130px; }
+.cs-source-stats.ant-collapse { margin-top: var(--admin-section-gap,24px); border-color: var(--border,#e2e8f0); background: #fff; }
+.cs-source-stats-toolbar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; }
+.cs-source-stats-toolbar .ant-select { min-width: 110px; }
+.cs-source-label { min-width: 0; overflow-wrap: anywhere; }
+.cs-follow-up-fields { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 16px; }
+.cs-follow-up-fields .ant-form-item { min-width: 0; }
+.cs-follow-up-card .ant-select { width: 100%; }
+.cs-follow-up-date { display: block; margin-top: 8px; font-size: 12px; overflow-wrap: anywhere; }
+.cs-follow-up-history { max-height: 420px; overflow: auto; padding: 4px 4px 0 0; }
+.cs-follow-up-note { white-space: pre-wrap; overflow-wrap: anywhere; line-height: 1.8; }
+@media (max-width: 1023px) {
+  .cs-folder-card { min-height: 0; }
+  .cs-folder-tip { display: none; }
+  .cs-folder-card .ant-menu { display: flex; flex-wrap: wrap; gap: 4px; }
+  .cs-folder-card .ant-menu-item { flex: 1 0 140px; margin: 0; }
+}
+@media (max-width: 767px) {
+  .cs-page-header h1 { font-size: 24px; }
+  .cs-header-action { width: 100%; }
+  .cs-toolbar { padding: 0 0 16px; }
+  .content-screen .cs-search { width: 100%; }
+  .cs-category-select { min-width: 0; flex: 1; }
+  .cs-status-tabs .ant-tabs-tab + .ant-tabs-tab { margin-left: 24px; }
+  .cs-media-heading .cs-search { width: 100%; }
+  .content-screen .cs-table .ant-table-pagination { margin: 16px 0 0; flex-wrap: wrap; gap: 8px; }
+  .cs-contact-details .ant-space { flex-wrap: wrap; }
+  .cs-drawer .ant-drawer-body { padding: 20px; }
+  .cs-inquiries .cs-follow-up-filter { flex: 1; }
+  .cs-follow-up-fields { grid-template-columns: minmax(0,1fr); gap: 0; }
+}
+
+/* 页面列表与产品列表采用相同面板留白，不叠加工具栏、页脚原有的横向缩进。 */
+.pages-screen .page-heading { margin-bottom: var(--admin-section-gap,24px); }
+.pages-screen .page-table,.pages-screen .small-banner { padding: var(--admin-panel-space,24px); }
+.pages-screen .table-toolbar { flex-wrap: wrap; gap: 16px; padding: 0 0 20px; border-bottom: 0; }
+.pages-screen .table-toolbar > .ant-tabs { flex: 1; min-width: 0; }
+.pages-screen .table-toolbar > .ant-input-affix-wrapper { max-width: 100%; }
+.pages-screen .table-foot { padding: 20px 0 0; }
+@media(max-width:767px) {
+  .pages-screen .table-toolbar { padding-bottom: 16px; }
+  .pages-screen .table-toolbar > .ant-tabs { flex: initial; width: 100%; }
+  .pages-screen .table-foot { padding: 16px 0 0; }
+}

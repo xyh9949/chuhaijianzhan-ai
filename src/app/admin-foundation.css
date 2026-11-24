@@ -1,0 +1,69 @@
+@theme inline {
+  --color-brand: var(--primary);
+  --color-ink: var(--text);
+  --color-muted: var(--muted);
+  --color-workspace: var(--bg);
+  --color-line: var(--border);
+}
+
+/* 字体本地加载，保留官方简体区域子集的完整字形；授权随 public/fonts 交付。 */
+@font-face { font-family:'Manrope'; src:url('/fonts/manrope-variable.ttf') format('truetype'); font-weight:200 800; font-style:normal; font-display:swap }
+@font-face { font-family:'Source Han Sans SC'; src:url('/fonts/source-han-sans-cn.woff2') format('woff2'); font-weight:250 900; font-style:normal; font-display:swap }
+* { box-sizing:border-box }
+html,body { margin:0; min-height:100% }
+body { background:var(--bg,#F3F6FA) }
+/* 后台排版限定于 App；画布、预览中的网站字体由其主题显式设置。 */
+.admin-app { color:var(--text); font-family:var(--font-admin); font-size:14px; line-height:1.65; -webkit-font-smoothing:antialiased }
+.admin-app :where(h1,h2,h3,h4,p) { margin:0 }
+.admin-app :where(img) { max-width:100%; display:block }
+.admin-app :where(button,input,textarea,select) { font-family:inherit }
+.admin-app :where(button,a,[tabindex]):focus-visible { outline:2px solid var(--primary); outline-offset:3px }
+.admin-app ::selection { background:#D8E6FF }
+.muted { color:var(--muted); font-size:13px }
+.mono { font-variant-numeric:tabular-nums }
+.surface { border:1px solid var(--border); border-radius:var(--radius); background:var(--surface); box-shadow:var(--shadow) }
+.page-heading { display:flex; justify-content:space-between; align-items:center; gap:20px; margin-bottom:24px }
+.page-heading h1 { color:var(--text); font-size:28px; font-weight:600; line-height:1.4; letter-spacing:-.4px }
+.page-heading p { font-size:14px; color:var(--muted); margin-top:6px }
+.page-heading>.ant-space { flex-shrink:0 }
+.page-heading .ant-btn { height:40px; font-size:14px }
+.heading-count { vertical-align:middle; margin-left:8px; padding:2px 8px; border:1px solid var(--border); border-radius:5px; background:#fff; color:var(--muted); font-size:14px; font-weight:500 }
+.file-icon { width:36px; height:40px; border:1px solid #DBE6F7; background:#F0F5FF; color:var(--primary); border-radius:6px; display:grid; place-items:center; flex-shrink:0; font-size:18px }
+
+.page-table { overflow:hidden }
+.table-toolbar { display:flex; justify-content:space-between; align-items:center; padding:0 20px; gap:20px; border-bottom:1px solid var(--border) }
+.table-toolbar .ant-tabs { min-width:0 }
+.table-toolbar .ant-tabs-nav { margin:0 }
+.table-toolbar .ant-tabs-nav::before { border:0 }
+.table-toolbar .ant-tabs-tab { padding:18px 0 }
+.table-toolbar>.ant-input-affix-wrapper { width:268px; flex-shrink:0 }
+.title-cell { display:flex; gap:12px; align-items:center; min-width:0 }
+.table-title.ant-btn { color:var(--text); font-size:14px; font-weight:500; padding:0; height:auto; text-align:left }
+.table-title.ant-btn:hover { color:var(--primary) }
+.title-cell .mono { margin-top:2px; font-size:12px }
+.status-tag { font-size:12px }
+.table-foot { display:flex; justify-content:space-between; gap:16px; padding:16px 20px; color:var(--muted); font-size:12px }
+.small-banner { display:flex; align-items:center; gap:16px; margin-top:20px; padding:20px; border:1px solid var(--border); border-radius:8px; background:#F8FAFE }
+.banner-symbol { display:grid; place-items:center; flex-shrink:0; width:42px; height:42px; border-radius:8px; background:var(--primary-soft); color:var(--primary); font-size:20px }
+.small-banner>div:nth-child(2) { flex:1 }
+.small-banner h3 { font-size:14px; font-weight:500 }
+.small-banner p { font-size:13px; color:var(--muted); margin-top:3px }
+.screen-enter { animation:screen-in .16s ease-out }
+@keyframes screen-in { from { opacity:.5; transform:translateY(3px) } to { opacity:1; transform:none } }
+@media(max-width:767px) {
+  .page-heading { flex-wrap:wrap; align-items:flex-start; gap:16px; margin-bottom:20px }
+  .page-heading h1 { font-size:24px }
+  .page-heading>.ant-space { width:100%; justify-content:flex-end; flex-wrap:wrap }
+  .page-heading p { font-size:13px }
+  .table-toolbar { padding:4px 14px 14px; flex-direction:column; align-items:stretch; gap:8px }
+  .table-toolbar>.ant-input-affix-wrapper { width:100%!important }
+  .table-toolbar .ant-tabs-tab { padding:14px 0 }
+  .table-foot { flex-wrap:wrap; gap:8px; padding:16px }
+  .small-banner { flex-wrap:wrap; padding:16px }
+  .small-banner>div:nth-child(2) { min-width:220px }
+  .small-banner>.ant-btn { margin-left:auto }
+  .ant-modal { max-width:calc(100vw - 24px) }
+}
+@media(prefers-reduced-motion:reduce) {
+  .admin-app *, .admin-app *::before, .admin-app *::after { animation:none!important; transition:none!important; scroll-behavior:auto!important }
+}

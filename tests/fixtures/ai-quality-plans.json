@@ -1,0 +1,622 @@
+[
+  {
+    "id": "manufacturing",
+    "fictional": true,
+    "brief": {
+      "companyName": "Vector Hatch Components — Fictional Demo",
+      "industry": "制造业 B2B：设备支架、安装板与轴环零部件的虚构供稿",
+      "audience": "德国、荷兰的工业设备采购、工程设计人员和小型设备集成商",
+      "market": "Germany and the Netherlands; website in English",
+      "language": "en",
+      "styleNotes": "冷白、石墨与少量钴蓝，偏工程信息组织；首页先讲可提供的零件与图纸沟通，再讲工作流程；避免豪华家居摄影、巨大口号、认证徽章、虚构数据。三个设计方向在首屏左右关系、零件列表编排和流程组织上必须不同。手机保持清楚的编号与单列卡片。",
+      "description": "FICTIONAL DEMONSTRATION. Vector Hatch Components is an invented B2B component supplier used only to evaluate an editable website builder. Its supplied demonstration range contains exactly three records: VHC-MP-01 Mounting Plate Concept, VHC-SB-02 Sensor Bracket Concept, and VHC-SC-03 Shaft Collar Concept. Material notes are illustrative aluminium or steel references, not material certificates. The site helps equipment buyers recognise the available component types, identify the matching product reference, and send a drawing or requirement for a discussion. Describe the proposed cooperation steps as: share intended use and drawings; clarify material and geometry requirements; review the proposed scope before any quotation. Do not state measured tolerances, production capacity, machine inventory, certifications, patents, customer names, prices, minimum order quantities, sample availability, lead times or shipping promises: none were supplied. No track record or factory ownership is verified. Use a product catalogue linked to the three real draft records and a native product detail template; do not repeat product cards as a second static list. Include Home, Components, How We Work and Contact, with native navigation and an inquiry CTA such as Discuss a component linking to Contact. Use the supplied components concept as an illustrative product-family image, never as proof of a particular SKU. The factory concept may illustrate a process section only if its caption clearly says AI-generated fictional factory illustration; omit it if that qualification cannot be retained. Put the visible statement Fictional demonstration — component and process illustrations on the site. Contact details, technical drawings, tolerance evidence, company registration, address and actual facilities are missing; leave them unclaimed and flag them for review. Do not invent an address, phone number or downloadable CAD file. Optimise page titles and descriptions for the actual supplied component types and buyer task; no search volume or ranking promises. The main conversion is a project discussion, not online payment or instant quotation."
+    },
+    "plan": {
+      "summary": "英文产品目录草案，面向德国和荷兰的设备采购、工程设计人员及小型设备集成商。四个普通页面配合原生产品详情模板，以识别零件类型、确认产品编号和发起项目讨论为主线。目录仅动态读取提供的三条草稿记录，不创建第二份静态产品卡片。保留醒目的虚构演示声明；零件图片仅作产品族概念示意，省略工厂图片。上线前须人工核实联系方式、技术图纸、公差证据、公司注册信息、地址及实际设施；这些资料均不在页面中作事实宣称。所有内容均为待审核草案。",
+      "intent": {
+        "siteType": "product-catalog",
+        "primaryGoal": "Identify a relevant component concept and product reference, then share drawings or requirements for a project discussion.",
+        "audienceTasks": [
+          "Recognise the available component types.",
+          "Identify the matching product reference.",
+          "Share intended use and drawings.",
+          "Clarify material and geometry requirements.",
+          "Review the proposed scope before any quotation."
+        ],
+        "constraints": [
+          "Use English for buyers in Germany and the Netherlands, with native navigation to Home, Components, How We Work and Contact.",
+          "Render only the three supplied draft product records through one dynamic catalogue and the native /products/:slug detail template; do not duplicate static product cards.",
+          "Display the statement Fictional demonstration — component and process illustrations visibly on the site.",
+          "Use the supplied component image only as an illustrative product-family concept, never as evidence of a particular SKU; omit the factory image.",
+          "Do not claim measured tolerances, capacity, machine inventory, certifications, patents, customers, prices, minimum orders, samples, lead times, shipping promises, track record or factory ownership.",
+          "Keep material references illustrative; do not invent contact details, an address, technical evidence or downloadable CAD files.",
+          "Make project discussion the conversion, with inquiry CTAs linking to Contact; provide no online payment, instant quotation or search-performance promises.",
+          "Use cool white, graphite and restrained cobalt blue with engineering-focused information; avoid oversized slogans, luxury imagery, badges and invented metrics. On mobile retain clear numbering and single-column cards."
+        ],
+        "missingFacts": [
+          "Verified contact details and the destination for inquiries.",
+          "Actual technical drawings and permission to publish them.",
+          "Measured tolerance evidence.",
+          "Company registration information.",
+          "Verified business address.",
+          "Actual facilities and any evidence of ownership or operating capability."
+        ]
+      },
+      "pages": [
+        {
+          "key": "home",
+          "title": "Home",
+          "path": "/",
+          "purpose": "介绍虚构演示范围与图纸沟通目标；先说明零件类型，再引导目录和合作步骤。采用原生导航连接四个普通页面。",
+          "seoTitle": "Mounting Plates, Sensor Brackets & Shaft Collars | Vector Hatch Demo",
+          "seoDescription": "Explore fictional component concepts for equipment assembly, identify a product reference and share drawings or requirements for a project discussion.",
+          "sections": [
+            {
+              "kind": "hero",
+              "heading": "Component concepts for your equipment requirements",
+              "body": "Fictional demonstration — component and process illustrations\nVector Hatch Components — Fictional Demo presents mounting plate, sensor bracket and shaft collar concepts. Identify a relevant reference, then share your intended use and drawings for discussion.",
+              "cta": {
+                "label": "Explore components",
+                "pageKey": "components"
+              }
+            },
+            {
+              "kind": "text",
+              "heading": "Start with the component type and your drawing",
+              "body": "Browse the component records to find a starting point for your requirement. The image is an AI-generated fictional product-family illustration; it does not represent a particular product reference or verified manufacturing capability.",
+              "mediaId": "media-1962f6e3-e3c9-4ab2-a2d4-ad5d975e61a1",
+              "cta": {
+                "label": "Discuss a component",
+                "pageKey": "contact"
+              }
+            },
+            {
+              "kind": "text",
+              "heading": "From intended use to a proposed scope",
+              "body": "Share intended use and drawings; clarify material and geometry requirements; review the proposed scope before any quotation.",
+              "cta": {
+                "label": "See how we work",
+                "pageKey": "howwework"
+              }
+            }
+          ]
+        },
+        {
+          "key": "components",
+          "title": "Components",
+          "path": "/components",
+          "purpose": "唯一普通目录页面，帮助买家识别零件并进入对应详情。products 区块仅动态绑定 vhc-mounting-plate、vhc-sensor-bracket、vhc-shaft-collar 三条现有记录，显示原生产品名称、编号与详情链接。",
+          "seoTitle": "Component Catalogue: Plates, Brackets & Collars | Vector Hatch Demo",
+          "seoDescription": "Browse three fictional mounting plate, sensor bracket and shaft collar records. Check their references and discussion requirements before making an inquiry.",
+          "sections": [
+            {
+              "kind": "hero",
+              "heading": "Find a component reference",
+              "body": "Explore the three fictional concept records. Use a reference to connect your inquiry with the relevant component type.",
+              "cta": {
+                "label": "Discuss a component",
+                "pageKey": "contact"
+              }
+            },
+            {
+              "kind": "products",
+              "heading": "Component concepts",
+              "body": "Open a record for its product reference, concept description and illustrative material note. Material references are not material certificates."
+            },
+            {
+              "kind": "text",
+              "heading": "Bring your application requirements",
+              "body": "Use the selected reference alongside your intended use, drawings and material or geometry requirements to start the discussion.",
+              "cta": {
+                "label": "Share your requirements",
+                "pageKey": "contact"
+              }
+            }
+          ]
+        },
+        {
+          "key": "componentdetail",
+          "title": "Component Details",
+          "path": "/products/:slug",
+          "purpose": "原生动态详情模板，只读取所选现有记录的名称、SKU、类别、描述和材料说明；原生数据区域完整保留记录中的限制说明。不得生成新产品、技术参数或下载文件，也不得把产品族概念图绑定为 SKU 实物图。不是普通导航页面。",
+          "seoTitle": "Component Reference & Discussion Requirements | Vector Hatch Demo",
+          "seoDescription": "Review the selected fictional component record, its reference, concept description and illustrative material note before discussing your requirements.",
+          "sections": [
+            {
+              "kind": "hero",
+              "heading": "Review this component concept",
+              "body": "Fictional demonstration — component and process illustrations\nUse the selected record and product reference as a starting point for a discussion about your application.",
+              "cta": {
+                "label": "Discuss a component",
+                "pageKey": "contact"
+              }
+            },
+            {
+              "kind": "text",
+              "heading": "Discuss the requirements behind your drawing",
+              "body": "Share the product reference, intended use and drawings. Clarify material and geometry requirements, then review the proposed scope before any quotation. Illustrative material references are not material certificates.",
+              "cta": {
+                "label": "Share your requirements",
+                "pageKey": "contact"
+              }
+            }
+          ]
+        },
+        {
+          "key": "howwework",
+          "title": "How We Work",
+          "path": "/how-we-work",
+          "purpose": "说明用户给定的三步拟议合作方式，帮助买家准备讨论并理解报价前的范围审核；不宣称已验证的生产流程或历史业绩。",
+          "seoTitle": "Drawing & Component Scope Discussions | Vector Hatch Demo",
+          "seoDescription": "See the proposed discussion steps: share intended use and drawings, clarify material and geometry requirements, and review scope before any quotation.",
+          "sections": [
+            {
+              "kind": "hero",
+              "heading": "Prepare a component discussion",
+              "body": "The proposed cooperation steps connect your intended application and drawings with a scope to review before any quotation.",
+              "cta": {
+                "label": "Discuss a component",
+                "pageKey": "contact"
+              }
+            },
+            {
+              "kind": "features",
+              "heading": "Proposed cooperation steps",
+              "body": "Use these three steps to structure the discussion.",
+              "items": [
+                {
+                  "title": "Share intended use and drawings",
+                  "body": "Describe the application and share the drawings or requirements you want to discuss."
+                },
+                {
+                  "title": "Clarify material and geometry requirements",
+                  "body": "Identify the material and geometry requirements relevant to your application."
+                },
+                {
+                  "title": "Review the proposed scope before any quotation",
+                  "body": "Review what the proposed scope covers before moving to any quotation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "contact",
+          "title": "Contact",
+          "path": "/contact",
+          "purpose": "项目讨论入口，承接产品编号、用途及图纸或需求。联系方式和接收渠道待人工确认；可编辑原生联系区不得预填虚构邮箱、电话、地址或承诺响应时间。",
+          "seoTitle": "Discuss a Component or Drawing | Vector Hatch Demo",
+          "seoDescription": "Prepare a project inquiry with a component reference, intended use, drawings and material or geometry requirements for the fictional demonstration.",
+          "sections": [
+            {
+              "kind": "hero",
+              "heading": "Discuss a component",
+              "body": "Start with the relevant product reference and describe what the component needs to do. Share your intended use and drawings or requirements for discussion."
+            },
+            {
+              "kind": "contact",
+              "heading": "Your project requirements",
+              "body": "Include the component reference, intended use, available drawings and material or geometry requirements. The proposed scope should be reviewed before any quotation.\nFictional demonstration — component and process illustrations"
+            }
+          ]
+        }
+      ],
+      "directions": [
+        {
+          "id": "catalog",
+          "name": "Engineering Catalogue",
+          "rationale": "冷白底与石墨无衬线字，钴蓝仅强调目录入口和询盘按钮。首页首屏左侧为紧凑介绍及 CTA，右侧为明确标注的产品族概念图；介绍与图纸沟通之后展示流程摘要。Components 页以等宽三列原生动态卡片呈现三条记录，产品编号突出显示。How We Work 用横向编号三步骤组织内容。手机全部转为单列卡片，保持步骤编号与顺序。",
+          "primary": "#244bc4",
+          "background": "#f7f9fc",
+          "text": "#20262e",
+          "headingFont": "sans",
+          "layout": "catalog"
+        },
+        {
+          "id": "split",
+          "name": "Drawing Dialogue",
+          "rationale": "采用不对称分栏：首页首屏左侧为带说明的概念图，右侧为零件类型、图纸沟通信息及询盘入口，与目录方向交换左右关系。Components 页保留同一个动态数据源，以单列宽卡呈现各记录，卡内左右分配产品信息和详情入口。How We Work 的三步骤沿页面纵向交替左右排布，并以原生编号保持阅读次序。冷白、石墨和深钴蓝形成工程文档感；手机统一按内容顺序变为单列。",
+          "primary": "#2146ae",
+          "background": "#fafbfd",
+          "text": "#242932",
+          "headingFont": "sans",
+          "layout": "split"
+        },
+        {
+          "id": "minimal",
+          "name": "Reference First",
+          "rationale": "首页首屏采用克制的大字号文字与纵向 CTA，不设置左右图片栏；带说明的产品族概念图放在后续介绍区。Components 页将三条动态记录排成全宽编号信息卡，突出原有 SKU，取消桌面多列网格。How We Work 采用纵向连续编号行，每行对应一个给定步骤。单色石墨信息层级配少量钴蓝按钮；手机沿用单列卡片和清晰编号，无新增装饰或图片占位。",
+          "primary": "#2348bb",
+          "background": "#ffffff",
+          "text": "#20252c",
+          "headingFont": "sans",
+          "layout": "minimal"
+        }
+      ]
+    },
+    "products": [
+      {
+        "id": "vhc-mounting-plate",
+        "name": "Mounting Plate Concept",
+        "sku": "VHC-MP-01",
+        "category": "Mounting components",
+        "material": "Illustrative aluminium reference; confirm before ordering",
+        "description": "FICTIONAL DEMO: A mounting-plate concept for equipment assembly discussions. Intended geometry, hole pattern, material grade and finish must be defined from the buyer's drawings. No measured performance or manufacturing tolerance is supplied.",
+        "image": "/images/showcase-components.png",
+        "imageAlt": "AI-generated generic component illustration, not a verified VHC-MP-01 photograph",
+        "status": "draft",
+        "locale": "en",
+        "slug": "vhc-mounting-plate"
+      },
+      {
+        "id": "vhc-sensor-bracket",
+        "name": "Sensor Bracket Concept",
+        "sku": "VHC-SB-02",
+        "category": "Mounting components",
+        "material": "Illustrative steel reference; confirm before ordering",
+        "description": "FICTIONAL DEMO: A sensor-bracket concept for discussing mounting position and available space. The purchaser must supply sensor details, intended environment and required geometry. No load rating, compatibility or surface-treatment performance is claimed.",
+        "image": "/images/showcase-components.png",
+        "imageAlt": "AI-generated generic component illustration, not a verified VHC-SB-02 photograph",
+        "status": "draft",
+        "locale": "en",
+        "slug": "vhc-sensor-bracket"
+      },
+      {
+        "id": "vhc-shaft-collar",
+        "name": "Shaft Collar Concept",
+        "sku": "VHC-SC-03",
+        "category": "Positioning components",
+        "material": "Illustrative aluminium reference; confirm before ordering",
+        "description": "FICTIONAL DEMO: A shaft-collar concept used to start a geometry and application discussion. Bore size, fastening arrangement, material grade and suitability must be agreed from real requirements. No torque, speed or safety rating has been supplied.",
+        "image": "/images/showcase-components.png",
+        "imageAlt": "AI-generated generic component illustration, not a verified VHC-SC-03 photograph",
+        "status": "draft",
+        "locale": "en",
+        "slug": "vhc-shaft-collar"
+      }
+    ],
+    "media": [
+      {
+        "id": "media-1962f6e3-e3c9-4ab2-a2d4-ad5d975e61a1",
+        "name": "showcase-components.png",
+        "url": "/images/showcase-components.png",
+        "kind": "image",
+        "folder": "Fictional quality regression",
+        "size": "Bundled",
+        "alt": "AI-generated generic machined component concept; fictional demonstration only",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "id": "media-76d6d2dc-f1c0-4cbf-bc08-c71cbe08a666",
+        "name": "showcase-factory.png",
+        "url": "/images/showcase-factory.png",
+        "kind": "image",
+        "folder": "Fictional quality regression",
+        "size": "Bundled",
+        "alt": "AI-generated fictional factory illustration; not Vector Hatch premises or capacity evidence",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "home-brand",
+    "fictional": true,
+    "brief": {
+      "companyName": "Alder Bay Living — Fictional Demo",
+      "industry": "家居生活品牌：阅读椅、双人沙发及边几的虚构设计系列",
+      "audience": "美国和加拿大的家居精品零售商、室内设计师与小型酒店采购团队",
+      "market": "United States and Canada; English-language brand showcase",
+      "language": "en",
+      "styleNotes": "暖纸白、深褐与苔绿色，画册式节奏与真实文字层次；首页以生活场景和设计观点引导，再进入系列。产品一屏内不堆成采购参数表。允许衬线标题，但正文清楚；避免工业蓝、认证标志、巨型 KPI 及奢侈品式空话。三方向用场景叙事、系列编排、留白节奏区分。手机图片与标题比例需单独设计。",
+      "description": "FICTIONAL DEMONSTRATION. Alder Bay Living is an invented home-living brand for a local editable-site rehearsal. Its supplied demonstration collection consists of three native product records: Fern Reading Chair ABL-FR-01, Cove Two-seat Sofa ABL-CS-02 and Pebble Side Table ABL-PT-03. The brand idea is considered furniture for quiet everyday spaces, expressed through a balance of softer seating and small supporting pieces. This is a design narrative, not a sustainability, durability or origin certification. The buyer is an independent home retailer, interior designer or small hospitality purchasing team in the US and Canada. Main action: Explore the collection, leading to the actual collection page; secondary action: Discuss your space, leading to Contact. Suggested pages are Home, Collection, Our Point of View and Contact, plus the native product-detail template for actual products. The homepage should feel like an editorial introduction: a supplied atmosphere reference, a concise brand viewpoint, one dynamic collection list and a route to a project conversation. The collection page must render only the actual three product records through a single editable dynamic list; do not repeat static cards with the same product names. Product descriptions are explicitly illustrative and carry no dimensions, material-performance testing, stock, price, warranty, delivery or production claims. Material references are concepts only and need confirmation. Reuse the supplied interior, chair and sofa images strictly as illustrative mood and category references; they are not verified photographs of these named products or completed customer projects. Any image caption and alternative text must preserve that distinction. Clearly show Fictional demonstration — furniture and interior references. No factory location, supply chain, certifications, sustainability claim, named designer, customer review, partnership or completed hotel project has been provided. No claims about FSC, recycled content, emissions or fire testing may be added. Missing facts are real product photography, specifications, material testing, ordering terms and company contact channels. Keep these unclaimed rather than guessing. SEO should describe the supplied collection and audience in natural English, with distinct titles and descriptions, not keyword stuffing or promises of AI recommendation or search rankings. All page layouts, product cards, original images and phone styling must remain editable native components."
+    },
+    "plan": {
+      "summary": "Plan a fictional furniture brand showcase with an editorial homepage, a collection page, a distinct brand viewpoint, Contact and a native product-detail template. Use only the three supplied product records in dynamic lists. Keep the demonstration disclosure visible and identify every supplied image as an illustrative reference in captions and alternative text. Human review is required for real product photography, specifications, materials and testing, ordering terms and company contact channels. All content remains a reviewable draft.",
+      "intent": {
+        "siteType": "brand-showcase",
+        "primaryGoal": "Explore the fictional collection, understand its design viewpoint and begin a conversation about a retail assortment or interior space.",
+        "audienceTasks": [
+          "Explore the supplied collection.",
+          "View individual product concepts.",
+          "Understand the brand's point of view.",
+          "Discuss a retail assortment or interior space."
+        ],
+        "constraints": [
+          "Use English for all customer-facing copy, with natural, distinct SEO titles and descriptions for buyers in the United States and Canada.",
+          "Clearly display “Fictional demonstration — furniture and interior references.” across ordinary pages and the product-detail template.",
+          "Use only the three existing product records. Include one dynamic collection list on Home and a single editable dynamic list on Collection; do not duplicate product names, SKUs, materials or descriptions in static cards.",
+          "Treat all supplied images as illustrative mood or category references. Captions and alternative text must state that they are not verified product photographs or completed Alder Bay projects.",
+          "Keep layouts, product cards, original images and mobile styling editable through native components. Design mobile image proportions and heading scale separately.",
+          "Use warm paper white, deep brown and moss green with editorial pacing, readable body text and restrained serif headings; avoid industrial blue, certification badges, oversized KPIs and inflated luxury language.",
+          "Do not invent specifications, performance, availability, pricing, warranties, delivery, production, origin, sustainability, certification, customer, designer or partnership claims. Material references remain unconfirmed concepts.",
+          "Route “Explore the collection” to Collection and “Discuss your space” to Contact. Product details use actual records at /products/:slug, with no invented products or search-ranking promises."
+        ],
+        "missingFacts": [
+          "Verified photography of the actual product concepts.",
+          "Confirmed product dimensions, shapes, construction and specifications.",
+          "Confirmed materials, upholstery and finishes.",
+          "Any applicable material-performance, emissions or fire-testing evidence.",
+          "Ordering terms, including pricing, availability, delivery and warranties.",
+          "Verified company contact channels."
+        ]
+      },
+      "pages": [
+        {
+          "key": "home",
+          "title": "Home",
+          "path": "/",
+          "purpose": "Introduce the fictional brand through atmosphere and viewpoint, then guide visitors into the actual collection.",
+          "seoTitle": "Alder Bay Living | Fictional Furniture Collection",
+          "seoDescription": "Explore a fictional furniture collection for quiet everyday spaces, presented for home retailers, interior designers and small hospitality purchasing teams.",
+          "sections": [
+            {
+              "kind": "hero",
+              "heading": "Furniture for quiet everyday spaces",
+              "body": "Fictional demonstration — furniture and interior references. A collection idea balancing softer seating with small supporting pieces. Illustrative interior atmosphere; not a completed Alder Bay project.",
+              "mediaId": "media-08cc90d7-e409-46fd-a645-cb017119a40d",
+              "cta": {
+                "label": "Explore the collection",
+                "pageKey": "collection"
+              }
+            },
+            {
+              "kind": "text",
+              "heading": "Begin with the way a room feels",
+              "body": "Our design story considers places to read, sit together and keep everyday objects close. The relationship between seating and supporting pieces shapes the collection.",
+              "cta": {
+                "label": "Read our point of view",
+                "pageKey": "viewpoint"
+              }
+            },
+            {
+              "kind": "products",
+              "heading": "Explore the collection",
+              "body": "Three illustrative furniture concepts, presented through their individual records. Images are references, not verified photographs of the named products.",
+              "cta": {
+                "label": "View the full collection",
+                "pageKey": "collection"
+              }
+            },
+            {
+              "kind": "text",
+              "heading": "Consider the collection in your setting",
+              "body": "For independent home retailers, interior designers and small hospitality purchasing teams in the United States and Canada.",
+              "cta": {
+                "label": "Discuss your space",
+                "pageKey": "contact"
+              }
+            }
+          ]
+        },
+        {
+          "key": "collection",
+          "title": "Collection",
+          "path": "/collection",
+          "purpose": "Let buyers browse the three existing records through one dynamic list and open their native product details.",
+          "seoTitle": "Furniture Concepts Collection | Alder Bay Living",
+          "seoDescription": "Browse Alder Bay Living's three fictional concepts: a reading chair, a two-seat sofa and a side table. View the illustrative details in each product record.",
+          "sections": [
+            {
+              "kind": "hero",
+              "heading": "A small collection, considered together",
+              "body": "Fictional demonstration — furniture and interior references. Explore seating and a supporting table as parts of one quiet everyday setting."
+            },
+            {
+              "kind": "products",
+              "heading": "The collection",
+              "body": "Browse the three supplied concepts and open each record for its illustrative description. Supplied images are mood and category references, not verified product photographs."
+            },
+            {
+              "kind": "text",
+              "heading": "What belongs in your space?",
+              "body": "Use the collection as a starting point for a conversation about your retail assortment or interior setting.",
+              "cta": {
+                "label": "Discuss your space",
+                "pageKey": "contact"
+              }
+            }
+          ]
+        },
+        {
+          "key": "viewpoint",
+          "title": "Our Point of View",
+          "path": "/our-point-of-view",
+          "purpose": "Explain the supplied design narrative and the relationship between seating and supporting pieces without adding performance or provenance claims.",
+          "seoTitle": "Our Point of View | Alder Bay Living",
+          "seoDescription": "Discover the design narrative behind Alder Bay Living's fictional collection: softer seating, small supporting pieces and quiet everyday spaces.",
+          "sections": [
+            {
+              "kind": "hero",
+              "heading": "Room for the everyday",
+              "body": "Fictional demonstration — furniture and interior references. Our starting point is a quiet setting for reading, sitting together and keeping useful things nearby. Illustrative chair reference; not a verified Alder Bay product photograph.",
+              "mediaId": "media-8f3c56e5-8b86-4def-b844-6d3f19c12c33"
+            },
+            {
+              "kind": "features",
+              "heading": "A balance of pieces",
+              "body": "Two ideas guide this fictional collection's design narrative.",
+              "items": [
+                {
+                  "title": "Softer seating",
+                  "body": "Reading and shared seating provide the starting point for the collection story."
+                },
+                {
+                  "title": "Small supporting pieces",
+                  "body": "An occasional table brings everyday objects into the conversation about a room."
+                }
+              ]
+            },
+            {
+              "kind": "text",
+              "heading": "From viewpoint to collection",
+              "body": "Explore how these ideas sit together across the three supplied furniture concepts.",
+              "cta": {
+                "label": "Explore the collection",
+                "pageKey": "collection"
+              }
+            }
+          ]
+        },
+        {
+          "key": "contact",
+          "title": "Contact",
+          "path": "/contact",
+          "purpose": "Frame a space or assortment inquiry without inventing company contact details, response times or commercial commitments.",
+          "seoTitle": "Discuss Your Space | Alder Bay Living",
+          "seoDescription": "Frame a conversation about the fictional Alder Bay Living collection for a home retail assortment, interior design setting or small hospitality space.",
+          "sections": [
+            {
+              "kind": "hero",
+              "heading": "Discuss your space",
+              "body": "Fictional demonstration — furniture and interior references. Start with the setting you have in mind and the collection concepts you would like to discuss."
+            },
+            {
+              "kind": "contact",
+              "heading": "A starting point for your inquiry",
+              "body": "Tell us about your retail assortment or interior space, its location and the questions you would like to explore."
+            }
+          ]
+        },
+        {
+          "key": "productdetail",
+          "title": "Product Concept",
+          "path": "/products/:slug",
+          "purpose": "Provide a native detail layout bound to the selected existing record; populate its name and supplied fields dynamically, preserving all illustrative qualifications.",
+          "seoTitle": "Furniture Concept Details | Alder Bay Living",
+          "seoDescription": "Read an individual Alder Bay Living fictional furniture concept record, including its illustrative description and unconfirmed material references.",
+          "sections": [
+            {
+              "kind": "hero",
+              "heading": "A concept within the collection",
+              "body": "Fictional demonstration — furniture and interior references. Any supplied imagery is illustrative and is not a verified photograph of the selected product."
+            },
+            {
+              "kind": "text",
+              "heading": "Concept details",
+              "body": "The selected record presents an illustrative design concept. Material references are conceptual; specifications and ordering terms remain unconfirmed."
+            },
+            {
+              "kind": "text",
+              "heading": "Consider it in your setting",
+              "body": "Bring your questions about this concept into a conversation about your space.",
+              "cta": {
+                "label": "Discuss your space",
+                "pageKey": "contact"
+              }
+            }
+          ]
+        }
+      ],
+      "directions": [
+        {
+          "id": "editorial",
+          "name": "Quiet Rooms",
+          "rationale": "Lead with the supplied interior atmosphere beside a concise introduction, followed by the viewpoint and a restrained dynamic collection grid. Serif headings, warm paper white and moss accents create a picture-book rhythm. Keep illustrative captions adjacent to images. On mobile, place the introduction above the scene and reduce heading scale so the collection action remains easy to find.",
+          "primary": "#43513b",
+          "background": "#f8f5ee",
+          "text": "#30271f",
+          "headingFont": "serif",
+          "layout": "editorial"
+        },
+        {
+          "id": "catalog",
+          "name": "Collection in Focus",
+          "rationale": "Keep the homepage's atmosphere and viewpoint concise, then give the three actual records a regular grid with clear names and routes to detail pages. Use deep brown actions and restrained serif headings without turning cards into specification tables. On mobile, use one readable card per row and preserve image proportions and reference disclosures.",
+          "primary": "#49392c",
+          "background": "#f6f2e9",
+          "text": "#2e2923",
+          "headingFont": "serif",
+          "layout": "catalog"
+        },
+        {
+          "id": "minimal",
+          "name": "Space Between Pieces",
+          "rationale": "Use generous whitespace, large serif statements and numbered viewpoint rows to emphasize the relationship between seating and supporting pieces. Keep the interior reference contained beneath the opening statement, with quieter imagery and an unhurried collection list. On mobile, scale typography independently and shorten vertical gaps while keeping captions visible.",
+          "primary": "#454d36",
+          "background": "#fbf8f1",
+          "text": "#352b23",
+          "headingFont": "serif",
+          "layout": "minimal"
+        }
+      ]
+    },
+    "products": [
+      {
+        "id": "abl-fern-chair",
+        "name": "Fern Reading Chair",
+        "sku": "ABL-FR-01",
+        "category": "Seating",
+        "material": "Illustrative upholstered seating concept; details to confirm",
+        "description": "FICTIONAL DEMO: A reading-chair concept within the Alder Bay collection story. The supplied chair image is a category reference, not this product's verified photograph. Dimensions, upholstery, structure and all ordering terms require confirmation.",
+        "image": "/images/chair.jpg",
+        "imageAlt": "Illustrative chair reference, not a verified Fern Reading Chair photograph",
+        "status": "draft",
+        "locale": "en",
+        "slug": "abl-fern-chair"
+      },
+      {
+        "id": "abl-cove-sofa",
+        "name": "Cove Two-seat Sofa",
+        "sku": "ABL-CS-02",
+        "category": "Seating",
+        "material": "Illustrative upholstery concept; details to confirm",
+        "description": "FICTIONAL DEMO: A two-seat-sofa concept for discussing shared living and hospitality settings. The supplied sofa image is a mood reference. No dimensions, upholstery performance, fire-test result, availability or commercial delivery promise is supplied.",
+        "image": "/images/sofa.jpg",
+        "imageAlt": "Illustrative sofa reference, not a verified Cove Two-seat Sofa photograph",
+        "status": "draft",
+        "locale": "en",
+        "slug": "abl-cove-sofa"
+      },
+      {
+        "id": "abl-pebble-table",
+        "name": "Pebble Side Table",
+        "sku": "ABL-PT-03",
+        "category": "Occasional furniture",
+        "material": "Illustrative timber-toned concept; details to confirm",
+        "description": "FICTIONAL DEMO: A small supporting-table concept in the collection narrative. The supplied interior image is an atmosphere reference and does not document a verified Pebble Side Table. Material, shape, dimensions and ordering information must be confirmed.",
+        "image": "/images/interior.jpg",
+        "imageAlt": "Illustrative interior reference, not a verified Pebble Side Table product photograph",
+        "status": "draft",
+        "locale": "en",
+        "slug": "abl-pebble-table"
+      }
+    ],
+    "media": [
+      {
+        "id": "media-08cc90d7-e409-46fd-a645-cb017119a40d",
+        "name": "interior.jpg",
+        "url": "/images/interior.jpg",
+        "kind": "image",
+        "folder": "Fictional quality regression",
+        "size": "Bundled",
+        "alt": "Illustrative interior atmosphere for a fictional collection, not a completed Alder Bay project",
+        "width": 1400,
+        "height": 1050
+      },
+      {
+        "id": "media-8f3c56e5-8b86-4def-b844-6d3f19c12c33",
+        "name": "chair.jpg",
+        "url": "/images/chair.jpg",
+        "kind": "image",
+        "folder": "Fictional quality regression",
+        "size": "Bundled",
+        "alt": "Illustrative chair reference, not a verified Alder Bay product photo",
+        "width": 800,
+        "height": 1201
+      },
+      {
+        "id": "media-68be2632-723b-4ac7-8e8d-5fa915b9369f",
+        "name": "sofa.jpg",
+        "url": "/images/sofa.jpg",
+        "kind": "image",
+        "folder": "Fictional quality regression",
+        "size": "Bundled",
+        "alt": "Illustrative sofa reference, not a verified Alder Bay product photo",
+        "width": 800,
+        "height": 533
+      }
+    ]
+  }
+]

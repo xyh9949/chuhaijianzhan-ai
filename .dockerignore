@@ -1,0 +1,14 @@
+node_modules
+.next
+.git
+.env*
+data
+backups
+output
+work
+out
+.playwright-cli
+*.tsbuildinfo
+**/*.sqlite*
+**/*.private
+**/local-access.json

@@ -1,0 +1,26 @@
+.global-design-screen .ant-tabs-nav { margin-bottom: 24px; }
+.global-design-screen .ant-tabs-tab { padding-top: 10px; padding-bottom: 18px; }
+/* 页面作用域保留Ant Flex/Card的间距；内距由Card原生styles跟随后台响应式令牌。 */
+.global-design-screen .global-toolbar { margin-bottom: var(--admin-section-gap,24px); }
+.global-design-screen .global-table-card { margin-top: var(--admin-section-gap,24px); }
+.global-asset-icon { display: grid; place-items: center; width: 36px; height: 36px; border: 1px solid var(--admin-border, #e2e8f0); border-radius: 8px; color: var(--admin-primary, #2563eb); background: #f5f8ff; }
+.global-cell-meta { margin-top: 4px; color: #8390a3; font-size: 12px; }
+.global-design-screen .global-usage-link { padding: 0; font-size: 13px; height: auto; white-space: normal; text-align: left; }
+.global-block-table .global-asset-icon { flex: none; }
+.global-block-fields { min-width: 0; overflow-wrap: anywhere; }
+.global-block-fields .global-cell-meta { margin-top: 0; }
+.global-layout-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--admin-section-gap,24px); margin-top: var(--admin-section-gap,24px); }
+.global-layout-grid .ant-form { margin-top: 24px; }
+.global-layout-diagram { display: flex; flex-direction: column; gap: 7px; height: 110px; padding: 14px; border: 1px solid #e2e8f0; border-radius: 6px; background: #f9fafc; }
+.global-layout-diagram span { display: block; border-radius: 3px; background: #e9eef5; height: 14px; }
+.global-layout-diagram span:nth-child(2) { flex: 1; background: #f0f3f7; }
+.global-layout-diagram.is-header span:first-child, .global-layout-diagram.is-footer span:last-child { background: #c6d9fb; outline: 1px solid #a4bff0; }
+.global-design-screen .global-code-card { margin-top: var(--admin-section-gap,24px); }
+.global-code-scope { min-width: 240px; max-width: 100%; }
+.global-code-note { margin: 16px 0 24px !important; font-size: 13px; }
+.global-code-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.global-code-panel { min-width: 0; }
+.global-code-panel textarea.ant-input { margin: 12px 0 8px; font-family: Consolas, 'Courier New', monospace; font-size: 13px; line-height: 1.75; tab-size: 2; background: #fafbfd; resize: vertical; }
+.global-code-panel > .ant-typography { font-size: 12px; }
+@media (max-width: 1000px) { .global-code-grid { grid-template-columns: 1fr; } }
+@media (max-width: 640px) { .global-layout-grid { grid-template-columns: 1fr; } .global-code-scope { min-width: 0; width: 100%; } .global-code-card .ant-card-body { padding: 16px; } .global-design-screen .ant-tabs-tab { margin-left: 0 !important; margin-right: 18px !important; } }

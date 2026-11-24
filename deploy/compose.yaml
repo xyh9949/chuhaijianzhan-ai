@@ -1,0 +1,27 @@
+# 项目名决定 Compose 的服务与网络归属；仅分开端口和挂载仍会操作同一个服务。
+name: ${COMPOSE_PROJECT_NAME:?请设置每个客户独立的 COMPOSE_PROJECT_NAME}
+services:
+  app:
+    image: ${FORM_STUDIO_IMAGE:-form-studio:local}
+    build:
+      context: ..
+    restart: unless-stopped
+    init: true
+    stop_grace_period: 30s
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    # 挂载参数中的逗号属于同一字符串，不能被 YAML 列表当作分隔符。
+    tmpfs: ["/tmp:size=128m,mode=1777"]
+    environment:
+      FORM_STUDIO_DATA_DIR: /data
+      FORM_STUDIO_BACKUP_DIR: /backups
+    volumes:
+      - ${INSTANCE_ROOT:?设置客户实例绝对目录}/data:/data
+      - ${INSTANCE_ROOT}/backups:/backups
+      - ${INSTANCE_ROOT}/config:/config:ro
+    # 仅本机反向代理可达；不要改成0.0.0.0直接暴露应用。
+    ports: ["127.0.0.1:${LOCAL_PORT:-3200}:3200"]
+    logging:
+      driver: json-file
+      options: {max-size: "10m", max-file: "3"}

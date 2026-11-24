@@ -1,0 +1,13 @@
+"use client";
+import {useEffect,useState} from 'react';
+import {Alert,Button,Card,Descriptions,Space,Table,Tag,Typography} from 'antd';
+import {request,useStudioRuntime} from '@/lib/studio-client';
+type Inventory={coverage:{complete:boolean;scannedReleases:number;totalReleases:number};items:{type:string;label:string;version:number;license:string;description:string;registered:boolean;draftUses:number;historyUses:number;locations:string[];versions:number[];removalBlocked:boolean}[]};
+/** 只展示本地构建的注册与引用，不提供在线安装、上传源码或卸载按钮。 */
+export default function ExtensionManager(){
+ const runtime=useStudioRuntime(),[data,setData]=useState<Inventory>(),[error,setError]=useState(''),[busy,setBusy]=useState(false);
+ async function load(){setBusy(true);setError('');try{setData(await request<Inventory>('/api/extensions'));}catch(e){setError((e as Error).message);}finally{setBusy(false);}}
+ useEffect(()=>{if(runtime.actor.role==='admin')void load();},[runtime.actor.role]);
+ if(runtime.actor.role!=='admin')return <Alert type="info" title="开发者扩展检查仅管理员可用"/>;
+ return <Space orientation="vertical" style={{width:'100%'}}><Card title="本地业务组件" extra={<Button loading={busy} onClick={load}>检查存量引用</Button>}><Space orientation="vertical" style={{width:'100%'}}><Alert type="info" title="开发者在源码注册并重新构建" description="客户在编辑器填写结构化属性。每个扩展有独立类型、数据版本、许可和引用规则；后台不上传React源码或在线安装npm。"/>{error&&<Alert type="warning" title={error}/>} {data&&<><Alert type={data.coverage.complete?'success':'warning'} title={data.coverage.complete?'草稿和全部保留历史已扫描':'扫描覆盖不全，不能据此移除扩展'} description={`已检查 ${data.coverage.scannedReleases} / ${data.coverage.totalReleases} 份历史。使用次数含未引用资产本身；保留历史仍需要相应兼容渲染器。`}/><Table rowKey="type" size="small" scroll={{x:680}} pagination={false} dataSource={data.items} columns={[{title:'组件',render:(_,r)=><Space orientation="vertical" size={0}><Typography.Text strong>{r.label}</Typography.Text><Typography.Text code>{r.type}</Typography.Text><Tag color={r.registered?'blue':'red'}>{r.registered?`数据 v${r.version}`:'未注册'}</Tag></Space>},{title:'引用',render:(_,r)=>`草稿 ${r.draftUses} / 历史 ${r.historyUses}`},{title:'移除检查',render:(_,r)=><Tag color={r.removalBlocked?'orange':'green'}>{r.removalBlocked?'需保留兼容实现':'当前未发现引用'}</Tag>}]} expandable={{expandedRowRender:r=><><Descriptions column={1} size="small" items={[{key:'description',label:'用途',children:r.description},{key:'license',label:'许可',children:r.license},{key:'versions',label:'实际数据版本',children:r.versions.join(', ')||'尚未使用'}]}/>{r.locations.map(location=><Typography.Paragraph key={location} style={{overflowWrap:'anywhere'}}>{location}</Typography.Paragraph>)}</>}}/></>}</Space></Card></Space>;
+}

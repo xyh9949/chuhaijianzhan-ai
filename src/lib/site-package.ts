@@ -1,0 +1,3 @@
+export const SITE_PACKAGE_MAX_BYTES = 72 * 1024 * 1024;
+export interface PackageImportOptions { mode: 'fresh' | 'merge'; prefix: string; skuPrefix: string; enableJs: boolean;mergeLocales?:boolean; }
+export interface SitePackagePreview { revision: number; name: string; description: string; license: string; dependencies: { name: string; version: string; license: string }[]; counts: { pages: number; products: number; entries: number; media: number; templates: number }; paths: { from: string; to: string }[]; warnings: string[]; errors: string[]; code: { scope: string; css: string; js: string; jsEnabled: boolean }[]; confirmation?: string; }

@@ -1,0 +1,31 @@
+# 替换example.com及证书路径后 nginx -t；TLS终结代理必须覆盖转发头。
+limit_req_zone $binary_remote_addr zone=studio_login:10m rate=10r/m;
+limit_req_zone $binary_remote_addr zone=studio_forms:10m rate=30r/m;
+server {
+    listen 80;
+    server_name example.com;
+    return 308 https://example.com$request_uri;
+}
+server {
+    listen 443 ssl;
+    server_name example.com;
+    ssl_certificate /etc/ssl/form-studio/fullchain.pem;
+    ssl_certificate_key /etc/ssl/form-studio/privkey.pem;
+    ssl_protocols TLSv1.2 TLSv1.3;
+    client_max_body_size 80m;
+    add_header X-Content-Type-Options nosniff always;
+    # 不记录请求体、Cookie、查询串或完整Referer；错误日志限制为warn。
+    access_log off;
+    error_log /var/log/nginx/form-studio-error.log warn;
+    location = /api/auth/sign-in/email {
+        limit_req zone=studio_login burst=5 nodelay;
+        include /etc/nginx/snippets/form-studio-proxy.conf;
+    }
+    location ~ ^/api/public/forms/[^/]+(?:/session)?$ {
+        limit_req zone=studio_forms burst=15 nodelay;
+        include /etc/nginx/snippets/form-studio-proxy.conf;
+    }
+    location / {
+        include /etc/nginx/snippets/form-studio-proxy.conf;
+    }
+}

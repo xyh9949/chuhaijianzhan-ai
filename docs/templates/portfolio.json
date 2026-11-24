@@ -1,0 +1,1299 @@
+{
+  "format": "form-studio-site",
+  "version": 1,
+  "manifest": {
+    "name": "个人作品集 · Field Studio",
+    "description": "深色、大字与荧光绿，作品模型、项目详情、自由网格与联系页面。作品均为虚构示例。",
+    "license": "Original synthetic demonstration layouts. No customer results, certifications, photography or redistribution rights are asserted. Replace with verified, authorized customer information.",
+    "createdAt": "2026-11-07T10:59:08.418Z",
+    "rendererVersion": 15,
+    "dependencies": [
+      {
+        "name": "form-studio-renderer",
+        "version": "15",
+        "license": "MIT"
+      },
+      {
+        "name": "@puckeditor/core",
+        "version": "0.24.0",
+        "license": "MIT"
+      },
+      {
+        "name": "react",
+        "version": "19.3.1",
+        "license": "MIT"
+      },
+      {
+        "name": "antd",
+        "version": "6.7.0",
+        "license": "MIT"
+      }
+    ],
+    "snapshotSha256": "701e4beb7c9f81da0b329d40c1ecd19b0dce8aa48b569d5735ee54c968ab9058"
+  },
+  "snapshot": {
+    "schemaVersion": 15,
+    "pages": [
+      {
+        "id": "starter-home",
+        "title": "Home",
+        "slug": "/",
+        "type": "普通页面",
+        "status": "published",
+        "updated": "2026-11-07T00:00:00.000Z"
+      },
+      {
+        "id": "starter-about",
+        "title": "About",
+        "slug": "/about",
+        "type": "普通页面",
+        "status": "published",
+        "updated": "2026-11-07T00:00:00.000Z"
+      },
+      {
+        "id": "starter-contact",
+        "title": "Contact",
+        "slug": "/contact",
+        "type": "普通页面",
+        "status": "published",
+        "updated": "2026-11-07T00:00:00.000Z"
+      },
+      {
+        "id": "starter-list",
+        "title": "Selected explorations",
+        "slug": "/work",
+        "type": "普通页面",
+        "status": "published",
+        "updated": "2026-11-07T00:00:00.000Z"
+      },
+      {
+        "id": "starter-detail",
+        "title": "Project details",
+        "slug": "/work/:slug",
+        "type": "内容详情",
+        "status": "published",
+        "updated": "2026-11-07T00:00:00.000Z",
+        "contentModelId": "starter-model"
+      }
+    ],
+    "editorData": {
+      "starter-home": {
+        "root": {
+          "props": {
+            "title": "Home",
+            "brand": "Field Studio",
+            "showChrome": "yes"
+          }
+        },
+        "content": [
+          {
+            "type": "Container",
+            "props": {
+              "id": "portfolio-Container-17",
+              "content": [
+                {
+                  "type": "Text",
+                  "props": {
+                    "id": "portfolio-Text-13",
+                    "text": "FIELD STUDIO / DEMONSTRATION",
+                    "size": 16,
+                    "color": "#a7b8ab",
+                    "maxWidth": 760,
+                    "align": "left"
+                  }
+                },
+                {
+                  "type": "Heading",
+                  "props": {
+                    "id": "portfolio-Heading-14",
+                    "text": "Ideas, given a distinct form.",
+                    "size": 86,
+                    "mobileSize": 38,
+                    "color": "#e9f1e8",
+                    "align": "left",
+                    "style": "sans",
+                    "spacing": 0,
+                    "design": {
+                      "desktop": {
+                        "fontWeight": 600,
+                        "lineHeight": 1.12
+                      },
+                      "mobile": {
+                        "fontSize": 38
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "id": "portfolio-Text-15",
+                    "text": "A flexible portfolio for an independent creative practice. The projects below are fictional demonstrations.",
+                    "size": 16,
+                    "color": "#a7b8ab",
+                    "maxWidth": 760,
+                    "align": "left"
+                  }
+                },
+                {
+                  "type": "ActionButton",
+                  "props": {
+                    "id": "portfolio-ActionButton-16",
+                    "text": "View demonstration projects",
+                    "href": "/work",
+                    "kind": "theme",
+                    "align": "left",
+                    "design": {
+                      "desktop": {
+                        "color": "#122014"
+                      }
+                    }
+                  }
+                }
+              ],
+              "layout": "column",
+              "columns": 1,
+              "mobileColumns": 1,
+              "gap": 28,
+              "padding": 100,
+              "inset": 40,
+              "minHeight": 0,
+              "background": "#111915",
+              "image": "",
+              "align": "start",
+              "design": {
+                "desktop": {
+                  "maxWidth": 1400,
+                  "marginLeft": "auto",
+                  "marginRight": "auto"
+                },
+                "mobile": {
+                  "paddingTop": 32,
+                  "paddingBottom": 32,
+                  "paddingLeft": 20,
+                  "paddingRight": 20,
+                  "gap": 20
+                }
+              }
+            }
+          },
+          {
+            "type": "Container",
+            "props": {
+              "id": "portfolio-Container-20",
+              "content": [
+                {
+                  "type": "Text",
+                  "props": {
+                    "id": "portfolio-Text-18",
+                    "text": "SELECTED WORK",
+                    "size": 16,
+                    "color": "#a7b8ab",
+                    "maxWidth": 760,
+                    "align": "left"
+                  }
+                },
+                {
+                  "type": "Heading",
+                  "props": {
+                    "id": "portfolio-Heading-19",
+                    "text": "Selected explorations",
+                    "size": 40,
+                    "mobileSize": 38,
+                    "color": "#e9f1e8",
+                    "align": "left",
+                    "style": "sans",
+                    "spacing": 0,
+                    "design": {
+                      "desktop": {
+                        "fontWeight": 600,
+                        "lineHeight": 1.12
+                      },
+                      "mobile": {
+                        "fontSize": 38
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "ContentLoop",
+                  "props": {
+                    "id": "portfolio-ContentLoop-12",
+                    "source": "entry",
+                    "modelId": "starter-model",
+                    "itemBlockId": "starter-card",
+                    "title": "",
+                    "count": 6,
+                    "columns": 2,
+                    "mobileColumns": 1,
+                    "gap": 24,
+                    "padding": 0,
+                    "emptyText": "No examples yet."
+                  }
+                }
+              ],
+              "layout": "column",
+              "columns": 1,
+              "mobileColumns": 1,
+              "gap": 28,
+              "padding": 64,
+              "inset": 40,
+              "minHeight": 0,
+              "background": "#111915",
+              "image": "",
+              "align": "start",
+              "design": {
+                "desktop": {
+                  "maxWidth": 1400,
+                  "marginLeft": "auto",
+                  "marginRight": "auto"
+                },
+                "mobile": {
+                  "paddingTop": 32,
+                  "paddingBottom": 32,
+                  "paddingLeft": 20,
+                  "paddingRight": 20,
+                  "gap": 20
+                }
+              }
+            }
+          },
+          {
+            "type": "Container",
+            "props": {
+              "id": "portfolio-Container-24",
+              "content": [
+                {
+                  "type": "Heading",
+                  "props": {
+                    "id": "portfolio-Heading-21",
+                    "text": "Have a project in mind?",
+                    "size": 40,
+                    "mobileSize": 38,
+                    "color": "#e9f1e8",
+                    "align": "left",
+                    "style": "sans",
+                    "spacing": 0,
+                    "design": {
+                      "desktop": {
+                        "fontWeight": 600,
+                        "lineHeight": 1.12
+                      },
+                      "mobile": {
+                        "fontSize": 38
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "id": "portfolio-Text-22",
+                    "text": "Use this editable section to explain the next step without inventing lead times, prices or outcomes.",
+                    "size": 16,
+                    "color": "#a7b8ab",
+                    "maxWidth": 760,
+                    "align": "left"
+                  }
+                },
+                {
+                  "type": "ActionButton",
+                  "props": {
+                    "id": "portfolio-ActionButton-23",
+                    "text": "Contact",
+                    "href": "/contact",
+                    "kind": "theme",
+                    "align": "left",
+                    "design": {
+                      "desktop": {
+                        "color": "#122014"
+                      }
+                    }
+                  }
+                }
+              ],
+              "layout": "column",
+              "columns": 1,
+              "mobileColumns": 1,
+              "gap": 28,
+              "padding": 64,
+              "inset": 40,
+              "minHeight": 0,
+              "background": "#202723",
+              "image": "",
+              "align": "start",
+              "design": {
+                "desktop": {
+                  "maxWidth": 1400,
+                  "marginLeft": "auto",
+                  "marginRight": "auto"
+                },
+                "mobile": {
+                  "paddingTop": 32,
+                  "paddingBottom": 32,
+                  "paddingLeft": 20,
+                  "paddingRight": 20,
+                  "gap": 20
+                }
+              }
+            }
+          }
+        ]
+      },
+      "starter-about": {
+        "root": {
+          "props": {
+            "title": "About",
+            "brand": "Field Studio",
+            "showChrome": "yes"
+          }
+        },
+        "content": [
+          {
+            "type": "Container",
+            "props": {
+              "id": "portfolio-Container-38",
+              "content": [
+                {
+                  "type": "Text",
+                  "props": {
+                    "id": "portfolio-Text-30",
+                    "text": "ABOUT / DEMONSTRATION",
+                    "size": 16,
+                    "color": "#a7b8ab",
+                    "maxWidth": 760,
+                    "align": "left"
+                  }
+                },
+                {
+                  "type": "Heading",
+                  "props": {
+                    "id": "portfolio-Heading-31",
+                    "text": "About Field Studio",
+                    "size": 60,
+                    "mobileSize": 38,
+                    "color": "#e9f1e8",
+                    "align": "left",
+                    "style": "sans",
+                    "spacing": 0,
+                    "design": {
+                      "desktop": {
+                        "fontWeight": 600,
+                        "lineHeight": 1.12
+                      },
+                      "mobile": {
+                        "fontSize": 38
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "id": "portfolio-Text-32",
+                    "text": "This company and its story are demonstration content. Add your actual history, team, facilities and working process.",
+                    "size": 16,
+                    "color": "#a7b8ab",
+                    "maxWidth": 760,
+                    "align": "left"
+                  }
+                },
+                {
+                  "type": "Container",
+                  "props": {
+                    "id": "portfolio-Container-37",
+                    "content": [
+                      {
+                        "type": "Heading",
+                        "props": {
+                          "id": "portfolio-Heading-33",
+                          "text": "Your approach",
+                          "size": 28,
+                          "mobileSize": 28,
+                          "color": "#e9f1e8",
+                          "align": "left",
+                          "style": "sans",
+                          "spacing": 0,
+                          "design": {
+                            "desktop": {
+                              "fontWeight": 600,
+                              "lineHeight": 1.12
+                            },
+                            "mobile": {
+                              "fontSize": 28
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "type": "Text",
+                        "props": {
+                          "id": "portfolio-Text-34",
+                          "text": "Describe the way you work using facts that the customer can verify.",
+                          "size": 16,
+                          "color": "#a7b8ab",
+                          "maxWidth": 760,
+                          "align": "left"
+                        }
+                      },
+                      {
+                        "type": "Heading",
+                        "props": {
+                          "id": "portfolio-Heading-35",
+                          "text": "Your people",
+                          "size": 28,
+                          "mobileSize": 28,
+                          "color": "#e9f1e8",
+                          "align": "left",
+                          "style": "sans",
+                          "spacing": 0,
+                          "design": {
+                            "desktop": {
+                              "fontWeight": 600,
+                              "lineHeight": 1.12
+                            },
+                            "mobile": {
+                              "fontSize": 28
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "type": "Text",
+                        "props": {
+                          "id": "portfolio-Text-36",
+                          "text": "Add authorized biographies and photography. No fictional customer testimonials are included.",
+                          "size": 16,
+                          "color": "#a7b8ab",
+                          "maxWidth": 760,
+                          "align": "left"
+                        }
+                      }
+                    ],
+                    "layout": "grid",
+                    "columns": 2,
+                    "mobileColumns": 1,
+                    "gap": 28,
+                    "padding": 64,
+                    "inset": 40,
+                    "minHeight": 0,
+                    "background": "#202b24",
+                    "image": "",
+                    "align": "start",
+                    "design": {
+                      "desktop": {
+                        "maxWidth": 1400,
+                        "marginLeft": "auto",
+                        "marginRight": "auto"
+                      },
+                      "mobile": {
+                        "paddingTop": 32,
+                        "paddingBottom": 32,
+                        "paddingLeft": 20,
+                        "paddingRight": 20,
+                        "gap": 20
+                      }
+                    }
+                  }
+                }
+              ],
+              "layout": "column",
+              "columns": 1,
+              "mobileColumns": 1,
+              "gap": 28,
+              "padding": 64,
+              "inset": 40,
+              "minHeight": 0,
+              "background": "#111915",
+              "image": "",
+              "align": "start",
+              "design": {
+                "desktop": {
+                  "maxWidth": 1400,
+                  "marginLeft": "auto",
+                  "marginRight": "auto"
+                },
+                "mobile": {
+                  "paddingTop": 32,
+                  "paddingBottom": 32,
+                  "paddingLeft": 20,
+                  "paddingRight": 20,
+                  "gap": 20
+                }
+              }
+            }
+          }
+        ]
+      },
+      "starter-contact": {
+        "root": {
+          "props": {
+            "title": "Contact",
+            "brand": "Field Studio",
+            "showChrome": "yes"
+          }
+        },
+        "content": [
+          {
+            "type": "Container",
+            "props": {
+              "id": "portfolio-Container-43",
+              "content": [
+                {
+                  "type": "Text",
+                  "props": {
+                    "id": "portfolio-Text-39",
+                    "text": "CONTACT / DEMONSTRATION",
+                    "size": 16,
+                    "color": "#a7b8ab",
+                    "maxWidth": 760,
+                    "align": "left"
+                  }
+                },
+                {
+                  "type": "Heading",
+                  "props": {
+                    "id": "portfolio-Heading-40",
+                    "text": "Let’s start a conversation.",
+                    "size": 58,
+                    "mobileSize": 38,
+                    "color": "#e9f1e8",
+                    "align": "left",
+                    "style": "sans",
+                    "spacing": 0,
+                    "design": {
+                      "desktop": {
+                        "fontWeight": 600,
+                        "lineHeight": 1.12
+                      },
+                      "mobile": {
+                        "fontSize": 38
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "id": "portfolio-Text-41",
+                    "text": "This is a functional inquiry form. Configure your own contact details, privacy wording and notification settings before public use.",
+                    "size": 16,
+                    "color": "#a7b8ab",
+                    "maxWidth": 760,
+                    "align": "left"
+                  }
+                },
+                {
+                  "type": "Form",
+                  "props": {
+                    "id": "portfolio-Form-42",
+                    "formId": "starter-inquiry",
+                    "wideFields": [
+                      "field-c1a4ab81-a178-4323-a947-0c0978d7c6b9"
+                    ],
+                    "design": {
+                      "desktop": {
+                        "display": "grid",
+                        "columns": 2,
+                        "gap": 20
+                      },
+                      "mobile": {
+                        "columns": 1
+                      }
+                    },
+                    "fieldDesign": {
+                      "desktop": {
+                        "borderWidth": 1,
+                        "borderColor": "#53645a",
+                        "borderRadius": 6
+                      }
+                    },
+                    "submitDesign": {
+                      "desktop": {
+                        "borderRadius": 6
+                      }
+                    }
+                  }
+                }
+              ],
+              "layout": "column",
+              "columns": 1,
+              "mobileColumns": 1,
+              "gap": 28,
+              "padding": 64,
+              "inset": 40,
+              "minHeight": 0,
+              "background": "#111915",
+              "image": "",
+              "align": "start",
+              "design": {
+                "desktop": {
+                  "maxWidth": 1400,
+                  "marginLeft": "auto",
+                  "marginRight": "auto"
+                },
+                "mobile": {
+                  "paddingTop": 32,
+                  "paddingBottom": 32,
+                  "paddingLeft": 20,
+                  "paddingRight": 20,
+                  "gap": 20
+                }
+              }
+            }
+          }
+        ]
+      },
+      "starter-list": {
+        "root": {
+          "props": {
+            "title": "Selected explorations",
+            "brand": "Field Studio",
+            "showChrome": "yes"
+          }
+        },
+        "content": [
+          {
+            "type": "Container",
+            "props": {
+              "id": "portfolio-list-47",
+              "content": [
+                {
+                  "type": "Heading",
+                  "props": {
+                    "id": "portfolio-list-48",
+                    "text": "Selected explorations",
+                    "size": 58,
+                    "mobileSize": 38,
+                    "color": "#e9f1e8",
+                    "align": "left",
+                    "style": "sans",
+                    "spacing": 0,
+                    "design": {
+                      "desktop": {
+                        "fontWeight": 600,
+                        "lineHeight": 1.12
+                      },
+                      "mobile": {
+                        "fontSize": 38
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "id": "portfolio-list-49",
+                    "text": "All examples are editable content records, not hardcoded industry components.",
+                    "size": 16,
+                    "color": "#a7b8ab",
+                    "maxWidth": 760,
+                    "align": "left"
+                  }
+                },
+                {
+                  "type": "ContentLoop",
+                  "props": {
+                    "id": "portfolio-list-50",
+                    "source": "entry",
+                    "modelId": "starter-model",
+                    "itemBlockId": "starter-card",
+                    "title": "",
+                    "count": 6,
+                    "columns": 2,
+                    "mobileColumns": 1,
+                    "gap": 24,
+                    "padding": 0,
+                    "emptyText": "No examples yet."
+                  }
+                }
+              ],
+              "layout": "column",
+              "columns": 1,
+              "mobileColumns": 1,
+              "gap": 28,
+              "padding": 64,
+              "inset": 40,
+              "minHeight": 0,
+              "background": "#111915",
+              "image": "",
+              "align": "start",
+              "design": {
+                "desktop": {
+                  "maxWidth": 1400,
+                  "marginLeft": "auto",
+                  "marginRight": "auto"
+                },
+                "mobile": {
+                  "paddingTop": 32,
+                  "paddingBottom": 32,
+                  "paddingLeft": 20,
+                  "paddingRight": 20,
+                  "gap": 20
+                }
+              }
+            }
+          }
+        ]
+      },
+      "starter-detail": {
+        "root": {
+          "props": {
+            "title": "Project details",
+            "brand": "Field Studio",
+            "showChrome": "yes"
+          }
+        },
+        "content": [
+          {
+            "type": "Container",
+            "props": {
+              "id": "portfolio-Container-29",
+              "content": [
+                {
+                  "type": "Text",
+                  "props": {
+                    "id": "portfolio-Text-25",
+                    "text": "DEMONSTRATION DETAIL",
+                    "size": 16,
+                    "color": "#a7b8ab",
+                    "maxWidth": 760,
+                    "align": "left"
+                  }
+                },
+                {
+                  "type": "Heading",
+                  "props": {
+                    "id": "portfolio-Heading-26",
+                    "text": "Example title",
+                    "size": 58,
+                    "mobileSize": 34,
+                    "color": "#e9f1e8",
+                    "style": "sans",
+                    "bindings": {
+                      "text": {
+                        "source": "entry",
+                        "mode": "current",
+                        "modelId": "starter-model",
+                        "field": "builtin:title"
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "id": "portfolio-Text-27",
+                    "text": "Example details",
+                    "size": 18,
+                    "color": "#a7b8ab",
+                    "maxWidth": 800,
+                    "bindings": {
+                      "text": {
+                        "source": "entry",
+                        "mode": "current",
+                        "modelId": "starter-model",
+                        "field": "field:starter-summary"
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "ActionButton",
+                  "props": {
+                    "id": "portfolio-ActionButton-28",
+                    "text": "Discuss your requirements",
+                    "href": "/contact",
+                    "kind": "theme",
+                    "align": "left",
+                    "design": {
+                      "desktop": {
+                        "color": "#122014"
+                      }
+                    }
+                  }
+                }
+              ],
+              "layout": "column",
+              "columns": 1,
+              "mobileColumns": 1,
+              "gap": 28,
+              "padding": 64,
+              "inset": 40,
+              "minHeight": 0,
+              "background": "#111915",
+              "image": "",
+              "align": "start",
+              "design": {
+                "desktop": {
+                  "maxWidth": 1400,
+                  "marginLeft": "auto",
+                  "marginRight": "auto"
+                },
+                "mobile": {
+                  "paddingTop": 32,
+                  "paddingBottom": 32,
+                  "paddingLeft": 20,
+                  "paddingRight": 20,
+                  "gap": 20
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "products": [],
+    "media": [],
+    "theme": {
+      "primary": "#c4f76a",
+      "background": "#111915",
+      "text": "#e9f1e8",
+      "radius": 8,
+      "font": "Arial",
+      "headingFont": "Arial"
+    },
+    "settings": {
+      "name": "Field Studio",
+      "description": "Field Studio: demonstration website. Replace all sample information before delivery.",
+      "email": "",
+      "language": "en"
+    },
+    "sharedBlocks": [
+      {
+        "id": "starter-header",
+        "name": "全站页眉",
+        "updated": "",
+        "data": {
+          "root": {
+            "props": {
+              "title": "Header",
+              "brand": "Field Studio",
+              "showChrome": "no"
+            }
+          },
+          "content": [
+            {
+              "type": "Container",
+              "props": {
+                "id": "portfolio-Container-6",
+                "content": [
+                  {
+                    "type": "Heading",
+                    "props": {
+                      "id": "portfolio-Heading-4",
+                      "text": "Field Studio",
+                      "size": 26,
+                      "mobileSize": 26,
+                      "color": "#e9f1e8",
+                      "align": "left",
+                      "style": "sans",
+                      "spacing": 0,
+                      "design": {
+                        "desktop": {
+                          "fontWeight": 600,
+                          "lineHeight": 1.12
+                        },
+                        "mobile": {
+                          "fontSize": 26
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "type": "Navigation",
+                    "props": {
+                      "id": "portfolio-Navigation-5",
+                      "menuId": "starter-menu"
+                    }
+                  }
+                ],
+                "layout": "grid",
+                "columns": 2,
+                "mobileColumns": 1,
+                "gap": 28,
+                "padding": 24,
+                "inset": 40,
+                "minHeight": 0,
+                "background": "#202b24",
+                "image": "",
+                "align": "start",
+                "design": {
+                  "desktop": {
+                    "maxWidth": 1400,
+                    "marginLeft": "auto",
+                    "marginRight": "auto"
+                  },
+                  "mobile": {
+                    "paddingTop": 32,
+                    "paddingBottom": 32,
+                    "paddingLeft": 20,
+                    "paddingRight": 20,
+                    "gap": 20
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "starter-footer",
+        "name": "全站页脚",
+        "updated": "",
+        "data": {
+          "root": {
+            "props": {
+              "title": "Footer",
+              "brand": "Field Studio",
+              "showChrome": "no"
+            }
+          },
+          "content": [
+            {
+              "type": "Container",
+              "props": {
+                "id": "portfolio-Container-3",
+                "content": [
+                  {
+                    "type": "Text",
+                    "props": {
+                      "id": "portfolio-Text-1",
+                      "text": "Field Studio · Demonstration website. Replace all example content with verified customer information.",
+                      "size": 16,
+                      "color": "#a7b8ab",
+                      "maxWidth": 760,
+                      "align": "left"
+                    }
+                  },
+                  {
+                    "type": "Navigation",
+                    "props": {
+                      "id": "portfolio-Navigation-2",
+                      "menuId": "starter-menu"
+                    }
+                  }
+                ],
+                "layout": "column",
+                "columns": 1,
+                "mobileColumns": 1,
+                "gap": 28,
+                "padding": 28,
+                "inset": 40,
+                "minHeight": 0,
+                "background": "#202b24",
+                "image": "",
+                "align": "start",
+                "design": {
+                  "desktop": {
+                    "maxWidth": 1400,
+                    "marginLeft": "auto",
+                    "marginRight": "auto"
+                  },
+                  "mobile": {
+                    "paddingTop": 32,
+                    "paddingBottom": 32,
+                    "paddingLeft": 20,
+                    "paddingRight": 20,
+                    "gap": 20
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "starter-card",
+        "name": "可自由编辑的列表卡片",
+        "updated": "",
+        "data": {
+          "root": {
+            "props": {
+              "title": "Editable list card",
+              "brand": "Field Studio",
+              "showChrome": "no"
+            }
+          },
+          "content": [
+            {
+              "type": "Container",
+              "props": {
+                "id": "portfolio-Container-11",
+                "content": [
+                  {
+                    "type": "Text",
+                    "props": {
+                      "id": "portfolio-Text-7",
+                      "text": "PROJECT DEMO",
+                      "size": 16,
+                      "color": "#a7b8ab",
+                      "maxWidth": 760,
+                      "align": "left"
+                    }
+                  },
+                  {
+                    "type": "Heading",
+                    "props": {
+                      "id": "portfolio-Heading-8",
+                      "text": "Example title",
+                      "size": 26,
+                      "mobileSize": 24,
+                      "color": "#e9f1e8",
+                      "style": "sans",
+                      "align": "left",
+                      "bindings": {
+                        "text": {
+                          "source": "entry",
+                          "mode": "current",
+                          "modelId": "starter-model",
+                          "field": "builtin:title"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "type": "Text",
+                    "props": {
+                      "id": "portfolio-Text-9",
+                      "text": "Example description",
+                      "size": 15,
+                      "color": "#a7b8ab",
+                      "maxWidth": 500,
+                      "bindings": {
+                        "text": {
+                          "source": "entry",
+                          "mode": "current",
+                          "modelId": "starter-model",
+                          "field": "field:starter-summary"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "type": "ActionButton",
+                    "props": {
+                      "id": "portfolio-ActionButton-10",
+                      "text": "Explore example",
+                      "href": "",
+                      "kind": "outline",
+                      "align": "left",
+                      "design": {
+                        "desktop": {
+                          "color": "#e9f1e8",
+                          "borderColor": "#799184"
+                        }
+                      },
+                      "bindings": {
+                        "href": {
+                          "source": "entry",
+                          "mode": "current",
+                          "modelId": "starter-model",
+                          "field": "builtin:url"
+                        }
+                      }
+                    }
+                  }
+                ],
+                "layout": "column",
+                "columns": 1,
+                "mobileColumns": 1,
+                "gap": 28,
+                "padding": 28,
+                "inset": 40,
+                "minHeight": 0,
+                "background": "#202b24",
+                "image": "",
+                "align": "start",
+                "design": {
+                  "desktop": {
+                    "maxWidth": 1400,
+                    "marginLeft": "auto",
+                    "marginRight": "auto"
+                  },
+                  "mobile": {
+                    "paddingTop": 32,
+                    "paddingBottom": 32,
+                    "paddingLeft": 20,
+                    "paddingRight": 20,
+                    "gap": 20
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "contentModels": [
+      {
+        "id": "starter-model",
+        "name": "作品项目",
+        "description": "演示内容模型，可自行增删字段",
+        "target": "content",
+        "updated": "",
+        "fields": [
+          {
+            "id": "starter-summary",
+            "key": "summary",
+            "label": "介绍",
+            "type": "textarea",
+            "required": false
+          },
+          {
+            "id": "starter-category",
+            "key": "category",
+            "label": "类别",
+            "type": "text",
+            "required": false
+          }
+        ]
+      }
+    ],
+    "contentEntries": [
+      {
+        "id": "starter-entry-1",
+        "modelId": "starter-model",
+        "title": "Composition study",
+        "slug": "example-1",
+        "status": "published",
+        "updated": "",
+        "customFields": {
+          "starter-summary": "Synthetic demonstration; this is not a claim of completed client work or business results.",
+          "starter-category": "Portfolio demonstration"
+        }
+      },
+      {
+        "id": "starter-entry-2",
+        "modelId": "starter-model",
+        "title": "Identity exploration",
+        "slug": "example-2",
+        "status": "published",
+        "updated": "",
+        "customFields": {
+          "starter-summary": "Synthetic demonstration; this is not a claim of completed client work or business results.",
+          "starter-category": "Portfolio demonstration"
+        }
+      },
+      {
+        "id": "starter-entry-3",
+        "modelId": "starter-model",
+        "title": "Digital experience",
+        "slug": "example-3",
+        "status": "published",
+        "updated": "",
+        "customFields": {
+          "starter-summary": "Synthetic demonstration; this is not a claim of completed client work or business results.",
+          "starter-category": "Portfolio demonstration"
+        }
+      }
+    ],
+    "forms": [
+      {
+        "id": "starter-inquiry",
+        "name": "网站询盘",
+        "enabled": true,
+        "submitLabel": "Send inquiry",
+        "successMessage": "Thank you. Your inquiry has been received.",
+        "fields": [
+          {
+            "id": "field-7138bdc5-ee01-4148-863e-332bf229a818",
+            "label": "Name",
+            "type": "text",
+            "mapTo": "name",
+            "required": true,
+            "maxLength": 150
+          },
+          {
+            "id": "field-4a5c068e-5a47-4bf1-9a56-d97a851a9ce7",
+            "label": "Email",
+            "type": "email",
+            "mapTo": "email",
+            "required": true,
+            "maxLength": 254
+          },
+          {
+            "id": "field-c9d7dd3a-25d6-43c7-808c-c40c5b1f24e7",
+            "label": "Company",
+            "type": "text",
+            "mapTo": "company",
+            "required": false,
+            "maxLength": 150
+          },
+          {
+            "id": "field-c1a4ab81-a178-4323-a947-0c0978d7c6b9",
+            "label": "Message",
+            "type": "textarea",
+            "mapTo": "message",
+            "required": true,
+            "maxLength": 4000
+          }
+        ]
+      }
+    ],
+    "pageTemplates": [],
+    "taxonomies": [],
+    "redirects": [],
+    "customCode": {
+      "global": {
+        "css": "",
+        "js": "",
+        "cssEnabled": false,
+        "jsEnabled": false
+      },
+      "pages": {}
+    },
+    "siteLayout": {
+      "header": {
+        "mode": "block",
+        "blockId": "starter-header",
+        "menuId": "starter-menu"
+      },
+      "footer": {
+        "mode": "block",
+        "blockId": "starter-footer"
+      },
+      "menus": [
+        {
+          "id": "starter-menu",
+          "name": "Main navigation",
+          "items": [
+            {
+              "id": "menu-home",
+              "label": "Home",
+              "target": {
+                "kind": "page",
+                "id": "starter-home"
+              }
+            },
+            {
+              "id": "menu-list",
+              "label": "Work",
+              "target": {
+                "kind": "page",
+                "id": "starter-list"
+              }
+            },
+            {
+              "id": "menu-about",
+              "label": "About",
+              "target": {
+                "kind": "page",
+                "id": "starter-about"
+              }
+            },
+            {
+              "id": "menu-contact",
+              "label": "Contact",
+              "target": {
+                "kind": "page",
+                "id": "starter-contact"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "files": []
+}

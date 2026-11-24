@@ -1,0 +1,56 @@
+.seo-workspace { display: flex; flex-direction: column; gap: 20px; min-width: 0; }
+.seo-workspace > .page-heading { margin-bottom: 0; }
+.seo-workspace h3, .seo-settings-section h3 { margin: 0 0 8px; font-size: 16px; font-weight: 600; }
+.seo-status-row { padding: 0 2px; }
+.seo-metric-grid { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 16px; }
+.seo-metric-grid .ant-statistic-title { font-size: 13px; }
+.seo-metric-grid .ant-statistic-content { font-size: 25px; }
+.seo-panel,.seo-diagnostic-panel,.seo-report-scope { border: 1px solid var(--border,#dce3ec); background: #fff; border-radius: 7px; }
+.seo-panel { padding: 24px; }
+/* Ant Flex会重置padding，限定工作台后保留工具栏与卡片边缘的留白。 */
+.seo-workspace .seo-panel-toolbar { padding: 18px 20px; border-bottom: 1px solid var(--border,#dce3ec); }
+.seo-diagnostic-panel .ant-table-wrapper { padding: 0 0 12px; }
+.seo-diagnostic-panel .ant-table-pagination { padding-inline: 20px; }
+.seo-report-scope { display: flex; padding: 20px; width: 100%; }
+.seo-query-form,.seo-form-space { margin-top: 20px; }
+.seo-input-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 0 20px; align-items: start; }
+.seo-input-grid .ant-form-item { min-width: 0; }
+.seo-settings-section { padding-bottom: 20px; border-bottom: 1px solid var(--border,#dce3ec); }
+.seo-settings-section > .ant-flex { margin-bottom: 12px; }
+.seo-settings-section .ant-form-item { margin-bottom: 18px; }
+.seo-settings-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; margin: 18px 0; }
+.seo-break-word,.seo-snippet-url { overflow-wrap: anywhere; word-break: break-word; }
+.seo-evidence-list { margin: 0; padding-left: 19px; }
+.seo-evidence-list li { margin-bottom: 7px; overflow-wrap: anywhere; }
+.seo-evidence-list li:last-child { margin-bottom: 0; }
+.seo-evidence-list li > .ant-typography { display: block; font-size: 12px; margin-top: 3px; }
+.seo-evidence-popover { max-width: min(440px,calc(100vw - 56px)); max-height: 420px; overflow-y: auto; }
+.seo-selected-report-notes { display: flex; flex-direction: column; gap: 6px; margin: -8px 0 18px; }
+.seo-snippet-comparison { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 16px; }
+.seo-snippet { min-width: 0; padding: 20px; border: 1px solid var(--border,#dce3ec); border-radius: 6px; background: #fff; }
+.seo-snippet-url { font-size: 12px; color: #52735b; margin-top: 16px; }
+.seo-snippet h3 { margin: 6px 0; color: #174895; font-size: 20px; font-weight: 500; line-height: 1.45; overflow-wrap: anywhere; }
+.seo-snippet p { margin: 0; color: #56677e; font-size: 14px; line-height: 1.65; overflow-wrap: anywhere; white-space: pre-wrap; }
+.seo-actual-pages { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 16px; width: 100%; }
+.seo-actual-pages iframe { width: 100%; height: 600px; border: 1px solid var(--border,#dce3ec); border-radius: 6px; background: #fff; }
+.seo-proposal-modal .ant-modal-body { padding-top: 8px; }
+.seo-proposal-modal .ant-tabs-content-holder { min-width: 0; }
+.seo-proposal-modal .ant-form-item { margin-bottom: 20px; }
+.seo-workspace .ant-table-cell { overflow-wrap: anywhere; }
+.seo-record-summary { width: 100%; min-width: 0; }
+.seo-record-summary .ant-space-item { min-width: 0; max-width: 100%; }
+.seo-record-summary div.ant-typography { margin-bottom: 0; }
+.seo-record-details { min-width: 0; overflow-wrap: anywhere; }
+.seo-record-details .ant-descriptions-item-content { min-width: 0; overflow-wrap: anywhere; }
+.seo-record-details h5.ant-typography { margin: 16px 0 10px; }
+/* 手机摘要与详情留在同一张Ant Table，操作始终在可见列，不靠横向拖动寻找。 */
+@media(max-width:767px) {
+  .seo-mobile-readable .ant-table-cell { padding: 16px; }
+  .seo-record-summary { white-space: normal; }
+  .seo-record-actions { width: 100%; margin-top: 4px; }
+  .seo-record-actions .ant-btn { min-height: 44px; height: auto; white-space: normal; }
+  .seo-mobile-readable .ant-table-expanded-row .ant-table-cell { padding: 16px; }
+  .seo-workspace .seo-report-scope .ant-space-item { min-width: 0; overflow-wrap: anywhere; }
+}
+@media(max-width:1100px) { .seo-metric-grid { grid-template-columns: repeat(2,minmax(0,1fr)); } .seo-input-grid { grid-template-columns: repeat(2,minmax(0,1fr)); } }
+@media(max-width:700px) { .seo-workspace { gap: 16px; } .seo-workspace .page-heading { align-items: flex-start; } .seo-panel { padding: 18px; } .seo-workspace .seo-panel-toolbar { padding: 16px; } .seo-metric-grid { gap: 12px; } .seo-input-grid,.seo-snippet-comparison,.seo-actual-pages { grid-template-columns: minmax(0,1fr); } .seo-snippet { padding: 16px; } .seo-report-scope { padding: 16px; } .seo-settings-actions > .ant-btn { max-width: 100%; white-space: normal; height: auto; min-height: 36px; } .seo-proposal-modal .ant-tabs-tab { padding-inline: 0; } }

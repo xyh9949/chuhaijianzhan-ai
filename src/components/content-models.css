@@ -1,0 +1,25 @@
+.content-models-screen .ant-tabs-nav{margin-bottom:24px}.cm-toolbar{margin-bottom:20px}.cm-table-card{margin-top:20px}.cm-table-card .ant-card-body{padding:0}.cm-secondary{margin-top:5px;color:var(--muted,#65758b);font-size:12px;max-width:300px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.cm-model-meta,.cm-field-dual{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.cm-schema-layout{display:grid;grid-template-columns:280px minmax(0,1fr);gap:24px}.cm-field-list{min-width:0}.cm-fields{margin-top:14px;border:1px solid #e2e8f0;border-radius:7px;overflow:hidden}.cm-fields .ant-list-item{padding:0;border-bottom:1px solid #e9eef5}.cm-fields .ant-list-item:last-child{border-bottom:0}.cm-fields .ant-btn{height:auto;min-height:68px;display:flex;justify-content:space-between;gap:10px;white-space:normal;text-align:left;padding:12px}.cm-fields .ant-btn>span:first-child{min-width:0}.cm-fields strong,.cm-fields small{display:block;overflow-wrap:anywhere}.cm-fields strong{font-size:13px;font-weight:600}.cm-fields small{color:#8390a3;font-size:11px;margin-top:5px}.cm-fields .ant-tag{font-size:11px;margin:0;flex-shrink:0}.cm-fields .is-selected{background:#edf4ff;box-shadow:inset 3px 0 #2563eb}.cm-field-settings{min-width:0}.cm-field-settings .ant-card-body{padding:20px}.cm-option-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) auto;gap:8px;margin-bottom:10px}.model-value-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 20px}.model-value-fields>.ant-form-item:has(textarea){grid-column:1/-1}.model-value-fields .ant-form-item-label>label{height:auto;min-height:22px}.model-value-fields .ant-tag{margin:0;font-size:11px}.model-value-fields .ant-select{width:100%}@media(max-width:800px){.cm-schema-layout{grid-template-columns:1fr}.cm-fields{max-height:260px;overflow:auto}}@media(max-width:600px){.cm-model-meta,.cm-field-dual,.model-value-fields{grid-template-columns:1fr}.cm-field-settings .ant-card-body{padding:14px}.cm-option-row{grid-template-columns:minmax(0,1fr) auto}.cm-option-row>.ant-input:nth-child(2){grid-column:1;grid-row:2}.cm-option-row>.ant-btn{grid-column:2;grid-row:1/3}.content-models-screen .ant-tabs-tab{margin-left:0!important;margin-right:24px!important}}
+/* 扩展字段允许暂存为空；发布要求由专属标签说明，避免“可选”造成误解。 */
+.model-value-fields .ant-form-item .ant-form-item-label>label .ant-form-item-optional{display:none}
+
+/* 栏目与日常列表分开，手机改用同一选项下拉，不复制业务数据。 */
+.cm-workspace{display:grid;grid-template-columns:208px minmax(0,1fr);gap:24px;align-items:start}.cm-column-nav,.cm-content-main{min-width:0}.cm-column-nav .ant-card-body{padding:4px}.cm-column-nav .ant-menu{border-inline-end:0!important}.cm-column-heading{margin-bottom:16px}.content-models-screen .cm-mobile-columns.ant-select{display:none}.cm-content-main .cm-table-card{margin-top:0}.cm-list-tools{padding:0 0 20px;display:grid;gap:12px}.cm-list-tools>.ant-input-search{max-width:380px}.cm-entry-title.ant-btn{height:auto;max-width:100%;white-space:normal;text-align:left;padding:0;overflow-wrap:anywhere}.cm-entry-title.ant-btn>span{min-width:0}.content-parameters .ant-list-item{gap:16px}.content-parameters .ant-list-item-meta{min-width:0}.content-parameters .ant-list-item-meta-title,.content-parameters .ant-list-item-meta-description{overflow-wrap:anywhere}
+@media(max-width:900px){.cm-workspace{grid-template-columns:minmax(0,1fr)}.cm-column-nav{display:none}.content-models-screen .cm-mobile-columns.ant-select{display:flex;width:100%;margin-bottom:20px}.cm-column-heading{margin-bottom:12px}}@media(max-width:600px){.cm-list-tools .ant-space{max-width:100%}.content-parameters .ant-list-item{align-items:stretch;flex-direction:column}.content-models-screen .ant-btn{min-height:40px}.model-value-fields>.ant-form-item:has(.image-picker){grid-column:1/-1}}
+
+/* 抽屉桌面宽度也需要整行图片区，避免192px预览与上传按钮挤在半列。 */
+.model-value-fields>.ant-form-item:has(.image-picker){grid-column:1/-1;min-width:0}
+
+/* 使用页面作用域压过Ant组件的margin/padding重置；卡片提供统一内距，子区域共用对齐线。 */
+.content-models-screen{--cm-panel-space:24px}
+.content-models-screen .sys-heading{margin-bottom:24px}
+.content-models-screen .cm-column-heading{margin-bottom:16px}
+.content-models-screen .cm-column-heading>.ant-space{min-width:0}
+.content-models-screen .cm-column-heading h4{overflow-wrap:anywhere}
+.content-models-screen .cm-status-tabs{padding:0}
+.content-models-screen .cm-list-tools{padding:0 0 20px}
+@media(max-width:600px){
+ .content-models-screen{--cm-panel-space:16px}
+ .content-models-screen .sys-heading{margin-bottom:20px}
+ .content-models-screen .cm-column-heading{margin-bottom:12px}
+ .content-models-screen .cm-list-tools{padding-bottom:16px}
+}

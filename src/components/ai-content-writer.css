@@ -1,0 +1,20 @@
+/* 后台写作沿用Ant表单与卡片，窄屏比较改为上下排列，客户网站样式不受影响。 */
+.ai-writing-input-grid,.ai-writing-compare-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;min-width:0}
+.ai-writing-compare-grid>div{min-width:0}.ai-writing-compare-grid .ant-typography{display:block;margin-bottom:10px}
+.ai-writing-plain{white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.75;padding:12px;background:var(--surface-subtle,#f7f9fc);border:1px solid var(--border,#e2e8f0);border-radius:6px;min-height:72px}
+.ai-writing-rich{overflow-wrap:anywhere;line-height:1.75;padding:12px;border:1px solid var(--border,#e2e8f0);border-radius:6px}
+.ai-writing-rich :is(h2,h3){font-size:18px;margin:12px 0 8px}.ai-writing-rich p{margin:0 0 12px}.ai-writing-rich img{max-width:100%}
+.ai-writing-facts{display:flex;flex-direction:column;gap:16px}.ai-writing-facts>.ant-checkbox-wrapper{align-items:flex-start;margin:0}
+.ai-writing-profile .ant-form-item{margin-bottom:20px}.ai-writing-profile .ant-collapse-content-box>.ant-form-item:last-child{margin-bottom:0}
+/* 高于Ant Flex的默认重置，避免状态文字贴住细边框。 */
+.ai-content-writer .ai-writing-state-strip{padding:12px 16px;border:1px solid var(--border,#e2e8f0);border-radius:6px;background:var(--surface-subtle,#f7f9fc);overflow-wrap:anywhere}
+.ai-writing-examples{display:flex;margin-bottom:20px}.ai-writing-source-summary{margin-bottom:16px}.ai-writing-source-summary .ant-typography{overflow-wrap:anywhere}.ai-writing-source-summary .ai-writing-source-note{margin-top:12px;margin-bottom:0}
+.ai-writing-more-options .ant-collapse-content-box>.ant-form-item:last-child{margin-bottom:0}
+/* 高亮只比较文字，删除线与标注同时表达变化，不能只依赖颜色。 */
+.ai-writing-difference{white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.8;padding:12px 16px;border:1px solid var(--border,#e2e8f0);border-radius:6px;max-height:360px;overflow:auto}
+.ai-writing-difference ins,.ai-writing-added-label{color:var(--ant-color-success-text,#237804);background:var(--ant-color-success-bg,#f6ffed);text-decoration:none}
+.ai-writing-difference del,.ai-writing-removed-label{color:var(--ant-color-error-text,#a8071a);background:var(--ant-color-error-bg,#fff2f0);text-decoration:line-through}
+.ai-writing-added-label,.ai-writing-removed-label{padding:0 6px;border-radius:3px}
+@media(max-width:650px){.ai-writing-input-grid,.ai-writing-compare-grid{grid-template-columns:minmax(0,1fr);gap:16px}.ai-content-writer .ant-tabs-tab+.ant-tabs-tab{margin-inline-start:18px}.ai-content-writer .ant-list-item{gap:12px;flex-wrap:wrap}.ai-content-writer .ant-list-item-action{margin-inline-start:0}}
+/* 手机把操作放到独立一行，避免Ant Alert的固定action把说明挤成逐字竖排。 */
+@media(max-width:650px){.ai-writing-adoption-notice.ant-alert{flex-wrap:wrap;row-gap:12px}.ai-writing-adoption-notice .ant-alert-section{flex:1 1 calc(100% - 40px)}.ai-writing-adoption-notice .ant-alert-actions{flex-basis:100%;margin-inline-start:0}}

@@ -1,0 +1,89 @@
+.admin-app .ov-page-header h1 { margin: 0; color: var(--text); font-size: 28px; font-weight: 600; line-height: 1.4; letter-spacing: 0; }
+.admin-app .ov-page-header p { margin: 6px 0 0; color: var(--muted); font-size: 14px; line-height: 1.7; }
+.admin-app .ov-page-header > div:last-child { padding-top: 3px; }
+.admin-app .ov-page-header .ant-btn { height: 40px; padding-inline: 18px; font-size: 14px; }
+.admin-app .ov-outline-action { border-color: var(--primary); color: var(--primary); background: #fff; }
+.admin-app .ov-card { border: 1px solid var(--border); border-radius: 8px; background: #fff; box-shadow: none; }
+.admin-app .ov-card > .ant-card-head { min-height: 57px; padding: 0 24px; border-bottom: 0; }
+.admin-app .ov-card > .ant-card-head h2 { color: var(--text); font-size: 16px; font-weight: 600; line-height: 1.5; margin: 0; }
+.admin-app .ov-card .ant-card-extra .ant-btn-link { padding-right: 0; font-size: 14px; }
+.admin-app .ov-summary > .ant-card-body, .admin-app .ov-pages-card > .ant-card-body { padding: 0; }
+.admin-app .ov-summary { overflow: hidden; margin-bottom: 20px; }
+.admin-app .ov-stat.ant-btn { display: flex; align-items: flex-start; justify-content: flex-start; gap: 18px; width: 100%; height: 122px; min-width: 0; padding: 21px 24px; border: 0; border-radius: 0; text-align: left; position: relative; }
+.admin-app .ov-stat + .ov-stat::before { content: ''; position: absolute; left: 0; top: 22px; bottom: 22px; width: 1px; background: var(--border); }
+.admin-app .ov-stat:hover { background: #f8faff; }
+.admin-app .ov-stat-icon { font-size: 24px; color: #6c7f99; margin-top: 2px; line-height: 1; }
+.admin-app .ov-stat-content { display: flex; flex-direction: column; align-items: flex-start; min-width: 0; }
+.admin-app .ov-stat-label { color: var(--text); font-size: 14px; line-height: 20px; }
+.admin-app .ov-stat-number { margin: 2px 0 3px; color: var(--text); font-size: 32px; line-height: 1.2; font-weight: 600; font-variant-numeric: tabular-nums; }
+.admin-app .ov-stat-detail { font-size: 13px; line-height: 20px; color: var(--muted); white-space: normal; }
+.admin-app .ov-site-card > .ant-card-body { padding: 0 24px 16px; }
+.admin-app .ov-local-status.ant-tag { border: 0; color: var(--muted); background: #f1f4f8; font-size: 12px; line-height: 24px; padding-inline: 9px; margin: 0; }
+.admin-app .ov-site-cover { border: 1px solid var(--border); border-radius: 7px; overflow: hidden; }
+.admin-app .ov-site-mini-header { padding: 10px 14px; background: #fafcff; }
+.admin-app .ov-site-mini-header strong { font-size: 14px; font-weight: 600; color: var(--text); overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.admin-app .ov-site-mini-header > span { flex-shrink: 0; font-size: 12px; color: var(--muted); }
+.admin-app .ov-site-image { height: 214px; position: relative; overflow: hidden; }
+.admin-app .ov-site-image > .ant-image { display: block; }
+.admin-app .ov-cover-caption { position: absolute; left: 12px; right: 12px; bottom: 12px; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 9px 12px; border: 1px solid #ffffffa8; border-radius: 6px; background: #fffffff0; }
+.admin-app .ov-cover-caption > span { font-size: 12px; color: #4e6078; }
+.admin-app .ov-cover-caption .ant-btn { height: 28px; font-size: 12px; }
+.admin-app .ov-site-details { padding: 12px 0; border-bottom: 1px solid var(--border); }
+.admin-app .ov-domain-link.ant-btn { max-width: 100%; padding: 0; height: auto; min-height: 24px; font-size: 14px; white-space: normal; overflow-wrap: anywhere; }
+.admin-app .ov-domain-link.ant-btn > span:last-child { min-width: 0; overflow-wrap: anywhere; }
+.admin-app .ov-site-language { display: inline-flex; align-items: center; gap: 8px; color: var(--muted); font-size: 13px; }
+.admin-app .ov-site-version { padding-top: 13px; color: var(--muted); font-size: 12px; }
+.admin-app .ov-site-version strong { color: var(--text); font-weight: 500; margin-left: 7px; font-variant-numeric: tabular-nums; }
+.admin-app .ov-site-version .ant-btn { padding: 0; height: auto; font-size: 14px; }
+.admin-app .ov-tasks-card > .ant-card-body { display: flex; flex-direction: column; height: calc(100% - 57px); padding: 0 20px 20px; }
+.admin-app .ov-task-row.ant-btn { display: flex; align-items: center; gap: 14px; width: 100%; min-height: 86px; height: auto; padding: 17px 4px; border: 0; border-bottom: 1px solid var(--border); border-radius: 0; text-align: left; }
+.admin-app .ov-task-icon { display: grid; place-items: center; width: 43px; height: 43px; flex-shrink: 0; border-radius: 7px; color: var(--primary); background: #edf3ff; font-size: 22px; }
+.admin-app .ov-task-copy { display: flex; flex: 1; min-width: 0; flex-direction: column; gap: 5px; white-space: normal; }
+.admin-app .ov-task-copy strong { font-size: 14px; font-weight: 600; color: var(--text); line-height: 1.5; }
+.admin-app .ov-task-copy > span { color: var(--muted); font-size: 13px; line-height: 1.6; }
+.admin-app .ov-task-count { color: var(--text); font-size: 21px; line-height: 1; font-weight: 600; font-variant-numeric: tabular-nums; margin-left: 6px; }
+.admin-app .ov-task-count.is-zero { color: #8b99ab; }
+.admin-app .ov-task-arrow { color: #8a99ae; font-size: 14px; margin-left: 2px; }
+.admin-app .ov-publish-callout { padding: 16px 14px; border-radius: 7px; background: #edf3ff; margin-top: auto; }
+.admin-app .ov-publish-callout > .anticon { font-size: 21px; color: var(--primary); }
+.admin-app .ov-publish-callout > div { flex: 1; min-width: 120px; }
+.admin-app .ov-publish-callout strong { display: block; color: var(--text); font-weight: 600; font-size: 14px; line-height: 1.6; }
+.admin-app .ov-publish-callout > div > span { display: block; color: var(--muted); font-size: 12px; line-height: 1.7; margin-top: 3px; }
+.admin-app .ov-publish-callout .ant-btn { height: 36px; font-size: 14px; padding-inline: 12px; }
+.admin-app .ov-pages-card { overflow: hidden; }
+.admin-app .ov-pages-card .ant-table { font-size: 14px; }
+.admin-app .ov-pages-card .ant-table-thead > tr > th { font-size: 13px; font-weight: 500; background: #f5f8fc; color: var(--muted); padding-block: 10px; }
+.admin-app .ov-pages-card .ant-table-tbody > tr > td { padding-top: 10px; padding-bottom: 10px; color: var(--text); }
+.admin-app .ov-pages-card .ant-table-thead > tr > th:first-child, .admin-app .ov-pages-card .ant-table-tbody > tr > td:first-child { padding-left: 24px; }
+.admin-app .ov-pages-card .ant-table-tbody > tr:last-child > td { border-bottom: 0; }
+.admin-app .ov-pages-card .ant-btn-link { padding: 0; height: auto; font-size: 14px; }
+.admin-app .ov-table-name > .anticon { font-size: 21px; color: var(--primary); }
+.admin-app .ov-table-name > div { display: flex; flex-direction: column; align-items: flex-start; gap: 1px; }
+.admin-app .ov-table-name .ant-btn { color: var(--text); font-weight: 500; white-space: normal; text-align: left; }
+.admin-app .ov-table-name > div > span { font-size: 12px; color: var(--muted); overflow-wrap: anywhere; }
+.admin-app .ov-table-status.ant-tag { font-size: 12px; line-height: 24px; border: 0; border-radius: 4px; padding-inline: 9px; }
+.admin-app .ov-table-date { font-size: 13px; color: var(--muted); }
+.admin-app .ov-data-note { margin: 14px 0 0; color: var(--muted); font-size: 12px; line-height: 1.7; }
+@media (max-width: 1279px) {
+  .admin-app .ov-stat:nth-child(3)::before { display: none; }
+  .admin-app .ov-stat:nth-child(-n+2) { border-bottom: 1px solid var(--border); }
+  .admin-app .ov-publish-callout { margin-top: 20px; }
+}
+@media (max-width: 640px) {
+  .admin-app .ov-page-header h1 { font-size: 25px; }
+  .admin-app .ov-page-header > div:last-child { width: 100%; }
+  .admin-app .ov-page-header .ant-btn { flex: 1; padding-inline: 12px; }
+  .admin-app .ov-stat.ant-btn { padding: 18px 13px; gap: 10px; min-height: 119px; height: auto; }
+  .admin-app .ov-stat-icon { font-size: 20px; }
+  .admin-app .ov-stat-number { font-size: 28px; }
+  .admin-app .ov-stat-detail { font-size: 12px; }
+  .admin-app .ov-card > .ant-card-head { padding-inline: 16px; }
+  .admin-app .ov-site-card > .ant-card-body { padding-inline: 16px; }
+  .admin-app .ov-tasks-card > .ant-card-body { padding-inline: 16px; }
+  .admin-app .ov-site-mini-header { padding-inline: 10px; }
+  .admin-app .ov-site-mini-header > span { font-size: 12px; }
+  .admin-app .ov-cover-caption { padding: 8px; left: 8px; right: 8px; bottom: 8px; flex-wrap: wrap; gap: 6px; }
+  .admin-app .ov-task-row.ant-btn { gap: 10px; }
+  .admin-app .ov-task-count { margin-left: 0; }
+  .admin-app .ov-publish-callout .ant-btn { width: 100%; }
+}

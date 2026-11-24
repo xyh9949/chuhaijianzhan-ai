@@ -1,0 +1,9 @@
+.ai-design-preview { width: 100%; min-width: 0; }
+.ai-design-preview-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 20px; }
+.ai-design-preview-card { min-width: 0; overflow: hidden; border: 1px solid var(--border, #e3e8ef); border-radius: 8px; background: #fff; }
+.ai-design-preview-heading { padding: 12px 16px; border-bottom: 1px solid var(--border, #e3e8ef); }
+.ai-design-preview-stage { position: relative; height: min(64dvh, 700px); min-height: 360px; overflow: hidden; background: #f3f5f8; }
+.ai-design-preview-stage iframe { position: absolute; top: 0; border: 0; background: white; transform-origin: top left; }
+@media (max-width: 767px) {
+  .ai-design-preview-stage { height: 60dvh; min-height: 320px; }
+}

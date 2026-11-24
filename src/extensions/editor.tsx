@@ -1,0 +1,15 @@
+"use client";
+import React from 'react';
+import {Alert,Button,Form,Input,Select,Space} from 'antd';
+import type {Config,Field} from '@puckeditor/core';
+import type {StudioState} from '../lib/types';
+import {LOCAL_EXTENSIONS,type ExtensionField} from './registry';
+import {groupedEditorFields,responsiveDesignField} from '../components/editor/DesignFields';
+/** 扩展字段由本地schema生成Ant控件；数组行有明确上限，不接受脚本或任意组件上传。 */
+function editorField(key:string,rule:ExtensionField,state:StudioState):Field{return {type:'custom',label:rule.label,render:({value,onChange,id,readOnly})=>{
+ const control=rule.kind==='rows'?<Space orientation="vertical" style={{width:'100%'}}>{(Array.isArray(value)?value:[]).map((row:{label:string;value:string},index:number)=><div key={index} style={{border:'1px solid #e5e9ef',padding:10,borderRadius:6}}><Input aria-label={`规格${index+1}名称`} maxLength={120} value={row.label} disabled={readOnly} onChange={e=>onChange(value.map((r:unknown,i:number)=>i===index?{...row,label:e.target.value}:r))}/><Input.TextArea aria-label={`规格${index+1}值`} maxLength={2000} value={row.value} disabled={readOnly} style={{marginTop:8}} onChange={e=>onChange(value.map((r:unknown,i:number)=>i===index?{...row,value:e.target.value}:r))}/><Space wrap><Button size="small" disabled={readOnly||index===0} onClick={()=>{const next=[...value];[next[index-1],next[index]]=[next[index],next[index-1]];onChange(next);}}>上移</Button><Button size="small" disabled={readOnly||index===value.length-1} onClick={()=>{const next=[...value];[next[index+1],next[index]]=[next[index],next[index+1]];onChange(next);}}>下移</Button><Button size="small" danger disabled={readOnly} onClick={()=>onChange(value.filter((_:unknown,i:number)=>i!==index))}>移除行</Button></Space></div>)}<Button disabled={readOnly||(value?.length||0)>=50} onClick={()=>onChange([...value||[],{label:'',value:''}])}>添加规格行</Button><Alert type="info" title="只填写已核实的产品资料"/></Space>:rule.kind==='product'||rule.kind==='document'?<Select aria-label={rule.label} id={id} disabled={readOnly} allowClear showSearch optionFilterProp="label" value={value||undefined} onChange={v=>onChange(v||'')} options={rule.kind==='product'?state.products.map(p=>({value:p.id,label:p.name})):state.media.filter(m=>m.kind==='document').map(m=>({value:m.url,label:m.name}))}/>:<Input.TextArea aria-label={rule.label} id={id} disabled={readOnly} value={value||''} maxLength={rule.max} autoSize={{minRows:1,maxRows:4}} onChange={e=>onChange(e.target.value)}/>;
+ return <Form.Item label={rule.label} htmlFor={id} layout="vertical">{control}</Form.Item>;
+}};}
+export function extensionEditorComponents(render:Config['components'],state:StudioState):Config['components']{
+ return Object.fromEntries(LOCAL_EXTENSIONS.map(e=>[e.type,{...render[e.type],label:e.label,renderFields:groupedEditorFields,fields:{...Object.fromEntries(Object.entries(e.schema).map(([key,rule])=>[key,editorField(key,rule,state)])),design:responsiveDesignField(e.type,state.media,state.theme)},defaultProps:e.defaultProps}]));
+}

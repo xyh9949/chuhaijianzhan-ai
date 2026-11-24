@@ -1,0 +1,24 @@
+/* Ant Flex会重置margin，组合选择器保证案例分组留白沿用后台规范。 */
+.starter-showcase-intro.ant-flex{margin-bottom:24px}
+.starter-showcase-intro .ant-typography{margin:0!important}
+.starter-showcase-intro h4.ant-typography{margin-bottom:8px!important}
+.starter-showcase-intro>.ant-tag{align-self:flex-start;margin:2px 0 0}
+.starter-showcase-card{height:100%;overflow:hidden}
+.starter-showcase-card>.ant-card-cover{margin:0!important}
+.starter-showcase-cover.ant-btn{display:block;width:100%;height:264px;padding:0;border:0;border-bottom:1px solid #e5eaf1;background:#f0f3f7;overflow:hidden;text-align:left;cursor:pointer;position:relative}
+.starter-showcase-cover img{display:block;width:100%;height:100%;object-fit:cover;object-position:top;transition:transform .3s ease}
+.starter-showcase-cover:hover img{transform:scale(1.025)}
+.starter-showcase-cover>span{position:absolute;bottom:16px;left:16px;background:#fff;color:#172b4d;border:1px solid #d8e1ed;border-radius:6px;padding:7px 12px;font-size:13px;box-shadow:0 3px 12px #142b4110}
+.starter-showcase-labels.ant-flex{margin-bottom:12px;font-size:12px}
+.starter-showcase-labels .ant-tag,.starter-showcase-features .ant-tag{margin:0}
+.starter-showcase-card h4.ant-typography{font-size:18px!important;line-height:1.5!important;margin:0 0 4px!important}
+.starter-showcase-style{display:block;font-size:12px;color:#68798e}
+.starter-showcase-description{margin:14px 0 16px!important;min-height:66px;font-size:13px;line-height:1.75}
+.starter-showcase-features.ant-flex{margin-bottom:24px;min-height:54px;align-content:flex-start}
+.starter-showcase-features .ant-tag{color:#607086;background:#f7f9fc;border-color:#e5eaf1;font-size:11px}
+.starter-showcase-note{margin:16px 0 0!important;font-size:12px}
+.starter-preview-toolbar.ant-flex{margin-bottom:16px}
+.starter-preview-stage{display:flex;justify-content:center;background:#e8edf3;padding:16px;overflow:auto;border:1px solid #e1e6ee;border-radius:8px}
+.starter-preview-stage>iframe{height:65vh;min-height:360px;border:0;background:#fff;flex-shrink:0;box-shadow:0 4px 20px #142b4110}
+@media(max-width:767px){.starter-showcase-intro.ant-flex{margin-bottom:20px}.starter-showcase-cover.ant-btn{height:240px}.starter-showcase-description{min-height:0}.starter-showcase-features.ant-flex{min-height:0}.starter-preview-stage{padding:4px}.starter-preview-toolbar .ant-segmented-item-label{padding:0 8px}.starter-preview-modal .ant-modal-footer .ant-space{flex-wrap:wrap}}
+@media(prefers-reduced-motion:reduce){.starter-showcase-cover img{transition:none}}

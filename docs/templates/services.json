@@ -1,0 +1,1299 @@
+{
+  "format": "form-studio-site",
+  "version": 1,
+  "manifest": {
+    "name": "专业服务 · North Advisory",
+    "description": "暖白、衬线标题与酒红，服务内容模型、自由卡片和联系表单。服务能力均为演示设定。",
+    "license": "Original synthetic demonstration layouts. No customer results, certifications, photography or redistribution rights are asserted. Replace with verified, authorized customer information.",
+    "createdAt": "2026-11-07T10:59:08.398Z",
+    "rendererVersion": 15,
+    "dependencies": [
+      {
+        "name": "form-studio-renderer",
+        "version": "15",
+        "license": "MIT"
+      },
+      {
+        "name": "@puckeditor/core",
+        "version": "0.24.0",
+        "license": "MIT"
+      },
+      {
+        "name": "react",
+        "version": "19.3.1",
+        "license": "MIT"
+      },
+      {
+        "name": "antd",
+        "version": "6.7.0",
+        "license": "MIT"
+      }
+    ],
+    "snapshotSha256": "1853c4bf20355894b1fc074ea65b1bc7ab5f0d615acc56c467dde3f40fe33f00"
+  },
+  "snapshot": {
+    "schemaVersion": 15,
+    "pages": [
+      {
+        "id": "starter-home",
+        "title": "Home",
+        "slug": "/",
+        "type": "普通页面",
+        "status": "published",
+        "updated": "2026-11-07T00:00:00.000Z"
+      },
+      {
+        "id": "starter-about",
+        "title": "About",
+        "slug": "/about",
+        "type": "普通页面",
+        "status": "published",
+        "updated": "2026-11-07T00:00:00.000Z"
+      },
+      {
+        "id": "starter-contact",
+        "title": "Contact",
+        "slug": "/contact",
+        "type": "普通页面",
+        "status": "published",
+        "updated": "2026-11-07T00:00:00.000Z"
+      },
+      {
+        "id": "starter-list",
+        "title": "Ways to work together",
+        "slug": "/services",
+        "type": "普通页面",
+        "status": "published",
+        "updated": "2026-11-07T00:00:00.000Z"
+      },
+      {
+        "id": "starter-detail",
+        "title": "Service details",
+        "slug": "/services/:slug",
+        "type": "内容详情",
+        "status": "published",
+        "updated": "2026-11-07T00:00:00.000Z",
+        "contentModelId": "starter-model"
+      }
+    ],
+    "editorData": {
+      "starter-home": {
+        "root": {
+          "props": {
+            "title": "Home",
+            "brand": "North Advisory",
+            "showChrome": "yes"
+          }
+        },
+        "content": [
+          {
+            "type": "Container",
+            "props": {
+              "id": "services-Container-17",
+              "content": [
+                {
+                  "type": "Text",
+                  "props": {
+                    "id": "services-Text-13",
+                    "text": "NORTH ADVISORY / DEMONSTRATION",
+                    "size": 16,
+                    "color": "#5e686d",
+                    "maxWidth": 760,
+                    "align": "left"
+                  }
+                },
+                {
+                  "type": "Heading",
+                  "props": {
+                    "id": "services-Heading-14",
+                    "text": "A clearer direction. A considered next step.",
+                    "size": 70,
+                    "mobileSize": 38,
+                    "color": "#1b2c32",
+                    "align": "left",
+                    "style": "serif",
+                    "spacing": 0,
+                    "design": {
+                      "desktop": {
+                        "fontWeight": 400,
+                        "lineHeight": 1.12
+                      },
+                      "mobile": {
+                        "fontSize": 38
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "id": "services-Text-15",
+                    "text": "An editable service presentation for independent teams. Replace the demonstration offers with your actual expertise and process.",
+                    "size": 16,
+                    "color": "#5e686d",
+                    "maxWidth": 760,
+                    "align": "left"
+                  }
+                },
+                {
+                  "type": "ActionButton",
+                  "props": {
+                    "id": "services-ActionButton-16",
+                    "text": "Discover the service examples",
+                    "href": "/services",
+                    "kind": "theme",
+                    "align": "left",
+                    "design": {
+                      "desktop": {
+                        "color": "#ffffff"
+                      }
+                    }
+                  }
+                }
+              ],
+              "layout": "column",
+              "columns": 1,
+              "mobileColumns": 1,
+              "gap": 28,
+              "padding": 100,
+              "inset": 40,
+              "minHeight": 0,
+              "background": "#faf7f0",
+              "image": "",
+              "align": "start",
+              "design": {
+                "desktop": {
+                  "maxWidth": 1400,
+                  "marginLeft": "auto",
+                  "marginRight": "auto"
+                },
+                "mobile": {
+                  "paddingTop": 32,
+                  "paddingBottom": 32,
+                  "paddingLeft": 20,
+                  "paddingRight": 20,
+                  "gap": 20
+                }
+              }
+            }
+          },
+          {
+            "type": "Container",
+            "props": {
+              "id": "services-Container-20",
+              "content": [
+                {
+                  "type": "Text",
+                  "props": {
+                    "id": "services-Text-18",
+                    "text": "OUR APPROACH",
+                    "size": 16,
+                    "color": "#5e686d",
+                    "maxWidth": 760,
+                    "align": "left"
+                  }
+                },
+                {
+                  "type": "Heading",
+                  "props": {
+                    "id": "services-Heading-19",
+                    "text": "Ways to work together",
+                    "size": 40,
+                    "mobileSize": 38,
+                    "color": "#1b2c32",
+                    "align": "left",
+                    "style": "serif",
+                    "spacing": 0,
+                    "design": {
+                      "desktop": {
+                        "fontWeight": 400,
+                        "lineHeight": 1.12
+                      },
+                      "mobile": {
+                        "fontSize": 38
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "ContentLoop",
+                  "props": {
+                    "id": "services-ContentLoop-12",
+                    "source": "entry",
+                    "modelId": "starter-model",
+                    "itemBlockId": "starter-card",
+                    "title": "",
+                    "count": 6,
+                    "columns": 2,
+                    "mobileColumns": 1,
+                    "gap": 24,
+                    "padding": 0,
+                    "emptyText": "No examples yet."
+                  }
+                }
+              ],
+              "layout": "column",
+              "columns": 1,
+              "mobileColumns": 1,
+              "gap": 28,
+              "padding": 64,
+              "inset": 40,
+              "minHeight": 0,
+              "background": "#faf7f0",
+              "image": "",
+              "align": "start",
+              "design": {
+                "desktop": {
+                  "maxWidth": 1400,
+                  "marginLeft": "auto",
+                  "marginRight": "auto"
+                },
+                "mobile": {
+                  "paddingTop": 32,
+                  "paddingBottom": 32,
+                  "paddingLeft": 20,
+                  "paddingRight": 20,
+                  "gap": 20
+                }
+              }
+            }
+          },
+          {
+            "type": "Container",
+            "props": {
+              "id": "services-Container-24",
+              "content": [
+                {
+                  "type": "Heading",
+                  "props": {
+                    "id": "services-Heading-21",
+                    "text": "Start with a conversation.",
+                    "size": 40,
+                    "mobileSize": 38,
+                    "color": "#1b2c32",
+                    "align": "left",
+                    "style": "serif",
+                    "spacing": 0,
+                    "design": {
+                      "desktop": {
+                        "fontWeight": 400,
+                        "lineHeight": 1.12
+                      },
+                      "mobile": {
+                        "fontSize": 38
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "id": "services-Text-22",
+                    "text": "Use this editable section to explain the next step without inventing lead times, prices or outcomes.",
+                    "size": 16,
+                    "color": "#5e686d",
+                    "maxWidth": 760,
+                    "align": "left"
+                  }
+                },
+                {
+                  "type": "ActionButton",
+                  "props": {
+                    "id": "services-ActionButton-23",
+                    "text": "Contact",
+                    "href": "/contact",
+                    "kind": "theme",
+                    "align": "left",
+                    "design": {
+                      "desktop": {
+                        "color": "#ffffff"
+                      }
+                    }
+                  }
+                }
+              ],
+              "layout": "column",
+              "columns": 1,
+              "mobileColumns": 1,
+              "gap": 28,
+              "padding": 64,
+              "inset": 40,
+              "minHeight": 0,
+              "background": "#f3eee6",
+              "image": "",
+              "align": "start",
+              "design": {
+                "desktop": {
+                  "maxWidth": 1400,
+                  "marginLeft": "auto",
+                  "marginRight": "auto"
+                },
+                "mobile": {
+                  "paddingTop": 32,
+                  "paddingBottom": 32,
+                  "paddingLeft": 20,
+                  "paddingRight": 20,
+                  "gap": 20
+                }
+              }
+            }
+          }
+        ]
+      },
+      "starter-about": {
+        "root": {
+          "props": {
+            "title": "About",
+            "brand": "North Advisory",
+            "showChrome": "yes"
+          }
+        },
+        "content": [
+          {
+            "type": "Container",
+            "props": {
+              "id": "services-Container-38",
+              "content": [
+                {
+                  "type": "Text",
+                  "props": {
+                    "id": "services-Text-30",
+                    "text": "ABOUT / DEMONSTRATION",
+                    "size": 16,
+                    "color": "#5e686d",
+                    "maxWidth": 760,
+                    "align": "left"
+                  }
+                },
+                {
+                  "type": "Heading",
+                  "props": {
+                    "id": "services-Heading-31",
+                    "text": "About North Advisory",
+                    "size": 60,
+                    "mobileSize": 38,
+                    "color": "#1b2c32",
+                    "align": "left",
+                    "style": "serif",
+                    "spacing": 0,
+                    "design": {
+                      "desktop": {
+                        "fontWeight": 400,
+                        "lineHeight": 1.12
+                      },
+                      "mobile": {
+                        "fontSize": 38
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "id": "services-Text-32",
+                    "text": "This company and its story are demonstration content. Add your actual history, team, facilities and working process.",
+                    "size": 16,
+                    "color": "#5e686d",
+                    "maxWidth": 760,
+                    "align": "left"
+                  }
+                },
+                {
+                  "type": "Container",
+                  "props": {
+                    "id": "services-Container-37",
+                    "content": [
+                      {
+                        "type": "Heading",
+                        "props": {
+                          "id": "services-Heading-33",
+                          "text": "Your approach",
+                          "size": 28,
+                          "mobileSize": 28,
+                          "color": "#1b2c32",
+                          "align": "left",
+                          "style": "serif",
+                          "spacing": 0,
+                          "design": {
+                            "desktop": {
+                              "fontWeight": 400,
+                              "lineHeight": 1.12
+                            },
+                            "mobile": {
+                              "fontSize": 28
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "type": "Text",
+                        "props": {
+                          "id": "services-Text-34",
+                          "text": "Describe the way you work using facts that the customer can verify.",
+                          "size": 16,
+                          "color": "#5e686d",
+                          "maxWidth": 760,
+                          "align": "left"
+                        }
+                      },
+                      {
+                        "type": "Heading",
+                        "props": {
+                          "id": "services-Heading-35",
+                          "text": "Your people",
+                          "size": 28,
+                          "mobileSize": 28,
+                          "color": "#1b2c32",
+                          "align": "left",
+                          "style": "serif",
+                          "spacing": 0,
+                          "design": {
+                            "desktop": {
+                              "fontWeight": 400,
+                              "lineHeight": 1.12
+                            },
+                            "mobile": {
+                              "fontSize": 28
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "type": "Text",
+                        "props": {
+                          "id": "services-Text-36",
+                          "text": "Add authorized biographies and photography. No fictional customer testimonials are included.",
+                          "size": 16,
+                          "color": "#5e686d",
+                          "maxWidth": 760,
+                          "align": "left"
+                        }
+                      }
+                    ],
+                    "layout": "grid",
+                    "columns": 2,
+                    "mobileColumns": 1,
+                    "gap": 28,
+                    "padding": 64,
+                    "inset": 40,
+                    "minHeight": 0,
+                    "background": "#ffffff",
+                    "image": "",
+                    "align": "start",
+                    "design": {
+                      "desktop": {
+                        "maxWidth": 1400,
+                        "marginLeft": "auto",
+                        "marginRight": "auto"
+                      },
+                      "mobile": {
+                        "paddingTop": 32,
+                        "paddingBottom": 32,
+                        "paddingLeft": 20,
+                        "paddingRight": 20,
+                        "gap": 20
+                      }
+                    }
+                  }
+                }
+              ],
+              "layout": "column",
+              "columns": 1,
+              "mobileColumns": 1,
+              "gap": 28,
+              "padding": 64,
+              "inset": 40,
+              "minHeight": 0,
+              "background": "#faf7f0",
+              "image": "",
+              "align": "start",
+              "design": {
+                "desktop": {
+                  "maxWidth": 1400,
+                  "marginLeft": "auto",
+                  "marginRight": "auto"
+                },
+                "mobile": {
+                  "paddingTop": 32,
+                  "paddingBottom": 32,
+                  "paddingLeft": 20,
+                  "paddingRight": 20,
+                  "gap": 20
+                }
+              }
+            }
+          }
+        ]
+      },
+      "starter-contact": {
+        "root": {
+          "props": {
+            "title": "Contact",
+            "brand": "North Advisory",
+            "showChrome": "yes"
+          }
+        },
+        "content": [
+          {
+            "type": "Container",
+            "props": {
+              "id": "services-Container-43",
+              "content": [
+                {
+                  "type": "Text",
+                  "props": {
+                    "id": "services-Text-39",
+                    "text": "CONTACT / DEMONSTRATION",
+                    "size": 16,
+                    "color": "#5e686d",
+                    "maxWidth": 760,
+                    "align": "left"
+                  }
+                },
+                {
+                  "type": "Heading",
+                  "props": {
+                    "id": "services-Heading-40",
+                    "text": "Let’s start a conversation.",
+                    "size": 58,
+                    "mobileSize": 38,
+                    "color": "#1b2c32",
+                    "align": "left",
+                    "style": "serif",
+                    "spacing": 0,
+                    "design": {
+                      "desktop": {
+                        "fontWeight": 400,
+                        "lineHeight": 1.12
+                      },
+                      "mobile": {
+                        "fontSize": 38
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "id": "services-Text-41",
+                    "text": "This is a functional inquiry form. Configure your own contact details, privacy wording and notification settings before public use.",
+                    "size": 16,
+                    "color": "#5e686d",
+                    "maxWidth": 760,
+                    "align": "left"
+                  }
+                },
+                {
+                  "type": "Form",
+                  "props": {
+                    "id": "services-Form-42",
+                    "formId": "starter-inquiry",
+                    "wideFields": [
+                      "field-03d93f1f-fbd4-4eed-a614-16f31994bbe7"
+                    ],
+                    "design": {
+                      "desktop": {
+                        "display": "grid",
+                        "columns": 2,
+                        "gap": 20
+                      },
+                      "mobile": {
+                        "columns": 1
+                      }
+                    },
+                    "fieldDesign": {
+                      "desktop": {
+                        "borderWidth": 1,
+                        "borderColor": "#cbd4d8",
+                        "borderRadius": 6
+                      }
+                    },
+                    "submitDesign": {
+                      "desktop": {
+                        "borderRadius": 6
+                      }
+                    }
+                  }
+                }
+              ],
+              "layout": "column",
+              "columns": 1,
+              "mobileColumns": 1,
+              "gap": 28,
+              "padding": 64,
+              "inset": 40,
+              "minHeight": 0,
+              "background": "#faf7f0",
+              "image": "",
+              "align": "start",
+              "design": {
+                "desktop": {
+                  "maxWidth": 1400,
+                  "marginLeft": "auto",
+                  "marginRight": "auto"
+                },
+                "mobile": {
+                  "paddingTop": 32,
+                  "paddingBottom": 32,
+                  "paddingLeft": 20,
+                  "paddingRight": 20,
+                  "gap": 20
+                }
+              }
+            }
+          }
+        ]
+      },
+      "starter-list": {
+        "root": {
+          "props": {
+            "title": "Ways to work together",
+            "brand": "North Advisory",
+            "showChrome": "yes"
+          }
+        },
+        "content": [
+          {
+            "type": "Container",
+            "props": {
+              "id": "services-list-47",
+              "content": [
+                {
+                  "type": "Heading",
+                  "props": {
+                    "id": "services-list-48",
+                    "text": "Ways to work together",
+                    "size": 58,
+                    "mobileSize": 38,
+                    "color": "#1b2c32",
+                    "align": "left",
+                    "style": "serif",
+                    "spacing": 0,
+                    "design": {
+                      "desktop": {
+                        "fontWeight": 400,
+                        "lineHeight": 1.12
+                      },
+                      "mobile": {
+                        "fontSize": 38
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "id": "services-list-49",
+                    "text": "All examples are editable content records, not hardcoded industry components.",
+                    "size": 16,
+                    "color": "#5e686d",
+                    "maxWidth": 760,
+                    "align": "left"
+                  }
+                },
+                {
+                  "type": "ContentLoop",
+                  "props": {
+                    "id": "services-list-50",
+                    "source": "entry",
+                    "modelId": "starter-model",
+                    "itemBlockId": "starter-card",
+                    "title": "",
+                    "count": 6,
+                    "columns": 2,
+                    "mobileColumns": 1,
+                    "gap": 24,
+                    "padding": 0,
+                    "emptyText": "No examples yet."
+                  }
+                }
+              ],
+              "layout": "column",
+              "columns": 1,
+              "mobileColumns": 1,
+              "gap": 28,
+              "padding": 64,
+              "inset": 40,
+              "minHeight": 0,
+              "background": "#faf7f0",
+              "image": "",
+              "align": "start",
+              "design": {
+                "desktop": {
+                  "maxWidth": 1400,
+                  "marginLeft": "auto",
+                  "marginRight": "auto"
+                },
+                "mobile": {
+                  "paddingTop": 32,
+                  "paddingBottom": 32,
+                  "paddingLeft": 20,
+                  "paddingRight": 20,
+                  "gap": 20
+                }
+              }
+            }
+          }
+        ]
+      },
+      "starter-detail": {
+        "root": {
+          "props": {
+            "title": "Service details",
+            "brand": "North Advisory",
+            "showChrome": "yes"
+          }
+        },
+        "content": [
+          {
+            "type": "Container",
+            "props": {
+              "id": "services-Container-29",
+              "content": [
+                {
+                  "type": "Text",
+                  "props": {
+                    "id": "services-Text-25",
+                    "text": "DEMONSTRATION DETAIL",
+                    "size": 16,
+                    "color": "#5e686d",
+                    "maxWidth": 760,
+                    "align": "left"
+                  }
+                },
+                {
+                  "type": "Heading",
+                  "props": {
+                    "id": "services-Heading-26",
+                    "text": "Example title",
+                    "size": 58,
+                    "mobileSize": 34,
+                    "color": "#1b2c32",
+                    "style": "serif",
+                    "bindings": {
+                      "text": {
+                        "source": "entry",
+                        "mode": "current",
+                        "modelId": "starter-model",
+                        "field": "builtin:title"
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "id": "services-Text-27",
+                    "text": "Example details",
+                    "size": 18,
+                    "color": "#5e686d",
+                    "maxWidth": 800,
+                    "bindings": {
+                      "text": {
+                        "source": "entry",
+                        "mode": "current",
+                        "modelId": "starter-model",
+                        "field": "field:starter-summary"
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "ActionButton",
+                  "props": {
+                    "id": "services-ActionButton-28",
+                    "text": "Discuss your requirements",
+                    "href": "/contact",
+                    "kind": "theme",
+                    "align": "left",
+                    "design": {
+                      "desktop": {
+                        "color": "#ffffff"
+                      }
+                    }
+                  }
+                }
+              ],
+              "layout": "column",
+              "columns": 1,
+              "mobileColumns": 1,
+              "gap": 28,
+              "padding": 64,
+              "inset": 40,
+              "minHeight": 0,
+              "background": "#faf7f0",
+              "image": "",
+              "align": "start",
+              "design": {
+                "desktop": {
+                  "maxWidth": 1400,
+                  "marginLeft": "auto",
+                  "marginRight": "auto"
+                },
+                "mobile": {
+                  "paddingTop": 32,
+                  "paddingBottom": 32,
+                  "paddingLeft": 20,
+                  "paddingRight": 20,
+                  "gap": 20
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "products": [],
+    "media": [],
+    "theme": {
+      "primary": "#6c333b",
+      "background": "#faf7f0",
+      "text": "#1b2c32",
+      "radius": 8,
+      "font": "Georgia",
+      "headingFont": "Georgia"
+    },
+    "settings": {
+      "name": "North Advisory",
+      "description": "North Advisory: demonstration website. Replace all sample information before delivery.",
+      "email": "",
+      "language": "en"
+    },
+    "sharedBlocks": [
+      {
+        "id": "starter-header",
+        "name": "全站页眉",
+        "updated": "",
+        "data": {
+          "root": {
+            "props": {
+              "title": "Header",
+              "brand": "North Advisory",
+              "showChrome": "no"
+            }
+          },
+          "content": [
+            {
+              "type": "Container",
+              "props": {
+                "id": "services-Container-6",
+                "content": [
+                  {
+                    "type": "Heading",
+                    "props": {
+                      "id": "services-Heading-4",
+                      "text": "North Advisory",
+                      "size": 26,
+                      "mobileSize": 26,
+                      "color": "#1b2c32",
+                      "align": "left",
+                      "style": "serif",
+                      "spacing": 0,
+                      "design": {
+                        "desktop": {
+                          "fontWeight": 400,
+                          "lineHeight": 1.12
+                        },
+                        "mobile": {
+                          "fontSize": 26
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "type": "Navigation",
+                    "props": {
+                      "id": "services-Navigation-5",
+                      "menuId": "starter-menu"
+                    }
+                  }
+                ],
+                "layout": "grid",
+                "columns": 2,
+                "mobileColumns": 1,
+                "gap": 28,
+                "padding": 24,
+                "inset": 40,
+                "minHeight": 0,
+                "background": "#ffffff",
+                "image": "",
+                "align": "start",
+                "design": {
+                  "desktop": {
+                    "maxWidth": 1400,
+                    "marginLeft": "auto",
+                    "marginRight": "auto"
+                  },
+                  "mobile": {
+                    "paddingTop": 32,
+                    "paddingBottom": 32,
+                    "paddingLeft": 20,
+                    "paddingRight": 20,
+                    "gap": 20
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "starter-footer",
+        "name": "全站页脚",
+        "updated": "",
+        "data": {
+          "root": {
+            "props": {
+              "title": "Footer",
+              "brand": "North Advisory",
+              "showChrome": "no"
+            }
+          },
+          "content": [
+            {
+              "type": "Container",
+              "props": {
+                "id": "services-Container-3",
+                "content": [
+                  {
+                    "type": "Text",
+                    "props": {
+                      "id": "services-Text-1",
+                      "text": "North Advisory · Demonstration website. Replace all example content with verified customer information.",
+                      "size": 16,
+                      "color": "#5e686d",
+                      "maxWidth": 760,
+                      "align": "left"
+                    }
+                  },
+                  {
+                    "type": "Navigation",
+                    "props": {
+                      "id": "services-Navigation-2",
+                      "menuId": "starter-menu"
+                    }
+                  }
+                ],
+                "layout": "column",
+                "columns": 1,
+                "mobileColumns": 1,
+                "gap": 28,
+                "padding": 28,
+                "inset": 40,
+                "minHeight": 0,
+                "background": "#ffffff",
+                "image": "",
+                "align": "start",
+                "design": {
+                  "desktop": {
+                    "maxWidth": 1400,
+                    "marginLeft": "auto",
+                    "marginRight": "auto"
+                  },
+                  "mobile": {
+                    "paddingTop": 32,
+                    "paddingBottom": 32,
+                    "paddingLeft": 20,
+                    "paddingRight": 20,
+                    "gap": 20
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "starter-card",
+        "name": "可自由编辑的列表卡片",
+        "updated": "",
+        "data": {
+          "root": {
+            "props": {
+              "title": "Editable list card",
+              "brand": "North Advisory",
+              "showChrome": "no"
+            }
+          },
+          "content": [
+            {
+              "type": "Container",
+              "props": {
+                "id": "services-Container-11",
+                "content": [
+                  {
+                    "type": "Text",
+                    "props": {
+                      "id": "services-Text-7",
+                      "text": "SERVICE DEMO",
+                      "size": 16,
+                      "color": "#5e686d",
+                      "maxWidth": 760,
+                      "align": "left"
+                    }
+                  },
+                  {
+                    "type": "Heading",
+                    "props": {
+                      "id": "services-Heading-8",
+                      "text": "Example title",
+                      "size": 26,
+                      "mobileSize": 24,
+                      "color": "#1b2c32",
+                      "style": "serif",
+                      "align": "left",
+                      "bindings": {
+                        "text": {
+                          "source": "entry",
+                          "mode": "current",
+                          "modelId": "starter-model",
+                          "field": "builtin:title"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "type": "Text",
+                    "props": {
+                      "id": "services-Text-9",
+                      "text": "Example description",
+                      "size": 15,
+                      "color": "#5e686d",
+                      "maxWidth": 500,
+                      "bindings": {
+                        "text": {
+                          "source": "entry",
+                          "mode": "current",
+                          "modelId": "starter-model",
+                          "field": "field:starter-summary"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "type": "ActionButton",
+                    "props": {
+                      "id": "services-ActionButton-10",
+                      "text": "Explore example",
+                      "href": "",
+                      "kind": "outline",
+                      "align": "left",
+                      "design": {
+                        "desktop": {
+                          "color": "#1b2c32",
+                          "borderColor": "#a9b09f"
+                        }
+                      },
+                      "bindings": {
+                        "href": {
+                          "source": "entry",
+                          "mode": "current",
+                          "modelId": "starter-model",
+                          "field": "builtin:url"
+                        }
+                      }
+                    }
+                  }
+                ],
+                "layout": "column",
+                "columns": 1,
+                "mobileColumns": 1,
+                "gap": 28,
+                "padding": 28,
+                "inset": 40,
+                "minHeight": 0,
+                "background": "#ffffff",
+                "image": "",
+                "align": "start",
+                "design": {
+                  "desktop": {
+                    "maxWidth": 1400,
+                    "marginLeft": "auto",
+                    "marginRight": "auto"
+                  },
+                  "mobile": {
+                    "paddingTop": 32,
+                    "paddingBottom": 32,
+                    "paddingLeft": 20,
+                    "paddingRight": 20,
+                    "gap": 20
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "contentModels": [
+      {
+        "id": "starter-model",
+        "name": "服务项目",
+        "description": "演示内容模型，可自行增删字段",
+        "target": "content",
+        "updated": "",
+        "fields": [
+          {
+            "id": "starter-summary",
+            "key": "summary",
+            "label": "介绍",
+            "type": "textarea",
+            "required": false
+          },
+          {
+            "id": "starter-category",
+            "key": "category",
+            "label": "类别",
+            "type": "text",
+            "required": false
+          }
+        ]
+      }
+    ],
+    "contentEntries": [
+      {
+        "id": "starter-entry-1",
+        "modelId": "starter-model",
+        "title": "Strategy workshop",
+        "slug": "example-1",
+        "status": "published",
+        "updated": "",
+        "customFields": {
+          "starter-summary": "Synthetic demonstration; this is not a claim of completed client work or business results.",
+          "starter-category": "Service demonstration"
+        }
+      },
+      {
+        "id": "starter-entry-2",
+        "modelId": "starter-model",
+        "title": "Market research",
+        "slug": "example-2",
+        "status": "published",
+        "updated": "",
+        "customFields": {
+          "starter-summary": "Synthetic demonstration; this is not a claim of completed client work or business results.",
+          "starter-category": "Service demonstration"
+        }
+      },
+      {
+        "id": "starter-entry-3",
+        "modelId": "starter-model",
+        "title": "Brand direction",
+        "slug": "example-3",
+        "status": "published",
+        "updated": "",
+        "customFields": {
+          "starter-summary": "Synthetic demonstration; this is not a claim of completed client work or business results.",
+          "starter-category": "Service demonstration"
+        }
+      }
+    ],
+    "forms": [
+      {
+        "id": "starter-inquiry",
+        "name": "网站询盘",
+        "enabled": true,
+        "submitLabel": "Send inquiry",
+        "successMessage": "Thank you. Your inquiry has been received.",
+        "fields": [
+          {
+            "id": "field-03f41273-accd-4ff3-b81f-ec4ee477c02c",
+            "label": "Name",
+            "type": "text",
+            "mapTo": "name",
+            "required": true,
+            "maxLength": 150
+          },
+          {
+            "id": "field-d7c9f3c2-f1c8-497b-9d5b-be3c1d12972e",
+            "label": "Email",
+            "type": "email",
+            "mapTo": "email",
+            "required": true,
+            "maxLength": 254
+          },
+          {
+            "id": "field-7c0191db-6f8f-4550-9dd7-9d1dc8a741e3",
+            "label": "Company",
+            "type": "text",
+            "mapTo": "company",
+            "required": false,
+            "maxLength": 150
+          },
+          {
+            "id": "field-03d93f1f-fbd4-4eed-a614-16f31994bbe7",
+            "label": "Message",
+            "type": "textarea",
+            "mapTo": "message",
+            "required": true,
+            "maxLength": 4000
+          }
+        ]
+      }
+    ],
+    "pageTemplates": [],
+    "taxonomies": [],
+    "redirects": [],
+    "customCode": {
+      "global": {
+        "css": "",
+        "js": "",
+        "cssEnabled": false,
+        "jsEnabled": false
+      },
+      "pages": {}
+    },
+    "siteLayout": {
+      "header": {
+        "mode": "block",
+        "blockId": "starter-header",
+        "menuId": "starter-menu"
+      },
+      "footer": {
+        "mode": "block",
+        "blockId": "starter-footer"
+      },
+      "menus": [
+        {
+          "id": "starter-menu",
+          "name": "Main navigation",
+          "items": [
+            {
+              "id": "menu-home",
+              "label": "Home",
+              "target": {
+                "kind": "page",
+                "id": "starter-home"
+              }
+            },
+            {
+              "id": "menu-list",
+              "label": "Services",
+              "target": {
+                "kind": "page",
+                "id": "starter-list"
+              }
+            },
+            {
+              "id": "menu-about",
+              "label": "About",
+              "target": {
+                "kind": "page",
+                "id": "starter-about"
+              }
+            },
+            {
+              "id": "menu-contact",
+              "label": "Contact",
+              "target": {
+                "kind": "page",
+                "id": "starter-contact"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "files": []
+}

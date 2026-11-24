@@ -1,0 +1,9 @@
+.ai-detail-design-content { width: 100%; min-width: 0; }
+.ai-detail-design-modal .ant-modal-body { max-height: calc(100dvh - 190px); overflow-y: auto; padding-inline: 2px; }
+.ai-detail-design-modal .ant-list-item-meta-description { overflow-wrap: anywhere; }
+@media (max-width: 767px) {
+  .ai-detail-design-modal { max-width: calc(100vw - 24px); margin: 12px auto; top: 12px; }
+  .ai-detail-design-modal .ant-modal-body { max-height: calc(100dvh - 170px); }
+  .ai-detail-design-modal .ant-list-item { flex-wrap: wrap; gap: 12px; }
+  .ai-detail-design-modal .ant-list-item-action { margin-inline-start: 0; }
+}

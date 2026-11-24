@@ -1,0 +1,22 @@
+node_modules/
+.next/
+*.tsbuildinfo
+output/
+work/
+
+# 实例数据库、上传资料与认证密钥不能随源码交付。
+data/
+backups/
+.env*
+!.env.example
+*.sqlite
+*.sqlite3
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite3-wal
+*.sqlite3-shm
+.npmrc
+out/
+.playwright-cli/
+__pycache__/
+*.pyc

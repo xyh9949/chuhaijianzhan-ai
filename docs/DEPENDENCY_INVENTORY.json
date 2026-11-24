@@ -1,0 +1,7090 @@
+{
+  "format": "form-studio-dependency-inventory",
+  "lockfileVersion": 3,
+  "applicationVersion": "0.42.0",
+  "platform": "win32",
+  "arch": "x64",
+  "packages": [
+    {
+      "name": "@alloc/quick-lru",
+      "version": "5.3.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@alloc/quick-lru/license"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@ant-design/colors",
+      "version": "8.0.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@ant-design/colors/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@ant-design/cssinjs",
+      "version": "2.1.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "direct-runtime",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@ant-design/cssinjs/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@ant-design/cssinjs-utils",
+      "version": "2.1.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@ant-design/cssinjs-utils/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@ant-design/fast-color",
+      "version": "3.0.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@ant-design/fast-color/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@ant-design/icons",
+      "version": "6.3.4",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "direct-runtime",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@ant-design/icons/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@ant-design/icons-svg",
+      "version": "4.6.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [],
+      "status": "metadata-only"
+    },
+    {
+      "name": "@ant-design/nextjs-registry",
+      "version": "1.3.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "direct-runtime",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [],
+      "status": "metadata-only"
+    },
+    {
+      "name": "@ant-design/react-slick",
+      "version": "2.0.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@ant-design/react-slick/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@babel/runtime",
+      "version": "7.29.13",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@babel/runtime/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@babel/runtime",
+      "version": "8.1.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@rc-component/collapse/node_modules/@babel/runtime/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@babel/runtime",
+      "version": "8.1.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@rc-component/segmented/node_modules/@babel/runtime/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@babel/runtime",
+      "version": "8.1.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@rc-component/virtual-list/node_modules/@babel/runtime/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@better-auth/core",
+      "version": "1.7.18",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@better-auth/core/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@better-auth/drizzle-adapter",
+      "version": "1.7.18",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@better-auth/drizzle-adapter/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@better-auth/kysely-adapter",
+      "version": "1.7.18",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@better-auth/kysely-adapter/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@better-auth/memory-adapter",
+      "version": "1.7.18",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@better-auth/memory-adapter/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@better-auth/mongo-adapter",
+      "version": "1.7.18",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@better-auth/mongo-adapter/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@better-auth/prisma-adapter",
+      "version": "1.7.18",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@better-auth/prisma-adapter/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@better-auth/telemetry",
+      "version": "1.7.18",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@better-auth/telemetry/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@better-auth/utils",
+      "version": "0.5.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@better-auth/utils/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@better-fetch/fetch",
+      "version": "1.3.3",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@better-fetch/fetch/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@dnd-kit/abstract",
+      "version": "0.4.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@dnd-kit/abstract/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@dnd-kit/collision",
+      "version": "0.4.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@dnd-kit/collision/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@dnd-kit/dom",
+      "version": "0.4.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@dnd-kit/dom/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@dnd-kit/geometry",
+      "version": "0.4.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@dnd-kit/geometry/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@dnd-kit/helpers",
+      "version": "0.4.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@dnd-kit/helpers/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@dnd-kit/react",
+      "version": "0.4.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@dnd-kit/react/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@dnd-kit/state",
+      "version": "0.4.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@dnd-kit/state/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@emnapi/core",
+      "version": "1.11.3",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@tailwindcss/oxide-wasm32-wasi/node_modules/@emnapi/core/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@emnapi/runtime",
+      "version": "1.11.3",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@emnapi/runtime/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@emnapi/runtime",
+      "version": "1.11.3",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@tailwindcss/oxide-wasm32-wasi/node_modules/@emnapi/runtime/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@emnapi/wasi-threads",
+      "version": "1.2.3",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@tailwindcss/oxide-wasm32-wasi/node_modules/@emnapi/wasi-threads/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@emotion/hash",
+      "version": "0.8.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@emotion/hash/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@emotion/unitless",
+      "version": "0.7.5",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@emotion/unitless/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@esbuild/aix-ppc64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@esbuild/android-arm",
+      "version": "0.28.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@esbuild/android-arm64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@esbuild/android-x64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@esbuild/darwin-arm64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@esbuild/darwin-x64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@esbuild/freebsd-arm64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@esbuild/freebsd-x64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@esbuild/linux-arm",
+      "version": "0.28.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@esbuild/linux-arm64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@esbuild/linux-ia32",
+      "version": "0.28.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@esbuild/linux-loong64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@esbuild/linux-mips64el",
+      "version": "0.28.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@esbuild/linux-ppc64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@esbuild/linux-riscv64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@esbuild/linux-s390x",
+      "version": "0.28.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@esbuild/linux-x64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@esbuild/netbsd-arm64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@esbuild/netbsd-x64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@esbuild/openbsd-arm64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@esbuild/openbsd-x64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@esbuild/openharmony-arm64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@esbuild/sunos-x64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@esbuild/win32-arm64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@esbuild/win32-ia32",
+      "version": "0.28.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@esbuild/win32-x64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": true,
+      "licenseFiles": [],
+      "status": "metadata-only"
+    },
+    {
+      "name": "@fast-csv/format",
+      "version": "4.3.5",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@fast-csv/format/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@fast-csv/parse",
+      "version": "4.3.6",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@fast-csv/parse/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@floating-ui/core",
+      "version": "1.8.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@floating-ui/core/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@floating-ui/dom",
+      "version": "1.8.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@floating-ui/dom/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@floating-ui/react-dom",
+      "version": "2.1.9",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@floating-ui/react-dom/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@floating-ui/utils",
+      "version": "0.2.12",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@floating-ui/utils/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@hono/node-server",
+      "version": "2.1.8",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@hono/node-server/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@img/colour",
+      "version": "1.1.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@img/colour/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@img/sharp-darwin-arm64",
+      "version": "0.35.5",
+      "license": "Apache-2.0",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@img/sharp-darwin-x64",
+      "version": "0.35.5",
+      "license": "Apache-2.0",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@img/sharp-freebsd-wasm32",
+      "version": "0.35.5",
+      "license": "Apache-2.0",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@img/sharp-libvips-darwin-arm64",
+      "version": "1.3.4",
+      "license": "LGPL-3.0-or-later",
+      "distributionReview": true,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@img/sharp-libvips-darwin-x64",
+      "version": "1.3.4",
+      "license": "LGPL-3.0-or-later",
+      "distributionReview": true,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@img/sharp-libvips-linux-arm",
+      "version": "1.3.4",
+      "license": "LGPL-3.0-or-later",
+      "distributionReview": true,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@img/sharp-libvips-linux-arm64",
+      "version": "1.3.4",
+      "license": "LGPL-3.0-or-later",
+      "distributionReview": true,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@img/sharp-libvips-linux-ppc64",
+      "version": "1.3.4",
+      "license": "LGPL-3.0-or-later",
+      "distributionReview": true,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@img/sharp-libvips-linux-riscv64",
+      "version": "1.3.4",
+      "license": "LGPL-3.0-or-later",
+      "distributionReview": true,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@img/sharp-libvips-linux-s390x",
+      "version": "1.3.4",
+      "license": "LGPL-3.0-or-later",
+      "distributionReview": true,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@img/sharp-libvips-linux-x64",
+      "version": "1.3.4",
+      "license": "LGPL-3.0-or-later",
+      "distributionReview": true,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@img/sharp-libvips-linuxmusl-arm64",
+      "version": "1.3.4",
+      "license": "LGPL-3.0-or-later",
+      "distributionReview": true,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@img/sharp-libvips-linuxmusl-x64",
+      "version": "1.3.4",
+      "license": "LGPL-3.0-or-later",
+      "distributionReview": true,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@img/sharp-linux-arm",
+      "version": "0.35.5",
+      "license": "Apache-2.0",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@img/sharp-linux-arm64",
+      "version": "0.35.5",
+      "license": "Apache-2.0",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@img/sharp-linux-ppc64",
+      "version": "0.35.5",
+      "license": "Apache-2.0",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@img/sharp-linux-riscv64",
+      "version": "0.35.5",
+      "license": "Apache-2.0",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@img/sharp-linux-s390x",
+      "version": "0.35.5",
+      "license": "Apache-2.0",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@img/sharp-linux-x64",
+      "version": "0.35.5",
+      "license": "Apache-2.0",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@img/sharp-linuxmusl-arm64",
+      "version": "0.35.5",
+      "license": "Apache-2.0",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@img/sharp-linuxmusl-x64",
+      "version": "0.35.5",
+      "license": "Apache-2.0",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@img/sharp-wasm32",
+      "version": "0.35.5",
+      "license": "Apache-2.0 AND LGPL-3.0-or-later AND MIT",
+      "distributionReview": true,
+      "scope": "transitive",
+      "optional": true,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@img/sharp-wasm32/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@img/sharp-webcontainers-wasm32",
+      "version": "0.35.5",
+      "license": "Apache-2.0",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@img/sharp-win32-arm64",
+      "version": "0.35.5",
+      "license": "Apache-2.0 AND LGPL-3.0-or-later",
+      "distributionReview": true,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@img/sharp-win32-ia32",
+      "version": "0.35.5",
+      "license": "Apache-2.0 AND LGPL-3.0-or-later",
+      "distributionReview": true,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@img/sharp-win32-x64",
+      "version": "0.35.5",
+      "license": "Apache-2.0 AND LGPL-3.0-or-later",
+      "distributionReview": true,
+      "scope": "transitive",
+      "optional": true,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@img/sharp-win32-x64/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@jridgewell/gen-mapping",
+      "version": "0.3.13",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@jridgewell/gen-mapping/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@jridgewell/remapping",
+      "version": "2.3.5",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@jridgewell/remapping/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@jridgewell/resolve-uri",
+      "version": "3.1.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@jridgewell/resolve-uri/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@jridgewell/sourcemap-codec",
+      "version": "1.6.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@jridgewell/sourcemap-codec/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@jridgewell/trace-mapping",
+      "version": "0.3.31",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@jridgewell/trace-mapping/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@modelcontextprotocol/sdk",
+      "version": "1.32.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "direct-runtime",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@modelcontextprotocol/sdk/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@napi-rs/canvas",
+      "version": "1.1.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "direct-runtime",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@napi-rs/canvas/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@napi-rs/canvas-android-arm64",
+      "version": "1.1.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@napi-rs/canvas-darwin-arm64",
+      "version": "1.1.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@napi-rs/canvas-darwin-x64",
+      "version": "1.1.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@napi-rs/canvas-linux-arm-gnueabihf",
+      "version": "1.1.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@napi-rs/canvas-linux-arm64-gnu",
+      "version": "1.1.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@napi-rs/canvas-linux-arm64-musl",
+      "version": "1.1.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@napi-rs/canvas-linux-riscv64-gnu",
+      "version": "1.1.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@napi-rs/canvas-linux-x64-gnu",
+      "version": "1.1.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@napi-rs/canvas-linux-x64-musl",
+      "version": "1.1.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@napi-rs/canvas-win32-arm64-msvc",
+      "version": "1.1.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@napi-rs/canvas-win32-x64-msvc",
+      "version": "1.1.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": true,
+      "licenseFiles": [],
+      "status": "metadata-only"
+    },
+    {
+      "name": "@napi-rs/wasm-runtime",
+      "version": "1.2.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": true,
+      "licenseFiles": [],
+      "status": "metadata-only"
+    },
+    {
+      "name": "@next/env",
+      "version": "16.4.5",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [],
+      "status": "metadata-only"
+    },
+    {
+      "name": "@next/swc-darwin-arm64",
+      "version": "16.4.5",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@next/swc-darwin-x64",
+      "version": "16.4.5",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@next/swc-linux-arm64-gnu",
+      "version": "16.4.5",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@next/swc-linux-arm64-musl",
+      "version": "16.4.5",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@next/swc-linux-x64-gnu",
+      "version": "16.4.5",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@next/swc-linux-x64-musl",
+      "version": "16.4.5",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@next/swc-win32-arm64-msvc",
+      "version": "16.4.5",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@next/swc-win32-x64-msvc",
+      "version": "16.4.5",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": true,
+      "licenseFiles": [],
+      "status": "metadata-only"
+    },
+    {
+      "name": "@noble/ciphers",
+      "version": "2.4.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@noble/ciphers/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@noble/hashes",
+      "version": "2.4.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@noble/hashes/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@pdf-lib/standard-fonts",
+      "version": "1.0.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@pdf-lib/standard-fonts/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@pdf-lib/upng",
+      "version": "1.0.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@pdf-lib/upng/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@playwright/test",
+      "version": "1.65.0",
+      "license": "Apache-2.0",
+      "distributionReview": false,
+      "scope": "direct-development",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@playwright/test/LICENSE",
+        "node_modules/@playwright/test/NOTICE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@preact/signals-core",
+      "version": "1.14.5",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@preact/signals-core/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@puckeditor/core",
+      "version": "0.24.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "direct-runtime",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@puckeditor/core/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@radix-ui/primitive",
+      "version": "1.2.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@radix-ui/primitive/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@radix-ui/react-arrow",
+      "version": "1.1.17",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@radix-ui/react-arrow/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@radix-ui/react-compose-refs",
+      "version": "1.1.5",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@radix-ui/react-compose-refs/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@radix-ui/react-context",
+      "version": "1.3.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@radix-ui/react-context/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@radix-ui/react-dismissable-layer",
+      "version": "1.2.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@radix-ui/react-dismissable-layer/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@radix-ui/react-focus-guards",
+      "version": "1.2.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@radix-ui/react-focus-guards/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@radix-ui/react-focus-scope",
+      "version": "1.3.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@radix-ui/react-focus-scope/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@radix-ui/react-id",
+      "version": "1.1.4",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@radix-ui/react-id/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@radix-ui/react-popover",
+      "version": "1.3.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@radix-ui/react-popover/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@radix-ui/react-popper",
+      "version": "1.4.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@radix-ui/react-popper/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@radix-ui/react-portal",
+      "version": "1.2.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@radix-ui/react-portal/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@radix-ui/react-presence",
+      "version": "1.1.11",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@radix-ui/react-presence/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@radix-ui/react-primitive",
+      "version": "2.2.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@radix-ui/react-primitive/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@radix-ui/react-slot",
+      "version": "1.5.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@radix-ui/react-slot/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@radix-ui/react-use-callback-ref",
+      "version": "1.1.5",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@radix-ui/react-use-callback-ref/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@radix-ui/react-use-controllable-state",
+      "version": "1.3.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@radix-ui/react-use-controllable-state/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@radix-ui/react-use-effect-event",
+      "version": "0.0.5",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@radix-ui/react-use-effect-event/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@radix-ui/react-use-layout-effect",
+      "version": "1.1.4",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@radix-ui/react-use-layout-effect/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@radix-ui/react-use-rect",
+      "version": "1.1.4",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@radix-ui/react-use-rect/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@radix-ui/react-use-size",
+      "version": "1.1.5",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@radix-ui/react-use-size/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@radix-ui/rect",
+      "version": "1.1.3",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@radix-ui/rect/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@rc-component/async-validator",
+      "version": "6.0.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@rc-component/async-validator/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@rc-component/cascader",
+      "version": "1.26.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@rc-component/cascader/LICENSE",
+        "node_modules/@rc-component/cascader/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@rc-component/checkbox",
+      "version": "2.0.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@rc-component/checkbox/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@rc-component/collapse",
+      "version": "1.3.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@rc-component/collapse/LICENSE",
+        "node_modules/@rc-component/collapse/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@rc-component/color-picker",
+      "version": "3.1.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@rc-component/color-picker/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@rc-component/context",
+      "version": "2.0.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@rc-component/context/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@rc-component/dialog",
+      "version": "1.10.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@rc-component/dialog/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@rc-component/drawer",
+      "version": "1.4.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@rc-component/drawer/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@rc-component/dropdown",
+      "version": "2.0.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@rc-component/dropdown/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@rc-component/form",
+      "version": "1.8.6",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@rc-component/form/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@rc-component/image",
+      "version": "1.10.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@rc-component/image/LICENSE",
+        "node_modules/@rc-component/image/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@rc-component/input",
+      "version": "1.4.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@rc-component/input/LICENSE",
+        "node_modules/@rc-component/input/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@rc-component/input-number",
+      "version": "1.8.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@rc-component/input-number/LICENSE",
+        "node_modules/@rc-component/input-number/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@rc-component/listy",
+      "version": "1.4.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@rc-component/listy/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@rc-component/mentions",
+      "version": "1.14.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@rc-component/mentions/LICENSE",
+        "node_modules/@rc-component/mentions/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@rc-component/menu",
+      "version": "1.6.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@rc-component/menu/LICENSE",
+        "node_modules/@rc-component/menu/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@rc-component/mini-decimal",
+      "version": "1.1.4",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@rc-component/mini-decimal/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@rc-component/motion",
+      "version": "1.3.3",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@rc-component/motion/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@rc-component/mutate-observer",
+      "version": "2.0.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@rc-component/mutate-observer/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@rc-component/notification",
+      "version": "2.1.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@rc-component/notification/LICENSE",
+        "node_modules/@rc-component/notification/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@rc-component/overflow",
+      "version": "1.0.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@rc-component/overflow/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@rc-component/pagination",
+      "version": "1.7.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@rc-component/pagination/LICENSE",
+        "node_modules/@rc-component/pagination/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@rc-component/picker",
+      "version": "1.17.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@rc-component/picker/LICENSE",
+        "node_modules/@rc-component/picker/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@rc-component/portal",
+      "version": "2.2.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@rc-component/portal/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@rc-component/progress",
+      "version": "1.1.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@rc-component/progress/LICENSE",
+        "node_modules/@rc-component/progress/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@rc-component/qrcode",
+      "version": "2.0.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@rc-component/qrcode/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@rc-component/rate",
+      "version": "1.0.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@rc-component/rate/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@rc-component/resize-observer",
+      "version": "1.1.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@rc-component/resize-observer/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@rc-component/segmented",
+      "version": "1.4.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@rc-component/segmented/LICENSE",
+        "node_modules/@rc-component/segmented/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@rc-component/select",
+      "version": "1.12.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@rc-component/select/LICENSE",
+        "node_modules/@rc-component/select/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@rc-component/slider",
+      "version": "1.2.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@rc-component/slider/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@rc-component/steps",
+      "version": "1.2.3",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@rc-component/steps/LICENSE",
+        "node_modules/@rc-component/steps/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@rc-component/switch",
+      "version": "1.0.3",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@rc-component/switch/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@rc-component/table",
+      "version": "1.12.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@rc-component/table/LICENSE",
+        "node_modules/@rc-component/table/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@rc-component/tabs",
+      "version": "2.0.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@rc-component/tabs/LICENSE",
+        "node_modules/@rc-component/tabs/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@rc-component/tooltip",
+      "version": "1.5.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@rc-component/tooltip/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@rc-component/tour",
+      "version": "2.4.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@rc-component/tour/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@rc-component/tree",
+      "version": "1.5.3",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@rc-component/tree/LICENSE",
+        "node_modules/@rc-component/tree/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@rc-component/tree-select",
+      "version": "1.19.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@rc-component/tree-select/LICENSE",
+        "node_modules/@rc-component/tree-select/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@rc-component/trigger",
+      "version": "3.10.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@rc-component/trigger/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@rc-component/upload",
+      "version": "1.1.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@rc-component/upload/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@rc-component/util",
+      "version": "1.14.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@rc-component/util/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@rc-component/virtual-list",
+      "version": "1.6.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@rc-component/virtual-list/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@standard-schema/spec",
+      "version": "1.1.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@standard-schema/spec/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@swc/helpers",
+      "version": "0.5.23",
+      "license": "Apache-2.0",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@swc/helpers/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@tailwindcss/node",
+      "version": "4.3.4",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@tailwindcss/node/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@tailwindcss/oxide",
+      "version": "4.3.4",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@tailwindcss/oxide/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@tailwindcss/oxide-android-arm64",
+      "version": "4.3.4",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@tailwindcss/oxide-darwin-arm64",
+      "version": "4.3.4",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@tailwindcss/oxide-darwin-x64",
+      "version": "4.3.4",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@tailwindcss/oxide-freebsd-x64",
+      "version": "4.3.4",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@tailwindcss/oxide-linux-arm-gnueabihf",
+      "version": "4.3.4",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@tailwindcss/oxide-linux-arm64-gnu",
+      "version": "4.3.4",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@tailwindcss/oxide-linux-arm64-musl",
+      "version": "4.3.4",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@tailwindcss/oxide-linux-x64-gnu",
+      "version": "4.3.4",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@tailwindcss/oxide-linux-x64-musl",
+      "version": "4.3.4",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@tailwindcss/oxide-wasm32-wasi",
+      "version": "4.3.4",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": true,
+      "licenseFiles": [],
+      "status": "metadata-only"
+    },
+    {
+      "name": "@tailwindcss/oxide-win32-arm64-msvc",
+      "version": "4.3.4",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "@tailwindcss/oxide-win32-x64-msvc",
+      "version": "4.3.4",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@tailwindcss/oxide-win32-x64-msvc/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@tailwindcss/postcss",
+      "version": "4.3.4",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "direct-development",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@tailwindcss/postcss/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@tanstack/react-virtual",
+      "version": "3.14.26",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@tanstack/react-virtual/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@tanstack/virtual-core",
+      "version": "3.19.11",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@tanstack/virtual-core/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@tesseract.js-data/chi_sim",
+      "version": "1.0.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "direct-runtime",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [],
+      "status": "metadata-only"
+    },
+    {
+      "name": "@tesseract.js-data/eng",
+      "version": "1.0.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "direct-runtime",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [],
+      "status": "metadata-only"
+    },
+    {
+      "name": "@tiptap/core",
+      "version": "3.32.3",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@puckeditor/core/node_modules/@tiptap/core/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@tiptap/core",
+      "version": "3.33.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@tiptap/core/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@tiptap/extension-blockquote",
+      "version": "3.33.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@tiptap/extension-blockquote/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@tiptap/extension-bold",
+      "version": "3.33.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@tiptap/extension-bold/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@tiptap/extension-bubble-menu",
+      "version": "3.33.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@tiptap/extension-bubble-menu/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@tiptap/extension-bullet-list",
+      "version": "3.33.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@tiptap/extension-bullet-list/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@tiptap/extension-code",
+      "version": "3.33.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@tiptap/extension-code/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@tiptap/extension-code-block",
+      "version": "3.33.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@tiptap/extension-code-block/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@tiptap/extension-document",
+      "version": "3.33.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@tiptap/extension-document/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@tiptap/extension-dropcursor",
+      "version": "3.33.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@tiptap/extension-dropcursor/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@tiptap/extension-floating-menu",
+      "version": "3.33.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@tiptap/extension-floating-menu/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@tiptap/extension-gapcursor",
+      "version": "3.33.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@tiptap/extension-gapcursor/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@tiptap/extension-hard-break",
+      "version": "3.33.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@tiptap/extension-hard-break/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@tiptap/extension-heading",
+      "version": "3.33.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@tiptap/extension-heading/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@tiptap/extension-horizontal-rule",
+      "version": "3.33.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@tiptap/extension-horizontal-rule/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@tiptap/extension-italic",
+      "version": "3.33.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@tiptap/extension-italic/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@tiptap/extension-link",
+      "version": "3.33.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@tiptap/extension-link/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@tiptap/extension-list",
+      "version": "3.33.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@tiptap/extension-list/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@tiptap/extension-list-item",
+      "version": "3.33.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@tiptap/extension-list-item/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@tiptap/extension-list-keymap",
+      "version": "3.33.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@tiptap/extension-list-keymap/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@tiptap/extension-ordered-list",
+      "version": "3.33.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@tiptap/extension-ordered-list/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@tiptap/extension-paragraph",
+      "version": "3.33.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@tiptap/extension-paragraph/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@tiptap/extension-strike",
+      "version": "3.33.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@tiptap/extension-strike/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@tiptap/extension-text",
+      "version": "3.33.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@tiptap/extension-text/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@tiptap/extension-text-align",
+      "version": "3.33.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@tiptap/extension-text-align/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@tiptap/extension-underline",
+      "version": "3.33.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@tiptap/extension-underline/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@tiptap/extensions",
+      "version": "3.33.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@tiptap/extensions/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@tiptap/html",
+      "version": "3.32.3",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@puckeditor/core/node_modules/@tiptap/html/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@tiptap/pm",
+      "version": "3.32.3",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "direct-runtime",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@puckeditor/core/node_modules/@tiptap/pm/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@tiptap/pm",
+      "version": "3.33.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "direct-runtime",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@tiptap/pm/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@tiptap/react",
+      "version": "3.33.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "direct-runtime",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@tiptap/react/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@tiptap/starter-kit",
+      "version": "3.33.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "direct-runtime",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@tiptap/starter-kit/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@tybys/wasm-util",
+      "version": "0.10.3",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": true,
+      "licenseFiles": [],
+      "status": "metadata-only"
+    },
+    {
+      "name": "@types/better-sqlite3",
+      "version": "9.6.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "direct-development",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@types/better-sqlite3/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@types/node",
+      "version": "14.18.63",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "direct-development",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@fast-csv/format/node_modules/@types/node/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@types/node",
+      "version": "14.18.63",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "direct-development",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@fast-csv/parse/node_modules/@types/node/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@types/node",
+      "version": "22.20.5",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "direct-development",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@types/node/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@types/nodemailer",
+      "version": "8.0.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "direct-development",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@types/nodemailer/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@types/react",
+      "version": "19.3.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "direct-development",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@types/react/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@types/react-dom",
+      "version": "19.3.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "direct-development",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@types/react-dom/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@types/use-sync-external-store",
+      "version": "0.0.6",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@types/use-sync-external-store/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@types/whatwg-mimetype",
+      "version": "3.0.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@types/whatwg-mimetype/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "@types/ws",
+      "version": "8.18.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@types/ws/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "accepts",
+      "version": "2.0.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/accepts/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "acorn",
+      "version": "8.19.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "direct-runtime",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/acorn/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "ajv",
+      "version": "8.20.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/ajv/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "ajv-formats",
+      "version": "3.0.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/ajv-formats/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "antd",
+      "version": "6.7.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "direct-runtime",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/antd/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "archiver",
+      "version": "5.3.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/archiver/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "archiver-utils",
+      "version": "2.1.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/archiver-utils/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "archiver-utils",
+      "version": "3.0.4",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/zip-stream/node_modules/archiver-utils/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "aria-hidden",
+      "version": "1.2.6",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/aria-hidden/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "async",
+      "version": "3.2.6",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/async/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "balanced-match",
+      "version": "1.0.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/balanced-match/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "base64-js",
+      "version": "1.5.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/base64-js/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "baseline-browser-mapping",
+      "version": "2.11.35",
+      "license": "Apache-2.0",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/baseline-browser-mapping/LICENSE.txt"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "better-auth",
+      "version": "1.7.18",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "direct-runtime",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/better-auth/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "better-call",
+      "version": "1.4.5",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/better-call/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "better-sqlite3",
+      "version": "13.0.3",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "direct-runtime",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/better-sqlite3/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "bl",
+      "version": "4.1.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/bl/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "bluebird",
+      "version": "3.7.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/bluebird/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "bmp-js",
+      "version": "0.1.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/bmp-js/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "body-parser",
+      "version": "2.4.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/body-parser/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "brace-expansion",
+      "version": "1.1.21",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/brace-expansion/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "brace-expansion",
+      "version": "2.1.7",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/readdir-glob/node_modules/brace-expansion/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "buffer",
+      "version": "5.7.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/buffer/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "buffer-crc32",
+      "version": "0.2.13",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/buffer-crc32/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "buffer-image-size",
+      "version": "0.6.4",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/buffer-image-size/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "bytes",
+      "version": "3.1.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/bytes/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "call-bind-apply-helpers",
+      "version": "1.0.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/call-bind-apply-helpers/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "call-bound",
+      "version": "1.0.4",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/call-bound/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "caniuse-lite",
+      "version": "1.0.30001822",
+      "license": "CC-BY-4.0",
+      "distributionReview": true,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/caniuse-lite/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "client-only",
+      "version": "0.0.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [],
+      "status": "metadata-only"
+    },
+    {
+      "name": "clsx",
+      "version": "2.1.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/clsx/license"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "compress-commons",
+      "version": "4.1.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/compress-commons/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "compute-scroll-into-view",
+      "version": "3.1.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/compute-scroll-into-view/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "concat-map",
+      "version": "0.0.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/concat-map/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "content-disposition",
+      "version": "2.0.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/content-disposition/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "content-type",
+      "version": "2.1.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/body-parser/node_modules/content-type/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "content-type",
+      "version": "1.0.5",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/content-type/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "content-type",
+      "version": "2.1.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/express/node_modules/content-type/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "content-type",
+      "version": "2.1.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/negotiator/node_modules/content-type/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "content-type",
+      "version": "2.1.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/type-is/node_modules/content-type/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "cookie",
+      "version": "0.7.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/cookie/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "cookie-signature",
+      "version": "1.2.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/cookie-signature/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "core-util-is",
+      "version": "1.0.3",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/core-util-is/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "cors",
+      "version": "2.8.6",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/cors/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "crc-32",
+      "version": "1.2.2",
+      "license": "Apache-2.0",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/crc-32/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "crc32-stream",
+      "version": "4.0.3",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/crc32-stream/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "cross-spawn",
+      "version": "7.0.6",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/cross-spawn/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "cssesc",
+      "version": "3.0.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/cssesc/LICENSE-MIT.txt"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "csstype",
+      "version": "3.2.3",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/csstype/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "dayjs",
+      "version": "1.11.23",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/dayjs/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "debug",
+      "version": "4.4.3",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/debug/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "deep-diff",
+      "version": "1.0.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/deep-diff/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "defu",
+      "version": "6.1.7",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/defu/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "depd",
+      "version": "2.0.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/depd/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "detect-libc",
+      "version": "2.1.2",
+      "license": "Apache-2.0",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/detect-libc/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "detect-node-es",
+      "version": "1.1.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/detect-node-es/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "dunder-proto",
+      "version": "1.0.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/dunder-proto/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "duplexer2",
+      "version": "0.1.4",
+      "license": "BSD-3-Clause",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/duplexer2/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "ee-first",
+      "version": "1.1.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/ee-first/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "encodeurl",
+      "version": "2.0.3",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/encodeurl/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "end-of-stream",
+      "version": "1.4.5",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/end-of-stream/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "enhanced-resolve",
+      "version": "5.26.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/enhanced-resolve/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "entities",
+      "version": "7.0.1",
+      "license": "BSD-2-Clause",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/entities/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "es-define-property",
+      "version": "1.0.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/es-define-property/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "es-errors",
+      "version": "1.3.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/es-errors/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "es-object-atoms",
+      "version": "1.1.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/es-object-atoms/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "esbuild",
+      "version": "0.28.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/esbuild/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "escape-html",
+      "version": "1.0.3",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/escape-html/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "etag",
+      "version": "1.8.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/etag/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "eventsource",
+      "version": "3.0.7",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/eventsource/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "eventsource-parser",
+      "version": "3.1.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/eventsource-parser/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "exceljs",
+      "version": "4.4.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "direct-runtime",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/exceljs/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "express",
+      "version": "5.3.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/express/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "express-rate-limit",
+      "version": "8.7.4",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/express-rate-limit/license"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "fast-csv",
+      "version": "4.3.6",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/fast-csv/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "fast-deep-equal",
+      "version": "3.1.3",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/fast-deep-equal/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "fast-equals",
+      "version": "5.4.5",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@tiptap/react/node_modules/fast-equals/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "fast-equals",
+      "version": "5.2.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/fast-equals/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "fast-uri",
+      "version": "3.1.9",
+      "license": "BSD-3-Clause",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/fast-uri/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "finalhandler",
+      "version": "2.1.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/finalhandler/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "flat",
+      "version": "5.0.2",
+      "license": "BSD-3-Clause",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/flat/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "forwarded",
+      "version": "0.2.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/forwarded/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "frac",
+      "version": "1.1.2",
+      "license": "Apache-2.0",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/frac/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "fresh",
+      "version": "2.0.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/fresh/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "fs-constants",
+      "version": "1.0.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/fs-constants/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "fs-extra",
+      "version": "11.3.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/fs-extra/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "fs.realpath",
+      "version": "1.0.0",
+      "license": "ISC",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/fs.realpath/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "fsevents",
+      "version": "2.3.3",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "function-bind",
+      "version": "1.1.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/function-bind/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "get-intrinsic",
+      "version": "1.3.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/get-intrinsic/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "get-nonce",
+      "version": "1.0.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/get-nonce/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "get-proto",
+      "version": "1.0.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/get-proto/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "glob",
+      "version": "7.2.3",
+      "license": "ISC",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/glob/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "gopd",
+      "version": "1.2.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/gopd/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "graceful-fs",
+      "version": "4.2.11",
+      "license": "ISC",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/graceful-fs/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "happy-dom",
+      "version": "21.0.4",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/happy-dom/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "has-symbols",
+      "version": "1.1.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/has-symbols/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "hasown",
+      "version": "2.0.4",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/hasown/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "hono",
+      "version": "4.13.18",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/hono/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "http-errors",
+      "version": "2.0.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/http-errors/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "iconv-lite",
+      "version": "0.7.3",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/iconv-lite/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "idb-keyval",
+      "version": "6.3.0",
+      "license": "Apache-2.0",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/idb-keyval/LICENCE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "ieee754",
+      "version": "1.2.1",
+      "license": "BSD-3-Clause",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/ieee754/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "immediate",
+      "version": "3.0.6",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/immediate/LICENSE.txt"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "inflight",
+      "version": "1.0.6",
+      "license": "ISC",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/inflight/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "inherits",
+      "version": "2.0.4",
+      "license": "ISC",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/inherits/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "ip-address",
+      "version": "10.7.6",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/ip-address/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "ipaddr.js",
+      "version": "1.9.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/ipaddr.js/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "is-mobile",
+      "version": "5.0.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [],
+      "status": "metadata-only"
+    },
+    {
+      "name": "is-promise",
+      "version": "4.0.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/is-promise/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "is-url",
+      "version": "1.2.4",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/is-url/LICENSE-MIT"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "isarray",
+      "version": "1.0.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [],
+      "status": "metadata-only"
+    },
+    {
+      "name": "isarray",
+      "version": "1.0.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [],
+      "status": "metadata-only"
+    },
+    {
+      "name": "isarray",
+      "version": "1.0.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [],
+      "status": "metadata-only"
+    },
+    {
+      "name": "isarray",
+      "version": "1.0.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [],
+      "status": "metadata-only"
+    },
+    {
+      "name": "isexe",
+      "version": "2.0.0",
+      "license": "ISC",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/isexe/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "jiti",
+      "version": "2.7.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/jiti/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "jose",
+      "version": "6.2.15",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/jose/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "json-schema-traverse",
+      "version": "1.0.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/json-schema-traverse/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "json-schema-typed",
+      "version": "8.0.2",
+      "license": "BSD-2-Clause",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/json-schema-typed/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "json2mq",
+      "version": "0.2.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/json2mq/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "jsonfile",
+      "version": "6.2.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/jsonfile/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "jszip",
+      "version": "3.10.2",
+      "license": "(MIT OR GPL-3.0-or-later)",
+      "distributionReview": true,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/jszip/LICENSE.markdown"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "kysely",
+      "version": "0.29.8",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/kysely/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "lazystream",
+      "version": "1.0.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/lazystream/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "lie",
+      "version": "3.3.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/lie/license.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "lightningcss",
+      "version": "1.33.0",
+      "license": "MPL-2.0",
+      "distributionReview": true,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/lightningcss/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "lightningcss-android-arm64",
+      "version": "1.33.0",
+      "license": "MPL-2.0",
+      "distributionReview": true,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "lightningcss-darwin-arm64",
+      "version": "1.33.0",
+      "license": "MPL-2.0",
+      "distributionReview": true,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "lightningcss-darwin-x64",
+      "version": "1.33.0",
+      "license": "MPL-2.0",
+      "distributionReview": true,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "lightningcss-freebsd-x64",
+      "version": "1.33.0",
+      "license": "MPL-2.0",
+      "distributionReview": true,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "lightningcss-linux-arm-gnueabihf",
+      "version": "1.33.0",
+      "license": "MPL-2.0",
+      "distributionReview": true,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "lightningcss-linux-arm64-gnu",
+      "version": "1.33.0",
+      "license": "MPL-2.0",
+      "distributionReview": true,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "lightningcss-linux-arm64-musl",
+      "version": "1.33.0",
+      "license": "MPL-2.0",
+      "distributionReview": true,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "lightningcss-linux-x64-gnu",
+      "version": "1.33.0",
+      "license": "MPL-2.0",
+      "distributionReview": true,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "lightningcss-linux-x64-musl",
+      "version": "1.33.0",
+      "license": "MPL-2.0",
+      "distributionReview": true,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "lightningcss-win32-arm64-msvc",
+      "version": "1.33.0",
+      "license": "MPL-2.0",
+      "distributionReview": true,
+      "scope": "transitive",
+      "optional": true,
+      "installed": false,
+      "licenseFiles": [],
+      "status": "not-installed"
+    },
+    {
+      "name": "lightningcss-win32-x64-msvc",
+      "version": "1.33.0",
+      "license": "MPL-2.0",
+      "distributionReview": true,
+      "scope": "transitive",
+      "optional": true,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/lightningcss-win32-x64-msvc/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "linkifyjs",
+      "version": "4.4.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/linkifyjs/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "lodash.defaults",
+      "version": "4.2.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/lodash.defaults/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "lodash.difference",
+      "version": "4.5.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/lodash.difference/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "lodash.escaperegexp",
+      "version": "4.1.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/lodash.escaperegexp/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "lodash.flatten",
+      "version": "4.4.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/lodash.flatten/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "lodash.groupby",
+      "version": "4.6.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/lodash.groupby/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "lodash.isboolean",
+      "version": "3.0.3",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/lodash.isboolean/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "lodash.isequal",
+      "version": "4.5.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/lodash.isequal/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "lodash.isfunction",
+      "version": "3.0.9",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/lodash.isfunction/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "lodash.isnil",
+      "version": "4.0.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/lodash.isnil/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "lodash.isplainobject",
+      "version": "4.0.6",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/lodash.isplainobject/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "lodash.isundefined",
+      "version": "3.0.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/lodash.isundefined/LICENSE.txt"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "lodash.union",
+      "version": "4.6.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/lodash.union/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "lodash.uniq",
+      "version": "4.5.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/lodash.uniq/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "magic-string",
+      "version": "1.4.5",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/magic-string/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "math-intrinsics",
+      "version": "1.1.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/math-intrinsics/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "media-typer",
+      "version": "1.1.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/media-typer/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "merge-descriptors",
+      "version": "2.0.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/merge-descriptors/license"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "mime-db",
+      "version": "1.54.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/mime-db/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "mime-types",
+      "version": "3.0.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/mime-types/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "minimatch",
+      "version": "3.1.5",
+      "license": "ISC",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/minimatch/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "minimatch",
+      "version": "5.1.9",
+      "license": "ISC",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/readdir-glob/node_modules/minimatch/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "ms",
+      "version": "2.1.3",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/ms/license.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "nanoid",
+      "version": "3.3.20",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/nanoid/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "nanostores",
+      "version": "1.5.5",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/nanostores/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "negotiator",
+      "version": "1.1.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/negotiator/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "next",
+      "version": "16.4.5",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "direct-runtime",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/next/license.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "node-addon-api",
+      "version": "8.9.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/node-addon-api/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "node-fetch",
+      "version": "2.7.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/node-fetch/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "node-int64",
+      "version": "0.4.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/node-int64/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "nodemailer",
+      "version": "10.3.1",
+      "license": "MIT-0",
+      "distributionReview": false,
+      "scope": "direct-runtime",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/nodemailer/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "normalize-path",
+      "version": "3.0.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/normalize-path/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "object-assign",
+      "version": "4.1.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/object-assign/license"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "object-hash",
+      "version": "3.0.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/object-hash/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "object-inspect",
+      "version": "1.13.4",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/object-inspect/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "on-finished",
+      "version": "2.4.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/on-finished/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "once",
+      "version": "1.4.0",
+      "license": "ISC",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/once/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "opencollective-postinstall",
+      "version": "2.0.3",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/opencollective-postinstall/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "orderedmap",
+      "version": "2.1.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/orderedmap/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "pako",
+      "version": "1.0.11",
+      "license": "(MIT AND Zlib)",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/pako/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "parseurl",
+      "version": "1.3.3",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/parseurl/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "path-is-absolute",
+      "version": "1.0.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/path-is-absolute/license"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "path-key",
+      "version": "3.1.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/path-key/license"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "path-to-regexp",
+      "version": "8.4.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/path-to-regexp/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "pdf-lib",
+      "version": "1.17.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "direct-runtime",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/pdf-lib/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "pdfjs-dist",
+      "version": "6.5.438",
+      "license": "Apache-2.0",
+      "distributionReview": false,
+      "scope": "direct-runtime",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/pdfjs-dist/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "picocolors",
+      "version": "1.1.1",
+      "license": "ISC",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/picocolors/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "pkce-challenge",
+      "version": "5.0.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/pkce-challenge/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "playwright",
+      "version": "1.65.0",
+      "license": "Apache-2.0",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/playwright/LICENSE",
+        "node_modules/playwright/NOTICE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "playwright-core",
+      "version": "1.65.0",
+      "license": "Apache-2.0",
+      "distributionReview": false,
+      "scope": "direct-runtime",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/playwright-core/LICENSE",
+        "node_modules/playwright-core/NOTICE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "postcss",
+      "version": "8.5.23",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "direct-runtime",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/next/node_modules/postcss/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "postcss",
+      "version": "8.5.32",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "direct-runtime",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/postcss/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "postcss-selector-parser",
+      "version": "7.1.7",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "direct-runtime",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/postcss-selector-parser/LICENSE-MIT"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "postcss-value-parser",
+      "version": "4.2.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "direct-runtime",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/postcss-value-parser/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "process-nextick-args",
+      "version": "2.0.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/process-nextick-args/license.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "prosemirror-changeset",
+      "version": "2.4.6",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/prosemirror-changeset/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "prosemirror-commands",
+      "version": "1.7.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/prosemirror-commands/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "prosemirror-dropcursor",
+      "version": "1.8.4",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/prosemirror-dropcursor/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "prosemirror-gapcursor",
+      "version": "1.4.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/prosemirror-gapcursor/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "prosemirror-history",
+      "version": "1.5.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/prosemirror-history/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "prosemirror-inputrules",
+      "version": "1.5.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/prosemirror-inputrules/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "prosemirror-keymap",
+      "version": "1.2.3",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/prosemirror-keymap/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "prosemirror-model",
+      "version": "1.25.12",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/prosemirror-model/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "prosemirror-schema-list",
+      "version": "1.6.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/prosemirror-schema-list/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "prosemirror-state",
+      "version": "1.4.4",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/prosemirror-state/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "prosemirror-tables",
+      "version": "1.8.5",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/prosemirror-tables/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "prosemirror-transform",
+      "version": "1.12.5",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/prosemirror-transform/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "prosemirror-view",
+      "version": "1.42.9",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/prosemirror-view/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "proxy-addr",
+      "version": "2.0.8",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/proxy-addr/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "qs",
+      "version": "6.17.1",
+      "license": "BSD-3-Clause",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/qs/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "range-parser",
+      "version": "1.3.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/range-parser/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "raw-body",
+      "version": "3.0.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/raw-body/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "react",
+      "version": "19.3.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "direct-runtime",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/react/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "react-dom",
+      "version": "19.3.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "direct-runtime",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/react-dom/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "react-hotkeys-hook",
+      "version": "4.6.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/react-hotkeys-hook/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "react-is",
+      "version": "19.3.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/react-is/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "react-remove-scroll",
+      "version": "2.7.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/react-remove-scroll/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "react-remove-scroll-bar",
+      "version": "2.3.8",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [],
+      "status": "metadata-only"
+    },
+    {
+      "name": "react-style-singleton",
+      "version": "2.2.3",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/react-style-singleton/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "readable-stream",
+      "version": "2.3.8",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/archiver-utils/node_modules/readable-stream/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "readable-stream",
+      "version": "2.3.8",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/duplexer2/node_modules/readable-stream/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "readable-stream",
+      "version": "2.3.8",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/jszip/node_modules/readable-stream/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "readable-stream",
+      "version": "2.3.8",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/lazystream/node_modules/readable-stream/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "readable-stream",
+      "version": "3.6.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/readable-stream/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "readdir-glob",
+      "version": "1.1.3",
+      "license": "Apache-2.0",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/readdir-glob/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "regenerator-runtime",
+      "version": "0.13.11",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/regenerator-runtime/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "require-from-string",
+      "version": "2.0.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/require-from-string/license"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "rope-sequence",
+      "version": "1.3.4",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/rope-sequence/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "rou3",
+      "version": "0.9.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/rou3/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "router",
+      "version": "2.2.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/router/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "safe-buffer",
+      "version": "5.1.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/archiver-utils/node_modules/safe-buffer/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "safe-buffer",
+      "version": "5.1.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/duplexer2/node_modules/safe-buffer/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "safe-buffer",
+      "version": "5.1.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/jszip/node_modules/safe-buffer/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "safe-buffer",
+      "version": "5.1.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/lazystream/node_modules/safe-buffer/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "safe-buffer",
+      "version": "5.2.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/safe-buffer/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "safer-buffer",
+      "version": "2.1.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/safer-buffer/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "saxes",
+      "version": "5.0.1",
+      "license": "ISC",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [],
+      "status": "metadata-only"
+    },
+    {
+      "name": "scheduler",
+      "version": "0.28.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/scheduler/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "scroll-into-view-if-needed",
+      "version": "3.1.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/scroll-into-view-if-needed/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "semver",
+      "version": "7.8.6",
+      "license": "ISC",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/semver/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "send",
+      "version": "1.2.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/send/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "serve-static",
+      "version": "2.2.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/serve-static/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "set-cookie-parser",
+      "version": "3.2.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/set-cookie-parser/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "setimmediate",
+      "version": "1.0.5",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/setimmediate/LICENSE.txt"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "setprototypeof",
+      "version": "1.2.0",
+      "license": "ISC",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/setprototypeof/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "sharp",
+      "version": "0.35.5",
+      "license": "Apache-2.0",
+      "distributionReview": false,
+      "scope": "direct-runtime",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/sharp/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "shebang-command",
+      "version": "2.0.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/shebang-command/license"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "shebang-regex",
+      "version": "3.0.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/shebang-regex/license"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "side-channel",
+      "version": "1.1.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/side-channel/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "side-channel-list",
+      "version": "1.0.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/side-channel-list/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "side-channel-map",
+      "version": "1.0.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/side-channel-map/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "side-channel-weakmap",
+      "version": "1.0.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/side-channel-weakmap/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "source-map-js",
+      "version": "1.2.2",
+      "license": "BSD-3-Clause",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/source-map-js/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "ssf",
+      "version": "0.11.2",
+      "license": "Apache-2.0",
+      "distributionReview": false,
+      "scope": "direct-runtime",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/ssf/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "statuses",
+      "version": "2.0.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/statuses/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "string_decoder",
+      "version": "1.1.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/archiver-utils/node_modules/string_decoder/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "string_decoder",
+      "version": "1.1.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/duplexer2/node_modules/string_decoder/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "string_decoder",
+      "version": "1.1.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/jszip/node_modules/string_decoder/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "string_decoder",
+      "version": "1.1.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/lazystream/node_modules/string_decoder/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "string_decoder",
+      "version": "1.3.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/string_decoder/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "string-convert",
+      "version": "0.2.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/string-convert/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "styled-jsx",
+      "version": "5.1.6",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/styled-jsx/license.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "stylis",
+      "version": "4.4.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/stylis/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "tailwindcss",
+      "version": "4.3.4",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "direct-development",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/tailwindcss/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "tapable",
+      "version": "2.3.3",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/tapable/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "tar-stream",
+      "version": "2.2.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/tar-stream/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "tesseract.js",
+      "version": "7.0.0",
+      "license": "Apache-2.0",
+      "distributionReview": false,
+      "scope": "direct-runtime",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/tesseract.js/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "tesseract.js-core",
+      "version": "7.0.0",
+      "license": "Apache-2.0",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/tesseract.js-core/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "throttle-debounce",
+      "version": "5.0.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/throttle-debounce/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "tmp",
+      "version": "0.2.7",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/tmp/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "toidentifier",
+      "version": "1.0.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/toidentifier/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "tr46",
+      "version": "0.0.3",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [],
+      "status": "metadata-only"
+    },
+    {
+      "name": "tslib",
+      "version": "2.8.1",
+      "license": "0BSD",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": true,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@tailwindcss/oxide-wasm32-wasi/node_modules/tslib/LICENSE.txt"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "tslib",
+      "version": "1.14.1",
+      "license": "0BSD",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/pdf-lib/node_modules/tslib/LICENSE.txt"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "tslib",
+      "version": "2.9.1",
+      "license": "0BSD",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/tslib/LICENSE.txt"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "tsx",
+      "version": "4.23.15",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "direct-development",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/tsx/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "type-is",
+      "version": "2.1.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/type-is/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "typescript",
+      "version": "5.9.3",
+      "license": "Apache-2.0",
+      "distributionReview": false,
+      "scope": "direct-development",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/typescript/LICENSE.txt"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "undici-types",
+      "version": "6.21.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/undici-types/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "universalify",
+      "version": "2.0.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/universalify/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "unpipe",
+      "version": "1.0.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/unpipe/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "unzipper",
+      "version": "0.12.5",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/unzipper/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "use-callback-ref",
+      "version": "1.3.3",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/use-callback-ref/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "use-debounce",
+      "version": "9.0.4",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/use-debounce/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "use-sidecar",
+      "version": "1.1.3",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/use-sidecar/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "use-sync-external-store",
+      "version": "1.7.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/use-sync-external-store/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "util-deprecate",
+      "version": "1.0.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/util-deprecate/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "uuid",
+      "version": "11.1.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/uuid/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "vary",
+      "version": "1.1.2",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/vary/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "w3c-keyname",
+      "version": "2.2.8",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/w3c-keyname/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "wasm-feature-detect",
+      "version": "1.10.1",
+      "license": "Apache-2.0",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/wasm-feature-detect/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "webidl-conversions",
+      "version": "3.0.1",
+      "license": "BSD-2-Clause",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/webidl-conversions/LICENSE.md"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "whatwg-mimetype",
+      "version": "3.0.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/whatwg-mimetype/LICENSE.txt"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "whatwg-url",
+      "version": "5.0.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/whatwg-url/LICENSE.txt"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "which",
+      "version": "2.0.2",
+      "license": "ISC",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/which/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "wrappy",
+      "version": "1.0.2",
+      "license": "ISC",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/wrappy/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "ws",
+      "version": "8.22.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/ws/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "xmlchars",
+      "version": "2.2.0",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/xmlchars/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "zip-stream",
+      "version": "4.1.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/zip-stream/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "zlibjs",
+      "version": "0.3.1",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/zlibjs/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "zod",
+      "version": "4.6.7",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "direct-runtime",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/zod/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "zod-to-json-schema",
+      "version": "3.25.2",
+      "license": "ISC",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/zod-to-json-schema/LICENSE"
+      ],
+      "status": "collected"
+    },
+    {
+      "name": "zustand",
+      "version": "5.0.16",
+      "license": "MIT",
+      "distributionReview": false,
+      "scope": "transitive",
+      "optional": false,
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/zustand/LICENSE"
+      ],
+      "status": "collected"
+    }
+  ],
+  "notes": [
+    "来源是本地锁文件、实际package.json及发行包LICENSE/NOTICE，不是法律结论。",
+    "collected只代表找到并保留许可文件，不代表捆绑依赖和分发义务全部核实。",
+    "依赖树含LGPL/MPL/CC-BY项目，不能统称MIT；distributionReview标出需按分发形式复核的条目。",
+    "未安装的平台可选包只记录锁文件元数据，部署构建时保留对应发行包许可。",
+    "摄影来源与使用范围另见THIRD_PARTY_NOTICES.md，软件许可不能推导照片再分发权。"
+  ]
+}

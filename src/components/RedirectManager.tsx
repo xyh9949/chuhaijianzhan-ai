@@ -1,0 +1,19 @@
+'use client';
+import { useState } from 'react';
+import { Alert, App, Button, Form, Input, Modal, Select, Space, Switch, Table, Typography } from 'antd';
+import type { RedirectRule } from '@/lib/types';
+import { request, useStudioRuntime, type StudioEnvelope } from '@/lib/studio-client';
+import { resolveLinkTarget } from '@/lib/site-links';
+
+/** 跳转规则只是草稿，管理员需在发布窗口明确选择上线；旧网址不能占用真实页面。 */
+export default function RedirectManager() {
+  const runtime = useStudioRuntime(), { message, modal } = App.useApp(), state = runtime.envelope.state;
+  const [draft, setDraft] = useState<RedirectRule | null>(null), [error, setError] = useState(''), [busy, setBusy] = useState(false);
+  const readonly = runtime.actor.role !== 'admin';
+  const options = [...state.pages.filter(page => !page.slug.includes(':')).map(page => ({ value: `page:${page.id}`, label: `页面 · ${page.title}` })), ...state.products.map(item => ({ value: `product:${item.id}`, label: `产品 · ${item.name}` })), ...(state.contentEntries || []).map(item => ({ value: `entry:${item.id}`, label: `内容 · ${item.title}` }))];
+  async function save() {
+    if (!draft || readonly) return; setBusy(true);
+    try { await runtime.mutate(env => request<StudioEnvelope>('/api/studio', { method: 'PATCH', body: JSON.stringify({ expectedRevision: env.revision, patch: { redirects: [...(env.state.redirects || []).filter(rule => rule.id !== draft.id), draft] } }) })); setDraft(null); message.success('重定向规则已保存为草稿'); } catch (e) { setError((e as Error).message); } finally { setBusy(false); }
+  }
+  return <><Space style={{ marginBottom: 18 }}><Button type="primary" disabled={readonly} onClick={() => { setDraft({ id: `redirect-${crypto.randomUUID()}`, from: '', target: { kind: 'page', id: '' }, status: 301 }); setError(''); }}>新建重定向</Button><Typography.Text type="secondary">网址变更也会在发布预检中给出可采用的建议。</Typography.Text></Space><Table rowKey="id" scroll={{ x: 720 }} dataSource={state.redirects || []} columns={[{ title: '旧路径', dataIndex: 'from' }, { title: '当前目标', render: (_, rule) => resolveLinkTarget(state, rule.target) || '目标不可用' }, { title: '状态码', render: (_, rule) => rule.enabled === false ? '已停用' : rule.status }, { title: '操作', render: (_, rule) => <Space><Button onClick={() => { setDraft(structuredClone(rule)); setError(''); }}>编辑</Button><Button danger disabled={readonly} onClick={() => modal.confirm({ title: '移除重定向草稿？', content: '公开版本需另行发布才改变。', onOk: async () => { try { await runtime.mutate(env => request<StudioEnvelope>('/api/studio', { method: 'PATCH', body: JSON.stringify({ expectedRevision: env.revision, patch: { redirects: (env.state.redirects || []).filter(item => item.id !== rule.id) } }) })); } catch (e) { message.error((e as Error).message); } } })}>删除</Button></Space> }]} /><Modal title="重定向规则" open={!!draft} onCancel={() => setDraft(null)} okText="保存规则" confirmLoading={busy} okButtonProps={{ disabled: readonly }} onOk={save}>{draft && <Form layout="vertical" disabled={readonly || busy}>{error && <Alert type="error" title={error} />}<Form.Item label="旧路径"><Input aria-label="重定向旧路径" value={draft.from} maxLength={200} placeholder="/old-page" onChange={e => setDraft({ ...draft, from: e.target.value })} /></Form.Item><Form.Item label="目标内容"><Select aria-label="重定向目标" showSearch optionFilterProp="label" value={draft.target.id ? `${draft.target.kind}:${draft.target.id}` : undefined} options={options} onChange={value => { const [kind, id] = value.split(':'); setDraft({ ...draft, target: { kind: kind as RedirectRule['target']['kind'], id } }); }} /></Form.Item><Form.Item label="启用规则"><Switch checked={draft.enabled !== false} onChange={enabled => setDraft({ ...draft, enabled })} /></Form.Item><Form.Item label="状态码"><Select value={draft.status} options={[{ value: 301, label: '301 · 永久移动' }, { value: 302, label: '302 · 临时跳转' }]} onChange={status => setDraft({ ...draft, status })} /></Form.Item></Form>}</Modal></>;
+}

@@ -1,0 +1,1229 @@
+{
+  "schemaVersion": 12,
+  "pages": [
+    {
+      "id": "starter-home",
+      "title": "Home",
+      "slug": "/",
+      "type": "普通页面",
+      "status": "published",
+      "updated": "2026-11-07T00:00:00.000Z"
+    },
+    {
+      "id": "starter-about",
+      "title": "About",
+      "slug": "/about",
+      "type": "普通页面",
+      "status": "published",
+      "updated": "2026-11-07T00:00:00.000Z"
+    },
+    {
+      "id": "starter-contact",
+      "title": "Contact",
+      "slug": "/contact",
+      "type": "普通页面",
+      "status": "published",
+      "updated": "2026-11-07T00:00:00.000Z"
+    },
+    {
+      "id": "starter-list",
+      "title": "Product examples",
+      "slug": "/catalog",
+      "type": "普通页面",
+      "status": "published",
+      "updated": "2026-11-07T00:00:00.000Z"
+    },
+    {
+      "id": "starter-detail",
+      "title": "Product details",
+      "slug": "/products/:slug",
+      "type": "普通页面",
+      "status": "published",
+      "updated": "2026-11-07T00:00:00.000Z"
+    }
+  ],
+  "editorData": {
+    "starter-home": {
+      "root": {
+        "props": {
+          "title": "Home",
+          "brand": "Atlas Works",
+          "showChrome": "yes"
+        }
+      },
+      "content": [
+        {
+          "type": "Container",
+          "props": {
+            "id": "manufacturing-Container-17",
+            "content": [
+              {
+                "type": "Text",
+                "props": {
+                  "id": "manufacturing-Text-13",
+                  "text": "MANUFACTURING / DEMONSTRATION",
+                  "size": 16,
+                  "color": "#5e686d",
+                  "maxWidth": 760,
+                  "align": "left"
+                }
+              },
+              {
+                "type": "Heading",
+                "props": {
+                  "id": "manufacturing-Heading-14",
+                  "text": "Built around your next specification.",
+                  "size": 68,
+                  "mobileSize": 38,
+                  "color": "#1b2c32",
+                  "align": "left",
+                  "style": "sans",
+                  "spacing": 0,
+                  "design": {
+                    "desktop": {
+                      "fontWeight": 600,
+                      "lineHeight": 1.12
+                    },
+                    "mobile": {
+                      "fontSize": 38
+                    }
+                  }
+                }
+              },
+              {
+                "type": "Text",
+                "props": {
+                  "id": "manufacturing-Text-15",
+                  "text": "A flexible starting point for a factory presentation: introduce capabilities, product families and project requirements using verified information.",
+                  "size": 16,
+                  "color": "#5e686d",
+                  "maxWidth": 760,
+                  "align": "left"
+                }
+              },
+              {
+                "type": "ActionButton",
+                "props": {
+                  "id": "manufacturing-ActionButton-16",
+                  "text": "Explore sample products",
+                  "href": "/catalog",
+                  "kind": "theme",
+                  "align": "left",
+                  "design": {
+                    "desktop": {
+                      "color": "#ffffff"
+                    }
+                  }
+                }
+              }
+            ],
+            "layout": "column",
+            "columns": 1,
+            "mobileColumns": 1,
+            "gap": 28,
+            "padding": 88,
+            "inset": 40,
+            "minHeight": 0,
+            "background": "#f7fafb",
+            "image": "",
+            "align": "start",
+            "design": {
+              "desktop": {
+                "maxWidth": 1400,
+                "marginLeft": "auto",
+                "marginRight": "auto"
+              },
+              "mobile": {
+                "paddingTop": 32,
+                "paddingBottom": 32,
+                "paddingLeft": 20,
+                "paddingRight": 20,
+                "gap": 20
+              }
+            }
+          }
+        },
+        {
+          "type": "Container",
+          "props": {
+            "id": "manufacturing-Container-20",
+            "content": [
+              {
+                "type": "Text",
+                "props": {
+                  "id": "manufacturing-Text-18",
+                  "text": "01 / PRODUCT SYSTEM",
+                  "size": 16,
+                  "color": "#5e686d",
+                  "maxWidth": 760,
+                  "align": "left"
+                }
+              },
+              {
+                "type": "Heading",
+                "props": {
+                  "id": "manufacturing-Heading-19",
+                  "text": "Product examples",
+                  "size": 40,
+                  "mobileSize": 38,
+                  "color": "#1b2c32",
+                  "align": "left",
+                  "style": "sans",
+                  "spacing": 0,
+                  "design": {
+                    "desktop": {
+                      "fontWeight": 600,
+                      "lineHeight": 1.12
+                    },
+                    "mobile": {
+                      "fontSize": 38
+                    }
+                  }
+                }
+              },
+              {
+                "type": "ContentLoop",
+                "props": {
+                  "id": "manufacturing-ContentLoop-12",
+                  "source": "product",
+                  "itemBlockId": "starter-card",
+                  "title": "",
+                  "count": 6,
+                  "columns": 3,
+                  "mobileColumns": 1,
+                  "gap": 24,
+                  "padding": 0,
+                  "emptyText": "No examples yet."
+                }
+              }
+            ],
+            "layout": "column",
+            "columns": 1,
+            "mobileColumns": 1,
+            "gap": 28,
+            "padding": 64,
+            "inset": 40,
+            "minHeight": 0,
+            "background": "#f7fafb",
+            "image": "",
+            "align": "start",
+            "design": {
+              "desktop": {
+                "maxWidth": 1400,
+                "marginLeft": "auto",
+                "marginRight": "auto"
+              },
+              "mobile": {
+                "paddingTop": 32,
+                "paddingBottom": 32,
+                "paddingLeft": 20,
+                "paddingRight": 20,
+                "gap": 20
+              }
+            }
+          }
+        },
+        {
+          "type": "Container",
+          "props": {
+            "id": "manufacturing-Container-24",
+            "content": [
+              {
+                "type": "Heading",
+                "props": {
+                  "id": "manufacturing-Heading-21",
+                  "text": "Tell us about your requirements.",
+                  "size": 40,
+                  "mobileSize": 38,
+                  "color": "#1b2c32",
+                  "align": "left",
+                  "style": "sans",
+                  "spacing": 0,
+                  "design": {
+                    "desktop": {
+                      "fontWeight": 600,
+                      "lineHeight": 1.12
+                    },
+                    "mobile": {
+                      "fontSize": 38
+                    }
+                  }
+                }
+              },
+              {
+                "type": "Text",
+                "props": {
+                  "id": "manufacturing-Text-22",
+                  "text": "Use this editable section to explain the next step without inventing lead times, prices or outcomes.",
+                  "size": 16,
+                  "color": "#5e686d",
+                  "maxWidth": 760,
+                  "align": "left"
+                }
+              },
+              {
+                "type": "ActionButton",
+                "props": {
+                  "id": "manufacturing-ActionButton-23",
+                  "text": "Contact",
+                  "href": "/contact",
+                  "kind": "theme",
+                  "align": "left",
+                  "design": {
+                    "desktop": {
+                      "color": "#ffffff"
+                    }
+                  }
+                }
+              }
+            ],
+            "layout": "column",
+            "columns": 1,
+            "mobileColumns": 1,
+            "gap": 28,
+            "padding": 64,
+            "inset": 40,
+            "minHeight": 0,
+            "background": "#dce9ef",
+            "image": "",
+            "align": "start",
+            "design": {
+              "desktop": {
+                "maxWidth": 1400,
+                "marginLeft": "auto",
+                "marginRight": "auto"
+              },
+              "mobile": {
+                "paddingTop": 32,
+                "paddingBottom": 32,
+                "paddingLeft": 20,
+                "paddingRight": 20,
+                "gap": 20
+              }
+            }
+          }
+        }
+      ]
+    },
+    "starter-about": {
+      "root": {
+        "props": {
+          "title": "About",
+          "brand": "Atlas Works",
+          "showChrome": "yes"
+        }
+      },
+      "content": [
+        {
+          "type": "Container",
+          "props": {
+            "id": "manufacturing-Container-38",
+            "content": [
+              {
+                "type": "Text",
+                "props": {
+                  "id": "manufacturing-Text-30",
+                  "text": "ABOUT / DEMONSTRATION",
+                  "size": 16,
+                  "color": "#5e686d",
+                  "maxWidth": 760,
+                  "align": "left"
+                }
+              },
+              {
+                "type": "Heading",
+                "props": {
+                  "id": "manufacturing-Heading-31",
+                  "text": "About Atlas Works",
+                  "size": 60,
+                  "mobileSize": 38,
+                  "color": "#1b2c32",
+                  "align": "left",
+                  "style": "sans",
+                  "spacing": 0,
+                  "design": {
+                    "desktop": {
+                      "fontWeight": 600,
+                      "lineHeight": 1.12
+                    },
+                    "mobile": {
+                      "fontSize": 38
+                    }
+                  }
+                }
+              },
+              {
+                "type": "Text",
+                "props": {
+                  "id": "manufacturing-Text-32",
+                  "text": "This company and its story are demonstration content. Add your actual history, team, facilities and working process.",
+                  "size": 16,
+                  "color": "#5e686d",
+                  "maxWidth": 760,
+                  "align": "left"
+                }
+              },
+              {
+                "type": "Container",
+                "props": {
+                  "id": "manufacturing-Container-37",
+                  "content": [
+                    {
+                      "type": "Heading",
+                      "props": {
+                        "id": "manufacturing-Heading-33",
+                        "text": "Your approach",
+                        "size": 28,
+                        "mobileSize": 28,
+                        "color": "#1b2c32",
+                        "align": "left",
+                        "style": "sans",
+                        "spacing": 0,
+                        "design": {
+                          "desktop": {
+                            "fontWeight": 600,
+                            "lineHeight": 1.12
+                          },
+                          "mobile": {
+                            "fontSize": 28
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "type": "Text",
+                      "props": {
+                        "id": "manufacturing-Text-34",
+                        "text": "Describe the way you work using facts that the customer can verify.",
+                        "size": 16,
+                        "color": "#5e686d",
+                        "maxWidth": 760,
+                        "align": "left"
+                      }
+                    },
+                    {
+                      "type": "Heading",
+                      "props": {
+                        "id": "manufacturing-Heading-35",
+                        "text": "Your people",
+                        "size": 28,
+                        "mobileSize": 28,
+                        "color": "#1b2c32",
+                        "align": "left",
+                        "style": "sans",
+                        "spacing": 0,
+                        "design": {
+                          "desktop": {
+                            "fontWeight": 600,
+                            "lineHeight": 1.12
+                          },
+                          "mobile": {
+                            "fontSize": 28
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "type": "Text",
+                      "props": {
+                        "id": "manufacturing-Text-36",
+                        "text": "Add authorized biographies and photography. No fictional customer testimonials are included.",
+                        "size": 16,
+                        "color": "#5e686d",
+                        "maxWidth": 760,
+                        "align": "left"
+                      }
+                    }
+                  ],
+                  "layout": "grid",
+                  "columns": 2,
+                  "mobileColumns": 1,
+                  "gap": 28,
+                  "padding": 64,
+                  "inset": 40,
+                  "minHeight": 0,
+                  "background": "#ffffff",
+                  "image": "",
+                  "align": "start",
+                  "design": {
+                    "desktop": {
+                      "maxWidth": 1400,
+                      "marginLeft": "auto",
+                      "marginRight": "auto"
+                    },
+                    "mobile": {
+                      "paddingTop": 32,
+                      "paddingBottom": 32,
+                      "paddingLeft": 20,
+                      "paddingRight": 20,
+                      "gap": 20
+                    }
+                  }
+                }
+              }
+            ],
+            "layout": "column",
+            "columns": 1,
+            "mobileColumns": 1,
+            "gap": 28,
+            "padding": 64,
+            "inset": 40,
+            "minHeight": 0,
+            "background": "#f7fafb",
+            "image": "",
+            "align": "start",
+            "design": {
+              "desktop": {
+                "maxWidth": 1400,
+                "marginLeft": "auto",
+                "marginRight": "auto"
+              },
+              "mobile": {
+                "paddingTop": 32,
+                "paddingBottom": 32,
+                "paddingLeft": 20,
+                "paddingRight": 20,
+                "gap": 20
+              }
+            }
+          }
+        }
+      ]
+    },
+    "starter-contact": {
+      "root": {
+        "props": {
+          "title": "Contact",
+          "brand": "Atlas Works",
+          "showChrome": "yes"
+        }
+      },
+      "content": [
+        {
+          "type": "Container",
+          "props": {
+            "id": "manufacturing-Container-43",
+            "content": [
+              {
+                "type": "Text",
+                "props": {
+                  "id": "manufacturing-Text-39",
+                  "text": "CONTACT / DEMONSTRATION",
+                  "size": 16,
+                  "color": "#5e686d",
+                  "maxWidth": 760,
+                  "align": "left"
+                }
+              },
+              {
+                "type": "Heading",
+                "props": {
+                  "id": "manufacturing-Heading-40",
+                  "text": "Let’s start a conversation.",
+                  "size": 58,
+                  "mobileSize": 38,
+                  "color": "#1b2c32",
+                  "align": "left",
+                  "style": "sans",
+                  "spacing": 0,
+                  "design": {
+                    "desktop": {
+                      "fontWeight": 600,
+                      "lineHeight": 1.12
+                    },
+                    "mobile": {
+                      "fontSize": 38
+                    }
+                  }
+                }
+              },
+              {
+                "type": "Text",
+                "props": {
+                  "id": "manufacturing-Text-41",
+                  "text": "This is a functional inquiry form. Configure your own contact details, privacy wording and notification settings before public use.",
+                  "size": 16,
+                  "color": "#5e686d",
+                  "maxWidth": 760,
+                  "align": "left"
+                }
+              },
+              {
+                "type": "Form",
+                "props": {
+                  "id": "manufacturing-Form-42",
+                  "formId": "starter-inquiry",
+                  "wideFields": [
+                    "field-e00f6b32-8339-46a3-bcdc-8de274ba5e5c"
+                  ],
+                  "design": {
+                    "desktop": {
+                      "display": "grid",
+                      "columns": 2,
+                      "gap": 20
+                    },
+                    "mobile": {
+                      "columns": 1
+                    }
+                  },
+                  "fieldDesign": {
+                    "desktop": {
+                      "borderWidth": 1,
+                      "borderColor": "#cbd4d8",
+                      "borderRadius": 6
+                    }
+                  },
+                  "submitDesign": {
+                    "desktop": {
+                      "borderRadius": 6
+                    }
+                  }
+                }
+              }
+            ],
+            "layout": "column",
+            "columns": 1,
+            "mobileColumns": 1,
+            "gap": 28,
+            "padding": 64,
+            "inset": 40,
+            "minHeight": 0,
+            "background": "#f7fafb",
+            "image": "",
+            "align": "start",
+            "design": {
+              "desktop": {
+                "maxWidth": 1400,
+                "marginLeft": "auto",
+                "marginRight": "auto"
+              },
+              "mobile": {
+                "paddingTop": 32,
+                "paddingBottom": 32,
+                "paddingLeft": 20,
+                "paddingRight": 20,
+                "gap": 20
+              }
+            }
+          }
+        }
+      ]
+    },
+    "starter-list": {
+      "root": {
+        "props": {
+          "title": "Product examples",
+          "brand": "Atlas Works",
+          "showChrome": "yes"
+        }
+      },
+      "content": [
+        {
+          "type": "Container",
+          "props": {
+            "id": "manufacturing-list-47",
+            "content": [
+              {
+                "type": "Heading",
+                "props": {
+                  "id": "manufacturing-list-48",
+                  "text": "Product examples",
+                  "size": 58,
+                  "mobileSize": 38,
+                  "color": "#1b2c32",
+                  "align": "left",
+                  "style": "sans",
+                  "spacing": 0,
+                  "design": {
+                    "desktop": {
+                      "fontWeight": 600,
+                      "lineHeight": 1.12
+                    },
+                    "mobile": {
+                      "fontSize": 38
+                    }
+                  }
+                }
+              },
+              {
+                "type": "Text",
+                "props": {
+                  "id": "manufacturing-list-49",
+                  "text": "All examples are editable content records, not hardcoded industry components.",
+                  "size": 16,
+                  "color": "#5e686d",
+                  "maxWidth": 760,
+                  "align": "left"
+                }
+              },
+              {
+                "type": "ContentLoop",
+                "props": {
+                  "id": "manufacturing-list-50",
+                  "source": "product",
+                  "itemBlockId": "starter-card",
+                  "title": "",
+                  "count": 6,
+                  "columns": 3,
+                  "mobileColumns": 1,
+                  "gap": 24,
+                  "padding": 0,
+                  "emptyText": "No examples yet."
+                }
+              }
+            ],
+            "layout": "column",
+            "columns": 1,
+            "mobileColumns": 1,
+            "gap": 28,
+            "padding": 64,
+            "inset": 40,
+            "minHeight": 0,
+            "background": "#f7fafb",
+            "image": "",
+            "align": "start",
+            "design": {
+              "desktop": {
+                "maxWidth": 1400,
+                "marginLeft": "auto",
+                "marginRight": "auto"
+              },
+              "mobile": {
+                "paddingTop": 32,
+                "paddingBottom": 32,
+                "paddingLeft": 20,
+                "paddingRight": 20,
+                "gap": 20
+              }
+            }
+          }
+        }
+      ]
+    },
+    "starter-detail": {
+      "root": {
+        "props": {
+          "title": "Product details",
+          "brand": "Atlas Works",
+          "showChrome": "yes"
+        }
+      },
+      "content": [
+        {
+          "type": "Container",
+          "props": {
+            "id": "manufacturing-Container-29",
+            "content": [
+              {
+                "type": "Text",
+                "props": {
+                  "id": "manufacturing-Text-25",
+                  "text": "DEMONSTRATION DETAIL",
+                  "size": 16,
+                  "color": "#5e686d",
+                  "maxWidth": 760,
+                  "align": "left"
+                }
+              },
+              {
+                "type": "Heading",
+                "props": {
+                  "id": "manufacturing-Heading-26",
+                  "text": "Example title",
+                  "size": 58,
+                  "mobileSize": 34,
+                  "color": "#1b2c32",
+                  "style": "sans",
+                  "bindings": {
+                    "text": {
+                      "source": "product",
+                      "mode": "current",
+                      "field": "builtin:name"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "Text",
+                "props": {
+                  "id": "manufacturing-Text-27",
+                  "text": "Example details",
+                  "size": 18,
+                  "color": "#5e686d",
+                  "maxWidth": 800,
+                  "bindings": {
+                    "text": {
+                      "source": "product",
+                      "mode": "current",
+                      "field": "builtin:description"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "ActionButton",
+                "props": {
+                  "id": "manufacturing-ActionButton-28",
+                  "text": "Discuss your requirements",
+                  "href": "/contact",
+                  "kind": "theme",
+                  "align": "left",
+                  "design": {
+                    "desktop": {
+                      "color": "#ffffff"
+                    }
+                  }
+                }
+              }
+            ],
+            "layout": "column",
+            "columns": 1,
+            "mobileColumns": 1,
+            "gap": 28,
+            "padding": 64,
+            "inset": 40,
+            "minHeight": 0,
+            "background": "#f7fafb",
+            "image": "",
+            "align": "start",
+            "design": {
+              "desktop": {
+                "maxWidth": 1400,
+                "marginLeft": "auto",
+                "marginRight": "auto"
+              },
+              "mobile": {
+                "paddingTop": 32,
+                "paddingBottom": 32,
+                "paddingLeft": 20,
+                "paddingRight": 20,
+                "gap": 20
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "products": [
+    {
+      "id": "starter-product-1",
+      "name": "Material sample A",
+      "sku": "DEMO-1",
+      "slug": "sample-1",
+      "category": "Demonstration products",
+      "status": "published",
+      "image": "",
+      "description": "Demonstration product only. Add verified specifications, materials and photography before customer delivery.",
+      "material": "To be supplied by the customer"
+    },
+    {
+      "id": "starter-product-2",
+      "name": "Material sample B",
+      "sku": "DEMO-2",
+      "slug": "sample-2",
+      "category": "Demonstration products",
+      "status": "published",
+      "image": "",
+      "description": "Demonstration product only. Add verified specifications, materials and photography before customer delivery.",
+      "material": "To be supplied by the customer"
+    },
+    {
+      "id": "starter-product-3",
+      "name": "Custom component example",
+      "sku": "DEMO-3",
+      "slug": "sample-3",
+      "category": "Demonstration products",
+      "status": "published",
+      "image": "",
+      "description": "Demonstration product only. Add verified specifications, materials and photography before customer delivery.",
+      "material": "To be supplied by the customer"
+    }
+  ],
+  "media": [],
+  "theme": {
+    "primary": "#16384c",
+    "background": "#f7fafb",
+    "text": "#1b2c32",
+    "radius": 2,
+    "font": "Arial",
+    "headingFont": "Arial"
+  },
+  "settings": {
+    "name": "Atlas Works",
+    "description": "Atlas Works: demonstration website. Replace all sample information before delivery.",
+    "email": "",
+    "language": "en"
+  },
+  "sharedBlocks": [
+    {
+      "id": "starter-header",
+      "name": "全站页眉",
+      "updated": "",
+      "data": {
+        "root": {
+          "props": {
+            "title": "Header",
+            "brand": "Atlas Works",
+            "showChrome": "no"
+          }
+        },
+        "content": [
+          {
+            "type": "Container",
+            "props": {
+              "id": "manufacturing-Container-6",
+              "content": [
+                {
+                  "type": "Heading",
+                  "props": {
+                    "id": "manufacturing-Heading-4",
+                    "text": "Atlas Works",
+                    "size": 26,
+                    "mobileSize": 26,
+                    "color": "#1b2c32",
+                    "align": "left",
+                    "style": "sans",
+                    "spacing": 0,
+                    "design": {
+                      "desktop": {
+                        "fontWeight": 600,
+                        "lineHeight": 1.12
+                      },
+                      "mobile": {
+                        "fontSize": 26
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "Navigation",
+                  "props": {
+                    "id": "manufacturing-Navigation-5",
+                    "menuId": "starter-menu"
+                  }
+                }
+              ],
+              "layout": "grid",
+              "columns": 2,
+              "mobileColumns": 1,
+              "gap": 28,
+              "padding": 24,
+              "inset": 40,
+              "minHeight": 0,
+              "background": "#ffffff",
+              "image": "",
+              "align": "start",
+              "design": {
+                "desktop": {
+                  "maxWidth": 1400,
+                  "marginLeft": "auto",
+                  "marginRight": "auto"
+                },
+                "mobile": {
+                  "paddingTop": 32,
+                  "paddingBottom": 32,
+                  "paddingLeft": 20,
+                  "paddingRight": 20,
+                  "gap": 20
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "starter-footer",
+      "name": "全站页脚",
+      "updated": "",
+      "data": {
+        "root": {
+          "props": {
+            "title": "Footer",
+            "brand": "Atlas Works",
+            "showChrome": "no"
+          }
+        },
+        "content": [
+          {
+            "type": "Container",
+            "props": {
+              "id": "manufacturing-Container-3",
+              "content": [
+                {
+                  "type": "Text",
+                  "props": {
+                    "id": "manufacturing-Text-1",
+                    "text": "Atlas Works · Demonstration website. Replace all example content with verified customer information.",
+                    "size": 16,
+                    "color": "#5e686d",
+                    "maxWidth": 760,
+                    "align": "left"
+                  }
+                },
+                {
+                  "type": "Navigation",
+                  "props": {
+                    "id": "manufacturing-Navigation-2",
+                    "menuId": "starter-menu"
+                  }
+                }
+              ],
+              "layout": "column",
+              "columns": 1,
+              "mobileColumns": 1,
+              "gap": 28,
+              "padding": 28,
+              "inset": 40,
+              "minHeight": 0,
+              "background": "#ffffff",
+              "image": "",
+              "align": "start",
+              "design": {
+                "desktop": {
+                  "maxWidth": 1400,
+                  "marginLeft": "auto",
+                  "marginRight": "auto"
+                },
+                "mobile": {
+                  "paddingTop": 32,
+                  "paddingBottom": 32,
+                  "paddingLeft": 20,
+                  "paddingRight": 20,
+                  "gap": 20
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "starter-card",
+      "name": "可自由编辑的列表卡片",
+      "updated": "",
+      "data": {
+        "root": {
+          "props": {
+            "title": "Editable list card",
+            "brand": "Atlas Works",
+            "showChrome": "no"
+          }
+        },
+        "content": [
+          {
+            "type": "Container",
+            "props": {
+              "id": "manufacturing-Container-11",
+              "content": [
+                {
+                  "type": "Text",
+                  "props": {
+                    "id": "manufacturing-Text-7",
+                    "text": "PRODUCT DEMO",
+                    "size": 16,
+                    "color": "#5e686d",
+                    "maxWidth": 760,
+                    "align": "left"
+                  }
+                },
+                {
+                  "type": "Heading",
+                  "props": {
+                    "id": "manufacturing-Heading-8",
+                    "text": "Example title",
+                    "size": 26,
+                    "mobileSize": 24,
+                    "color": "#1b2c32",
+                    "style": "sans",
+                    "align": "left",
+                    "bindings": {
+                      "text": {
+                        "source": "product",
+                        "mode": "current",
+                        "field": "builtin:name"
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "id": "manufacturing-Text-9",
+                    "text": "Example description",
+                    "size": 15,
+                    "color": "#5e686d",
+                    "maxWidth": 500,
+                    "bindings": {
+                      "text": {
+                        "source": "product",
+                        "mode": "current",
+                        "field": "builtin:description"
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "ActionButton",
+                  "props": {
+                    "id": "manufacturing-ActionButton-10",
+                    "text": "Explore example",
+                    "href": "",
+                    "kind": "outline",
+                    "align": "left",
+                    "design": {
+                      "desktop": {
+                        "color": "#1b2c32",
+                        "borderColor": "#a9b09f"
+                      }
+                    },
+                    "bindings": {
+                      "href": {
+                        "source": "product",
+                        "mode": "current",
+                        "field": "builtin:url"
+                      }
+                    }
+                  }
+                }
+              ],
+              "layout": "column",
+              "columns": 1,
+              "mobileColumns": 1,
+              "gap": 28,
+              "padding": 28,
+              "inset": 40,
+              "minHeight": 0,
+              "background": "#ffffff",
+              "image": "",
+              "align": "start",
+              "design": {
+                "desktop": {
+                  "maxWidth": 1400,
+                  "marginLeft": "auto",
+                  "marginRight": "auto"
+                },
+                "mobile": {
+                  "paddingTop": 32,
+                  "paddingBottom": 32,
+                  "paddingLeft": 20,
+                  "paddingRight": 20,
+                  "gap": 20
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "contentModels": [],
+  "contentEntries": [],
+  "forms": [
+    {
+      "id": "starter-inquiry",
+      "name": "网站询盘",
+      "enabled": true,
+      "submitLabel": "Send inquiry",
+      "successMessage": "Thank you. Your inquiry has been received.",
+      "fields": [
+        {
+          "id": "field-3ad59acc-fbe5-4d7b-a6b6-7b7ffa214253",
+          "label": "Name",
+          "type": "text",
+          "mapTo": "name",
+          "required": true,
+          "maxLength": 150
+        },
+        {
+          "id": "field-8ea8a28b-bc45-4fb8-ac88-79f7d5c327dd",
+          "label": "Email",
+          "type": "email",
+          "mapTo": "email",
+          "required": true,
+          "maxLength": 254
+        },
+        {
+          "id": "field-f74f51f8-cf86-4c6b-a0ba-87d6835bec9c",
+          "label": "Company",
+          "type": "text",
+          "mapTo": "company",
+          "required": false,
+          "maxLength": 150
+        },
+        {
+          "id": "field-e00f6b32-8339-46a3-bcdc-8de274ba5e5c",
+          "label": "Message",
+          "type": "textarea",
+          "mapTo": "message",
+          "required": true,
+          "maxLength": 4000
+        }
+      ]
+    }
+  ],
+  "pageTemplates": [],
+  "taxonomies": [],
+  "redirects": [],
+  "customCode": {
+    "global": {
+      "css": "",
+      "js": "",
+      "cssEnabled": false,
+      "jsEnabled": false
+    },
+    "pages": {}
+  },
+  "siteLayout": {
+    "header": {
+      "mode": "block",
+      "blockId": "starter-header",
+      "menuId": "starter-menu"
+    },
+    "footer": {
+      "mode": "block",
+      "blockId": "starter-footer"
+    },
+    "menus": [
+      {
+        "id": "starter-menu",
+        "name": "Main navigation",
+        "items": [
+          {
+            "id": "menu-home",
+            "label": "Home",
+            "target": {
+              "kind": "page",
+              "id": "starter-home"
+            }
+          },
+          {
+            "id": "menu-list",
+            "label": "Products",
+            "target": {
+              "kind": "page",
+              "id": "starter-list"
+            }
+          },
+          {
+            "id": "menu-about",
+            "label": "About",
+            "target": {
+              "kind": "page",
+              "id": "starter-about"
+            }
+          },
+          {
+            "id": "menu-contact",
+            "label": "Contact",
+            "target": {
+              "kind": "page",
+              "id": "starter-contact"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

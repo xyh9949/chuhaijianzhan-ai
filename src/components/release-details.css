@@ -1,0 +1,15 @@
+/* 历史内容只做阅读适配，长名称、网址和字段值不撑宽抽屉。 */
+.release-screen .sys-release-item,
+.release-details-drawer .ant-descriptions-item-content,
+.release-details-drawer .ant-collapse-header-text,
+.release-details-drawer .ant-tag,
+.release-details-drawer .release-details-table .ant-table-cell { min-width: 0; overflow-wrap: anywhere; }
+.release-details-drawer .release-record-summary { display: flex; min-width: 0; width: 100%; }
+.release-details-drawer .release-record-summary > .ant-space-item { min-width: 0; max-width: 100%; }
+.release-details-drawer .release-record-subtitle { display: block; max-width: 100%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+@media (max-width: 767px) {
+  .release-details-drawer .release-details-table .ant-table-cell { padding: 12px 10px; }
+  .release-details-drawer .release-details-table .ant-table-row-expand-icon-cell { vertical-align: top; }
+  .release-details-drawer .release-detail-toggle.ant-btn { min-width: 44px; min-height: 44px; height: auto; padding-inline: 0; }
+  .release-details-drawer .release-details-table .ant-descriptions-item-label { white-space: normal; }
+}

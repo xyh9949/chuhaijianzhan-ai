@@ -1,0 +1,5 @@
+# 真实协议15来源
+
+从9142a10交付中docs/templates/developer-demo.json的snapshot原样提取（只格式化JSON）。合成C公开站导出，非新数据改版本号。
+
+SHA256 bd673b439f8c50a3c11778820c3ed4483a9757559acbecba9630d1e18d8a5b11

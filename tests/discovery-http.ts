@@ -1,0 +1,27 @@
+import assert from 'node:assert/strict';
+import type {StudioState} from '../src/lib/types';
+type Envelope={state:StudioState;revision:number;activeReleaseId:string|null};
+type Client={api<T=Record<string,unknown>>(path:string,method?:string,body?:unknown,expected?:number):Promise<T>;fetch(path:string,options?:RequestInit):Promise<Response>};
+/** 生产HTTP验证访问政策、SSR事实、草稿隔离、运行记录和资料预设；不发真实外部提交。 */
+export async function runDiscoveryHttp(clients:{admin:Client;editor:Client;viewer:Client;anonymous:Client},state:Envelope){
+ const {admin,editor,viewer,anonymous}=clients;
+ await anonymous.api('/api/discovery','GET',undefined,401);await viewer.api('/api/discovery','GET',undefined,403);await editor.api('/api/discovery','GET',undefined,403);
+ assert.equal((await anonymous.fetch('/llms.txt')).status,404);assert.equal((await anonymous.fetch('/api/discovery-key')).status,404);
+ const patch=async(patch:object)=>state=await admin.api<Envelope>('/api/studio','PATCH',{expectedRevision:state.revision,patch});
+ const page={id:'ai-company',title:'AI company facts',slug:'/ai-company',type:'普通页面',status:'draft' as const,updated:''};const discovery={organization:{legalName:'Synthetic Published Factory',address:'Verified synthetic address',role:'Example manufacturer',sameAs:['https://directory.example.invalid/factory']},facts:[{id:'ai-fact',title:'Tested scope',value:'Only synthetic verified range',scope:'Only this test example',sourceUrl:'https://lab.example.invalid/report',reviewedAt:'2026-11-01',validUntil:'2027-11-01',status:'reviewed' as const}],search:{openai:true,claude:true,perplexity:true},training:{openai:'deny' as const},llms:true};
+ await patch({pages:[...state.state.pages,page],editorData:{...state.state.editorData,[page.id]:{root:{props:{showChrome:'no'}},content:[{type:'Heading',props:{id:'ai-heading',text:'Verified factory information',level:'h1',size:40,mobileSize:28,color:'#172033',align:'left',style:'sans',spacing:12}},{type:'CompanyFacts',props:{id:'ai-facts-component',title:'Company evidence'}}]}},settings:{...state.state.settings,publicUrl:'https://factory.example.invalid',discovery}});
+ assert.equal((await anonymous.fetch('/llms.txt')).status,404,'目录不能提前读到草稿开关');
+ const selection=()=>({expectedRevision:state.revision,baseReleaseId:state.activeReleaseId,pageIds:[page.id],productIds:[],includeTheme:false,includeSettings:true});
+ const pre=await admin.api<{errors:string[]}>('/api/releases/preview','POST',selection());assert.deepEqual(pre.errors,[]);state=await admin.api<Envelope>('/api/releases','POST',selection(),201);
+ const html=await(await anonymous.fetch('/ai-company')).text();assert.ok(html.includes('Synthetic Published Factory'));assert.ok(html.includes('Only synthetic verified range'));assert.match(html,/<h1[^>]*>Verified factory information/);assert.ok(html.includes('application/ld+json'));assert.ok(html.includes('#organization'));assert.ok(!html.includes('"price":0'));
+ const robots=await(await anonymous.fetch('/robots.txt')).text();assert.ok(robots.includes('Allow: /api/media/'));assert.ok(robots.includes('Allow: /api/site-code/'));assert.ok(robots.includes('Allow: /_next/static/'));assert.ok(robots.includes('User-Agent: GPTBot'));assert.ok(robots.includes('Disallow: /admin'));
+ const llms=await(await anonymous.fetch('/llms.txt')).text();assert.ok(llms.includes('https://factory.example.invalid/ai-company'));assert.ok(!llms.includes('/s13-unknown'));const sitemap=await(await anonymous.fetch('/sitemap.xml')).text();assert.ok(sitemap.includes('/ai-company'));assert.match(sitemap,/<lastmod>20\d\d-/);
+ await patch({settings:{...state.state.settings,discovery:{...discovery,organization:{legalName:'PRIVATE COMPANY DRAFT'}}}});assert.ok(!(await(await anonymous.fetch('/ai-company')).text()).includes('PRIVATE COMPANY DRAFT'));
+ const row={kind:'manual-answer',platform:'Manual synthetic QA',date:'2026-11-01',timezone:'UTC',count:1,url:'https://factory.example.invalid/ai-company',source:'Synthetic saved answer sample; not a platform ranking',notes:'Test prompt; English; web search enabled; sample only'};
+ await editor.api('/api/discovery','POST',{action:'record',rows:[row]},403);await viewer.api('/api/discovery','POST',{action:'record',rows:[row]},403);await admin.api('/api/discovery','POST',{action:'record',rows:[{...row,count:-1}]},422);
+ const recorded=await admin.api<{observations:{id:number}[];indexNow:{enabled:boolean}}>('/api/discovery','POST',{action:'record',rows:[row]});assert.equal(recorded.indexNow.enabled,false);assert.equal(recorded.observations.length,1);
+ const exported=await admin.api('/api/site-packages/export','POST',{name:'Discovery QA',description:'Synthetic public package',license:'Synthetic only'});assert.ok(!JSON.stringify(exported).includes('PRIVATE COMPANY DRAFT'));assert.ok(!JSON.stringify(exported).includes('saved answer sample'));
+ const revision=state.revision;state=await admin.api<Envelope>('/api/discovery/presets','POST',{kind:'selection',expectedRevision:revision});assert.ok(state.state.contentModels?.some(m=>m.name==='选型与比较'));await admin.api('/api/discovery/presets','POST',{kind:'case',expectedRevision:revision},409);
+ const status=await admin.api<{publicIssues:unknown[];observations:unknown[]}>('/api/discovery');assert.equal(status.observations.length,1);assert.ok(Array.isArray(status.publicIssues));
+ await admin.api('/api/discovery','POST',{action:'delete',id:recorded.observations[0].id});return state;
+}

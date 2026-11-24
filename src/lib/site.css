@@ -1,0 +1,207 @@
+/* 以下为客户网站组件；与后台主题隔离，保留原有渲染样式。 */
+.editor-site{container-type:inline-size;container-name:form-site;min-height:100dvh;box-sizing:border-box;background:var(--editor-site-bg,#fff);color:var(--editor-site-text,#263128);font-family:Arial,sans-serif;line-height:1.5}
+.editor-site-page{min-height:100dvh}
+.editor-design-node{min-width:0;overflow-wrap:anywhere}
+.editor-shared-block,.editor-shared-block-content{min-width:0}
+/* 共享页眉整体高于普通布局容器（其可视z-index上限20），防止首屏隔离层挡住下拉菜单。 */
+.editor-site-shared-header{position:relative;z-index:30}
+/* 引用体不能在当前页面误改，点击/拖动只选择外层 SharedBlock 实例。 */
+.editor-shared-block-readonly>.editor-shared-block-content,.editor-site-editor-canvas .editor-site-shared-header,.editor-site-editor-canvas .editor-site-shared-footer{pointer-events:none;user-select:none}
+.editor-shared-block-unavailable{padding:24px;border:1px dashed #cbd5e1;background:#f8fafc;color:#64748b;text-align:center;font:13px/1.5 system-ui,sans-serif}
+.editor-site *{box-sizing:border-box}
+/* 保留Ant按钮自己的文字色；普通站内链接才继承正文色，避免主按钮出现深底深字。 */
+.editor-site a:not(.ant-btn){color:inherit;text-decoration:none}
+.editor-site-nav{height:90px;display:flex;align-items:center;padding:0 48px;gap:40px;border-bottom:1px solid #293d2910;background:var(--editor-site-bg,#fff)}
+.editor-site-brand{font-family:Georgia,"Times New Roman",serif;font-size:39px;letter-spacing:-2px;line-height:1}
+.editor-site-brand span{font-family:Arial,sans-serif;font-size:10px;vertical-align:top;letter-spacing:0;margin-left:5px}
+.editor-site-nav nav{display:flex;align-items:center;gap:30px;margin-left:auto}
+.editor-site-nav nav a{font-size:12px}
+.editor-site-nav-note{font-size:10px;opacity:.5;margin-left:20px;white-space:nowrap}
+/* 窄屏默认导航允许整组链接换行，保留长站名与链接的独立阅读空间。 */
+@container (max-width:700px){
+ .editor-site-nav:has(>nav:not(.site-managed-navigation)){height:auto;min-height:72px;flex-wrap:wrap;padding:12px 20px;gap:8px 18px}
+ .editor-site-nav:has(>nav:not(.site-managed-navigation))>.editor-site-brand{min-width:0;flex:1 1 200px;font-size:26px;line-height:1.16;letter-spacing:-.5px;overflow-wrap:anywhere}
+ .editor-site-nav>nav:not(.site-managed-navigation){min-width:0;flex-wrap:wrap;gap:4px 14px;margin-left:0}
+ .editor-site-nav>nav:not(.site-managed-navigation):empty{display:none}
+ .editor-site-nav>nav:not(.site-managed-navigation)>a{display:inline-flex;align-items:center;min-height:36px;max-width:100%;line-height:1.35;overflow-wrap:anywhere}
+}
+.editor-site-section{display:flex;flex-direction:column;background-size:cover;background-position:center;position:relative}
+.editor-site-section-image{background-position:center 53%}
+.editor-site-heading{font-size:var(--editor-heading-size,44px);line-height:1.06;letter-spacing:-1.8px;white-space:pre-line;font-weight:400;max-width:900px;margin:0}
+.editor-site-copy{white-space:pre-line;font-weight:400;line-height:1.8;margin:0;letter-spacing:.04px}
+.editor-site-action.ant-btn{font-size:12px!important;font-weight:500!important;height:44px!important;border-radius:var(--editor-site-radius,3px)!important;padding:0 22px!important;box-shadow:none!important;gap:24px!important;max-width:100%;white-space:normal}
+.editor-site-action-light.ant-btn{background:#fff;border-color:#fff;color:#2d382c}
+.editor-site-action-dark.ant-btn{background:#26362c;border-color:#26362c;color:#fff}
+.editor-site-action-outline.ant-btn{background:transparent;border-color:#a9b09f;color:#354331}
+.editor-site-action .anticon{font-size:13px}
+.editor-site-image{width:100%;display:block;max-width:100%}
+.editor-site-products{padding-left:48px;padding-right:48px;max-width:var(--editor-site-width,1240px);margin:0 auto}
+.editor-site-eyebrow{font-size:10px;letter-spacing:2px;color:#8c927f;margin-bottom:17px}
+.editor-site-collection-heading{display:flex;align-items:end;justify-content:space-between;gap:18px;margin-bottom:30px}
+.editor-site-collection-heading h2{font-size:38px;font-family:Georgia,serif;letter-spacing:-1px;line-height:1.15;font-weight:400;margin:0}
+.editor-site-collection-heading>span{font-size:10px;color:#8b9184;white-space:nowrap;margin-bottom:5px}
+.editor-site-product-grid{display:grid;gap:23px}
+/* 卡片沿用既定画幅；原图高度属性不能把手机中的卡片拉成长图。 */
+.editor-site-product img{display:block;width:100%;height:auto;aspect-ratio:4/4.4;object-fit:cover;background:#edece6}
+.editor-site-product>div{display:flex;justify-content:space-between;align-items:center;gap:15px;margin-top:15px}
+.editor-site-product h3{font-size:14px;font-weight:500;line-height:1.4;margin:0}
+.editor-site-product .anticon{font-size:12px}
+.editor-site-product p{font-size:10px;color:#9a9f91;line-height:1.5;margin:7px 0 0}
+.editor-site-empty{padding:50px;text-align:center;background:#f4f5ef;color:#8c9786}
+.editor-site-footer{display:flex;justify-content:space-between;align-items:center;gap:36px;background:#e7ebe1;padding:50px 48px}
+.editor-site-footer strong{font-family:Georgia,serif;font-size:37px;font-weight:400;letter-spacing:-1px}
+.editor-site-footer strong span{font-family:Arial,sans-serif;font-size:9px;vertical-align:top}
+.editor-site-footer p{font-size:11px;color:#89927d;margin:12px 0 0}
+.editor-site-footer>div:last-child{display:flex;flex-direction:column;gap:20px;text-align:right}
+.editor-site-footer a{font-size:12px}
+.editor-site-footer small{font-size:9px;color:#8d9583}
+.editor-site-footer a .anticon{margin-left:15px}
+@container (max-width:700px){.editor-site-nav{padding:0 24px;height:72px;gap:20px}.editor-site-brand{font-size:31px}.editor-site-nav nav{gap:18px}.editor-site-nav-note{display:none}.editor-site-nav nav a{font-size:10px}.editor-site-section{padding-left:24px!important;padding-right:24px!important}.editor-site-heading{font-size:var(--editor-heading-mobile,34px);letter-spacing:-1px}.editor-site-grid{grid-template-columns:repeat(var(--editor-mobile-columns,1),minmax(0,1fr))!important}.editor-site-products{padding-left:24px;padding-right:24px}.editor-site-product-grid{grid-template-columns:repeat(var(--editor-mobile-columns,1),minmax(0,1fr))!important}.editor-site-collection-heading h2{font-size:31px}.editor-site-collection-heading>span{display:none}.editor-site-footer{padding:36px 24px;align-items:start;flex-direction:column;gap:28px}.editor-site-footer>div:last-child{text-align:left}.editor-site-section-image{min-height:470px!important;background-position:60% center}.editor-site-copy{font-size:14px!important}.editor-site-image{max-height:400px}}
+.editor-product-link.ant-btn{padding:0;height:auto;white-space:normal;font-size:14px;line-height:1.5;color:inherit;text-align:left}
+.editor-site-detail{display:grid;grid-template-columns:1.15fr 1fr;gap:64px;max-width:var(--editor-site-width,1240px);margin:0 auto;padding-left:48px;padding-right:48px;align-items:center}
+.editor-site-detail>img{width:100%;object-fit:cover;min-width:0}
+.editor-site-detail-copy{min-width:0}
+.editor-site-detail-copy h1{font-family:Georgia,serif;font-weight:400;font-size:44px;line-height:1.15;letter-spacing:-1px;margin:20px 0}
+.editor-site-detail-copy>p{font-size:14px;line-height:1.9;color:#75806e;max-width:480px}
+.editor-site-detail-copy dl{margin:30px 0;border-top:1px solid #e0e4d9}
+.editor-site-detail-copy dl>div{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:15px 0;border-bottom:1px solid #e0e4d9;font-size:12px}
+.editor-site-detail-copy dt{letter-spacing:1px;color:#8a947f}
+.editor-site-detail-copy dd{margin:0;text-align:right}
+.editor-site-detail-copy dt,.editor-site-detail-copy dd{min-width:0;overflow-wrap:anywhere}
+.editor-site-detail-copy>small{display:block;font-size:12px;color:#89927d;margin-top:15px}
+.editor-site-detail-stacked{grid-template-columns:1fr}
+.editor-site-detail-stacked>img{max-height:560px}
+.editor-site-detail-stacked .editor-site-detail-copy{max-width:640px}
+@container(max-width:700px){.editor-site-detail{grid-template-columns:1fr;padding-left:24px;padding-right:24px;gap:30px}.editor-site-detail>img{height:360px!important}.editor-site-detail-copy h1{font-size:34px}.editor-site-detail-copy .editor-site-action{white-space:normal!important;min-height:44px;height:auto!important}}
+/* 显式身份优先沿用同一动态资料；桌面仍图左文右，手机先名称/型号/行动，再媒体及说明。 */
+.editor-site-detail-identity-first{row-gap:20px;align-items:start}
+.editor-site-detail-identity-first>.editor-site-detail-identity{grid-column:2;grid-row:1}
+.editor-site-detail-identity-first>img,.editor-site-detail-identity-first>.editor-product-gallery{grid-column:1;grid-row:1 / span 2;align-self:start}
+.editor-site-detail-identity-first>.editor-site-detail-body{grid-column:2;grid-row:2}
+.editor-site-detail-identity .editor-site-detail-reference{margin:0 0 20px;border:0}
+.editor-site-detail-identity .editor-site-detail-reference>div{justify-content:flex-start;padding:0;border:0}
+.editor-site-detail-identity .editor-site-detail-reference dd{text-align:left}
+.editor-site-detail-identity>h1{margin:12px 0 16px}
+.editor-site-detail-body>p{margin-top:0}
+.editor-site-detail-identity-first.editor-site-detail-stacked>.editor-site-detail-identity{grid-column:1;grid-row:2}
+.editor-site-detail-identity-first.editor-site-detail-stacked>img,.editor-site-detail-identity-first.editor-site-detail-stacked>.editor-product-gallery{grid-column:1;grid-row:1}
+.editor-site-detail-identity-first.editor-site-detail-stacked>.editor-site-detail-body{grid-column:1;grid-row:3}
+/* 只覆盖明确选色的可用按钮；保留Ant禁用态，不把缺失联系目标伪装成可点击动作。 */
+.editor-site .editor-site-detail-cta-custom .editor-site-action.ant-btn:not(:disabled):not([aria-disabled=true]),.editor-site .editor-site-detail-cta-custom .editor-site-action.ant-btn:not(:disabled):not([aria-disabled=true]):hover,.editor-site .editor-site-detail-cta-custom .editor-site-action.ant-btn:not(:disabled):not([aria-disabled=true]):active{background:var(--product-detail-cta-background);border-color:var(--product-detail-cta-background);color:var(--product-detail-cta-text)}
+@container(max-width:700px){
+ .editor-site-detail-identity-first>.editor-site-detail-identity,.editor-site-detail-identity-first.editor-site-detail-stacked>.editor-site-detail-identity{grid-column:1;grid-row:1}
+ .editor-site-detail-identity-first>img,.editor-site-detail-identity-first>.editor-product-gallery,.editor-site-detail-identity-first.editor-site-detail-stacked>img,.editor-site-detail-identity-first.editor-site-detail-stacked>.editor-product-gallery{grid-column:1;grid-row:2}
+ .editor-site-detail-identity-first>.editor-site-detail-body,.editor-site-detail-identity-first.editor-site-detail-stacked>.editor-site-detail-body{grid-column:1;grid-row:3}
+}
+.editor-site-detail-identity-first.editor-site-detail-no-image>.editor-site-detail-identity{grid-column:1;grid-row:1}
+.editor-site-detail-identity-first.editor-site-detail-no-image>.editor-site-detail-body{grid-column:1;grid-row:2}
+/* 详情的新模式沿用组件响应式网格，通栏不依赖固定列号。 */
+.editor-site-detail-profile{align-items:start}
+.editor-site-detail-profile>.editor-site-detail-identity,
+.editor-site-detail-profile.editor-site-detail-no-image>.editor-site-detail-copy,
+.editor-site-detail-specifications-first>.editor-site-detail-summary,
+.editor-site-detail-overview-first>.editor-site-detail-specifications{grid-column:1 / -1}
+.editor-site-detail-specifications-first:not(:has(>.editor-site-detail-specifications))>:is(img,.editor-product-gallery),
+.editor-site-detail-overview-first:not(:has(>.editor-site-detail-summary))>:is(img,.editor-product-gallery){grid-column:1 / -1}
+.editor-site-detail-profile .editor-site-detail-copy>p{margin:0;max-width:62ch;font-size:16px;color:inherit;white-space:pre-line;overflow-wrap:anywhere}
+.editor-site-detail-profile .editor-site-detail-copy>h1{overflow-wrap:anywhere}
+.editor-site-detail-profile .editor-site-detail-specifications dl{margin:0}
+.editor-site-detail-profile .editor-site-detail-specifications dt{color:inherit}
+@container(max-width:700px){
+ .editor-site-detail-profile .editor-site-detail-specifications dl>div{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:12px;font-size:13px;padding:12px 0}
+}
+.editor-site-nav-note,.editor-site-nav nav a,.editor-site-eyebrow,.editor-site-collection-heading>span,.editor-site-product p,.editor-site-footer p,.editor-site-footer small{font-size:12px!important}
+
+/* 模型值保持为文本/图片；图片集等宽排列，不把字段值解释为 HTML。 */
+.editor-custom-gallery{display:flex;gap:12px;flex-wrap:wrap}.editor-custom-gallery img{width:112px;height:90px;object-fit:contain;border:1px solid #dce1db}.editor-site-content-list .editor-site-product p{white-space:pre-line;overflow-wrap:anywhere}.editor-site-content-list .editor-site-product h3{overflow-wrap:anywhere}
+/* 循环卡片不继承固定产品卡外观，每个实例内部由设计画布决定。 */
+.editor-site-loop-grid{display:grid;width:100%;align-items:stretch}.editor-site-loop-item{min-width:0;overflow-wrap:anywhere}.editor-site-loop-item>.editor-shared-block-content{height:100%}
+@container(max-width:700px){.editor-site-loop-grid{grid-template-columns:repeat(var(--editor-mobile-columns,1),minmax(0,1fr))!important}}
+
+/* 托管菜单保留桌面横排和手机抽屉，移动端不隐藏导航入口。 */
+.site-managed-navigation{min-width:0;max-width:100%}.site-menu-desktop{min-width:240px}.site-menu-mobile{display:none}
+/* 显式内联导航不进入手机折叠结构；只影响该实例，品牌和普通单项菜单可分别选择。 */
+.site-menu-inline{display:none;min-width:0;max-width:100%}.site-menu-inline>ul{display:flex;align-items:center;flex-wrap:wrap;gap:24px}.site-menu-inline li{min-width:0;max-width:100%}.site-menu-inline a{max-width:100%;overflow-wrap:anywhere}
+@container form-site (max-width:700px){.site-menu-inline{display:block}}
+.site-menu-inline details>ul{position:absolute;z-index:40;min-width:190px;background:var(--editor-site-bg,#fff);padding:12px;box-shadow:0 8px 30px #0002;border:1px solid #dce1e8;border-radius:6px}.site-menu-inline details>ul ul{left:100%;top:0}
+@container form-site (max-width:700px){.site-menu-desktop{display:none}.site-menu-mobile{display:inline-flex}.editor-site-nav-note{display:none}}
+
+.site-managed-navigation ul{list-style:none;margin:0;padding:0}.site-menu-desktop>ul{display:flex;align-items:center;gap:24px}.site-managed-navigation li{position:relative}.site-managed-navigation summary{cursor:pointer;padding:10px;list-style-position:inside}.site-menu-desktop details>ul{position:absolute;z-index:40;min-width:190px;background:var(--editor-site-bg,#fff);padding:12px;box-shadow:0 8px 30px #0002;border:1px solid #dce1e8;border-radius:6px}.site-menu-desktop details>ul ul{left:100%;top:0}.site-managed-navigation a{display:inline-block;padding:8px 10px}.site-menu-mobile{position:relative}.site-menu-panel{position:fixed;z-index:100;inset:72px 0 auto auto;width:min(340px,100%);max-height:calc(100dvh - 72px);overflow:auto;background:var(--editor-site-bg,#fff);padding:20px;border:1px solid #dce1e8;box-shadow:0 12px 30px #0002}.site-menu-panel ul ul{padding-left:18px}.site-managed-navigation a:focus-visible,.site-managed-navigation summary:focus-visible{outline:2px solid var(--editor-site-primary,#165dff);outline-offset:3px}
+/* 平板窄页眉仍使用横向托管菜单，较长的页面名称可以增加一行，避免撑宽画布。 */
+.site-menu-desktop>ul{flex-wrap:wrap}.site-menu-desktop>ul>li,.site-menu-panel li{min-width:0;max-width:100%;overflow-wrap:anywhere}
+/* 保留开关下方的自然位置；宽度取所在布局而不是图标宽度，并随页面滚动。 */
+@container form-site (max-width:700px){
+ .site-menu-mobile{display:block}
+ .editor-site-page:has(.site-navigation-block .site-menu-mobile){position:relative}
+ .site-navigation-block .site-menu-mobile{position:static}
+ .site-navigation-block .site-menu-panel{position:absolute;inset-block:auto;inset-inline:auto 3%;width:min(340px,94%);max-height:min(65dvh,560px)}
+}
+
+.site-loop-filters,.site-loop-pagination{display:flex;gap:16px;align-items:center;flex-wrap:wrap;margin:20px 0}.site-loop-filters input,.site-loop-filters select,.site-loop-filters button{font:inherit;padding:10px;border:1px solid #cbd5e1;border-radius:5px;max-width:100%}.site-loop-pagination a{padding:8px 14px;border:1px solid #cbd5e1;border-radius:5px}
+.editor-site a:focus-visible,.editor-site button:focus-visible,.editor-site input:focus-visible,.editor-site textarea:focus-visible,.editor-site select:focus-visible{outline:2px solid var(--editor-site-primary,#165dff);outline-offset:3px}
+.site-rich-text{line-height:1.8}.site-rich-text p{margin:0 0 1em}.site-rich-text h2,.site-rich-text h3{line-height:1.25;margin:1.2em 0 .6em}.site-rich-text ul,.site-rich-text ol{padding-left:1.7em}.site-rich-text a{text-decoration:underline;color:var(--editor-site-primary)}.site-icon{display:inline-flex;font-size:32px;line-height:1}.site-divider{width:100%}
+.site-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}.site-gallery figure,.site-carousel figure,.site-video{margin:0;min-width:0}.site-gallery figure>img,.site-gallery-open img,.site-carousel img{display:block;width:100%;aspect-ratio:var(--gallery-ratio,4/3);object-fit:var(--gallery-fit,cover)}.site-gallery .site-gallery-open{display:block;width:100%;height:auto;padding:0;border:0;border-radius:0;overflow:hidden;line-height:0}.site-gallery figcaption,.site-carousel figcaption,.site-video figcaption{font-size:14px;line-height:1.6;padding-top:10px}.site-lightbox{border:0;border-radius:8px;padding:20px;max-width:95vw;max-height:95dvh;background:#fff;color:#222}.site-lightbox:popover-open{display:flex;flex-direction:column;gap:12px;align-items:center}.site-lightbox::backdrop{background:#101820cc}.site-lightbox>img{max-width:85vw;max-height:76dvh;width:auto;height:auto;object-fit:contain}.site-lightbox>button{align-self:flex-end}.site-lightbox>p{margin:0}
+.site-accordion details{border-bottom:1px solid #dfe4e9}.site-accordion summary{padding:20px 4px;font-weight:600;cursor:pointer;list-style-position:inside}.site-accordion summary:focus-visible,.site-tabs input:focus-visible+label,.site-carousel-track:focus-visible{outline:2px solid var(--editor-site-primary);outline-offset:3px}.site-panel-body{white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.8;padding:20px 4px}.site-tabs{display:grid;grid-template-columns:repeat(var(--tab-count,2),minmax(0,1fr));gap:0}.site-tab{display:contents}.site-tab>input{position:absolute;width:1px;height:1px;clip-path:inset(50%)}.site-tab>label{grid-row:1;padding:14px;text-align:center;border-bottom:2px solid #dfe4e9;cursor:pointer;overflow-wrap:anywhere}.site-tab>section{display:none;grid-column:1/-1;grid-row:2}.site-tab>input:checked+label{border-bottom-color:var(--editor-site-primary);color:var(--editor-site-primary)}.site-tab>input:checked~section{display:block}.site-video>video,.site-video>iframe{display:block;width:100%;aspect-ratio:16/9;border:0;object-fit:contain;background:#101820}.site-carousel-track{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;gap:0}.site-carousel-track>figure{flex:0 0 100%;scroll-snap-align:start}.site-carousel nav{display:flex;justify-content:space-between;align-items:center;padding:12px 0}.site-carousel nav a{color:var(--editor-site-primary);padding:8px}
+@container form-site (max-width:700px){.site-gallery{grid-template-columns:1fr;gap:16px}.site-tab>label{padding:12px 4px;font-size:13px}.site-lightbox{padding:10px}.site-lightbox>img{max-width:88vw}}
+@media(prefers-reduced-motion:reduce){.site-carousel-track{scroll-behavior:auto}}
+.site-form-container{width:100%;max-width:680px}.site-contact-form{width:100%}.site-contact-fields{display:grid;grid-template-columns:1fr;gap:24px;margin-bottom:24px;align-items:start}.site-contact-fields>.ant-form-item{margin:0}.site-contact-form .ant-form-item-label>label{white-space:normal;height:auto}.site-form-honeypot{position:absolute;width:1px;height:1px;clip-path:inset(50%);overflow:hidden}.site-contact-form-native .site-contact-fields>label{display:flex;flex-direction:column;gap:8px;line-height:1.5}.site-contact-form-native input:not([type=checkbox]),.site-contact-form-native textarea,.site-contact-form-native select{box-sizing:border-box;width:100%;border:1px solid #d9d9d9;border-radius:var(--editor-site-radius,4px);padding:9px 12px;background:#fff;color:var(--editor-site-text,#222);font:inherit}.site-contact-form-native input[type=checkbox]{width:18px;height:18px;accent-color:var(--editor-site-primary)}.site-form-demo-status{font-size:13px;color:#64748b;line-height:1.6}
+
+/* 询价控件保留站点主题，窄屏按阅读顺序排列且不超出卡片。 */
+.editor-site-page>main>.site-form-container-rfq{box-sizing:border-box;margin-inline:auto;padding-inline:clamp(16px,4vw,24px)}
+.site-rfq-button{min-height:44px;max-width:100%;height:auto;white-space:normal;margin-block:8px}
+.site-rfq-actions{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.site-rfq-actions .site-rfq-button{margin:0}
+.site-rfq-fields{min-width:0;margin:0 0 24px;scroll-margin-top:88px}
+.site-rfq-line-grid{display:grid;grid-template-columns:minmax(0,112px) minmax(0,1fr);gap:12px}
+.site-rfq-line-grid .ant-form-item{margin-bottom:0;min-width:0}
+.site-rfq-line-grid .ant-input-number,.site-rfq-lines{width:100%}
+.site-rfq-line .ant-card-head-title{white-space:normal;overflow-wrap:anywhere}
+.site-contact-form-native .site-rfq-fields>label{display:grid;gap:6px;margin:8px 0}
+@media(max-width:520px){.site-rfq-line-grid{grid-template-columns:minmax(0,1fr)}}
+
+/* 绝对定位以显式容器为边界；每个节点重置位移变量，避免子节点意外继承父节点的位移。 */
+.editor-site-advanced .editor-site-section{position:relative;isolation:isolate}
+.editor-site-advanced .editor-design-node{--fs-shift-x:0px;--fs-shift-y:0px}
+
+.editor-site .editor-site-detail-no-image{grid-template-columns:1fr}
+
+.editor-site .site-extension-spec .ant-table,.editor-site .site-extension-spec .ant-table-cell{font:inherit;color:inherit;background:transparent}
+
+/* 企业事实使用正文语义和继承样式，不把客户网站固定为后台外观。 */
+.editor-site-company-facts dl>div{display:grid;grid-template-columns:minmax(100px,1fr) minmax(0,3fr);gap:16px;padding:14px 0;border-bottom:1px solid #8883}.editor-site-company-facts dt{font-weight:600}.editor-site-company-facts dd{margin:0;overflow-wrap:anywhere}.editor-site-company-facts p{white-space:pre-wrap}@media(max-width:700px){.editor-site-company-facts dl>div{grid-template-columns:1fr;gap:6px}}
+
+/* 自由面板中的节点使用原有三端样式；编辑态平铺帮助拖放，公开态不显示编辑提示。 */
+.site-free-panel-content{min-width:0;white-space:normal;overflow-wrap:anywhere;padding:20px 0;display:grid;gap:20px}
+.site-panel-editor{display:grid;gap:20px;min-width:0}.site-panel-edit-item{min-width:0;border:1px dashed #aebfcd;border-radius:6px;padding:12px;background:#fff}
+.site-panel-edit-label{padding:4px 0 12px;border-bottom:1px solid #e2e8ef;font:600 13px/1.5 sans-serif;color:#40566b}.site-panel-edit-label small{display:block;font-weight:400;color:#6b7e8f;margin-top:4px}
+.site-content-carousel .site-free-panel-content{padding:0;min-height:100px}.site-content-carousel .site-carousel-track>figure{min-width:0;box-sizing:border-box}
+
+/* 业务控件继承站点主题。窄屏只滚动表格，容器宽度不受长文字和较多列影响。 */
+.site-comparison-table,.site-project-timeline,.site-image-comparison{box-sizing:border-box;min-width:0;max-width:100%;overflow-wrap:anywhere}
+.editor-site-page>main>:is(.site-comparison-table,.site-project-timeline,.site-image-comparison){width:100%;max-width:var(--editor-site-width,1240px);margin-inline:auto;padding-inline:clamp(16px,4vw,40px)}
+.site-project-timeline>h2,.site-image-comparison>h2{margin:0 0 1rem;font-size:1.4em;line-height:1.25;color:inherit}
+.site-comparison-scroll{min-width:0;max-width:100%;overflow-x:auto;border:1px solid color-mix(in srgb,currentColor 20%,transparent);border-radius:var(--editor-site-radius,4px)}
+.site-comparison-scroll:focus-visible{outline:2px solid var(--editor-site-primary,#165dff);outline-offset:3px}
+.site-comparison-scroll table{width:100%;min-width:34rem;border-collapse:collapse;text-align:start;font:inherit;color:inherit}
+.site-comparison-scroll caption{text-align:start;padding:.85rem 1rem;font-weight:600;font-size:1.25em}
+.site-comparison-scroll :is(th,td){padding:.7rem 1rem;text-align:start;vertical-align:top;border-block-start:1px solid color-mix(in srgb,currentColor 18%,transparent);overflow-wrap:anywhere;white-space:pre-line}
+.site-comparison-scroll thead{background:color-mix(in srgb,currentColor 7%,transparent)}
+.site-project-milestones{list-style:none;padding:0;margin:0}
+.site-project-milestones>li{position:relative;margin-inline-start:.45rem;padding:0 0 1.55rem 1.25rem;border-inline-start:1px solid color-mix(in srgb,currentColor 30%,transparent)}
+.site-project-milestones>li:last-child{border-color:transparent;padding-block-end:0}
+.site-project-milestones>li::before{content:"";position:absolute;inset-inline-start:-.29rem;inset-block-start:.42em;width:.54rem;height:.54rem;border-radius:50%;background:var(--editor-site-primary,currentColor)}
+.site-project-milestones h3,.site-project-milestones p{margin:.22rem 0 0;color:inherit}
+.site-project-milestones h3{font-size:1.12em}
+.site-project-milestones p{white-space:pre-line}
+.site-project-milestone-label{font-size:.88em;font-weight:600}
+.site-image-comparison-split{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
+.site-image-comparison-figure{min-width:0;margin:0}
+.site-image-comparison-figure>img,.site-image-comparison-placeholder{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:contain;background:color-mix(in srgb,currentColor 6%,transparent)}
+.site-image-comparison-placeholder{display:grid;place-items:center;text-align:center;padding:1rem;box-sizing:border-box;border:1px dashed color-mix(in srgb,currentColor 35%,transparent)}
+.site-image-comparison-figure figcaption{margin-block-start:.5rem;font-size:.9em}
+.site-image-comparison-toggle .site-tab>label{display:grid;align-content:center;min-height:44px;box-sizing:border-box}
+.site-image-comparison-toggle .site-tab>section{padding-block-start:1rem}
+@container form-site (max-width:560px){.site-image-comparison-split{grid-template-columns:minmax(0,1fr)}}
+
+/* 产品原生相册：首图是封面，缩略图锚点切换大图，SSR/无JS预览均可操作。 */
+.editor-product-gallery{min-width:0;width:100%}.editor-product-gallery-track{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;min-width:0}.editor-product-gallery-track>figure{flex:0 0 100%;min-width:0;margin:0;scroll-snap-align:start}.editor-product-gallery-track img{display:block;width:100%;object-fit:cover}.editor-product-gallery-thumbs{display:flex;overflow-x:auto;gap:8px;padding:12px 0}.editor-product-gallery-thumbs>a{display:block;flex:0 0 64px;border:1px solid #dfe5ea;border-radius:4px;padding:3px}.editor-product-gallery-thumbs img{display:block;width:56px;height:56px;object-fit:contain}.editor-product-gallery a:focus-visible,.editor-product-gallery-track:focus-visible{outline:2px solid var(--editor-site-primary);outline-offset:2px}@media(prefers-reduced-motion:reduce){.editor-product-gallery-track{scroll-behavior:auto}}

@@ -1,0 +1,2710 @@
+{
+  "format": "form-studio-site",
+  "version": 1,
+  "manifest": {
+    "name": "Form Studio developer example",
+    "description": "Synthetic bilingual site with local specification component.",
+    "license": "Project-created synthetic demonstration. Replace business content before customer delivery.",
+    "createdAt": "2026-11-07T10:16:20.049Z",
+    "rendererVersion": 15,
+    "dependencies": [
+      {
+        "name": "form-studio-renderer",
+        "version": "15",
+        "license": "MIT"
+      },
+      {
+        "name": "@puckeditor/core",
+        "version": "0.24.0",
+        "license": "MIT"
+      },
+      {
+        "name": "react",
+        "version": "19.3.1",
+        "license": "MIT"
+      },
+      {
+        "name": "antd",
+        "version": "6.7.0",
+        "license": "MIT"
+      },
+      {
+        "name": "studio/SpecificationTable",
+        "version": "2",
+        "license": "MIT"
+      }
+    ],
+    "snapshotSha256": "2cb504b908d357b38b3ce1ac41f2678c77012c5bb115b331fe28164d3f47b843"
+  },
+  "snapshot": {
+    "schemaVersion": 15,
+    "pageTemplates": [
+      {
+        "id": "b-layout-en",
+        "name": "B en product layout",
+        "description": "Synthetic acceptance layout",
+        "kind": "product",
+        "updated": "2026-11-07T09:40:16.074Z",
+        "detailRule": {
+          "enabled": true,
+          "priority": 800,
+          "locale": "en",
+          "recordIds": [
+            "pkg-99fe43f2ea2b-813f9f2fb7d59998aed2b5a5"
+          ]
+        },
+        "data": {
+          "root": {
+            "props": {
+              "showChrome": "no"
+            }
+          },
+          "content": [
+            {
+              "type": "Heading",
+              "props": {
+                "id": "b-heading-en",
+                "text": "B EN product design"
+              }
+            },
+            {
+              "type": "LanguageSwitcher",
+              "props": {
+                "id": "b-lang-en"
+              }
+            },
+            {
+              "type": "ProductDetail",
+              "props": {
+                "id": "b-detail-en",
+                "productId": "",
+                "layout": "split",
+                "showCustomFields": "yes"
+              }
+            },
+            {
+              "type": "ContentLoop",
+              "props": {
+                "id": "b-related-en",
+                "source": "entry",
+                "modelId": "accept-cases",
+                "relation": {
+                  "source": "product",
+                  "modelId": "b-goods",
+                  "fieldId": "b-cases"
+                },
+                "itemBlockId": "b-card",
+                "query": {
+                  "paginate": true,
+                  "pageSize": 1,
+                  "controls": true
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "b-layout-de",
+        "name": "B de product layout",
+        "description": "Synthetic acceptance layout",
+        "kind": "product",
+        "updated": "2026-11-07T09:40:16.283Z",
+        "detailRule": {
+          "enabled": true,
+          "priority": 800,
+          "locale": "de",
+          "recordIds": [
+            "product-db8a7de1-cb0b-4d0d-84d7-787ac42006a9"
+          ]
+        },
+        "data": {
+          "root": {
+            "props": {
+              "showChrome": "no"
+            }
+          },
+          "content": [
+            {
+              "type": "Heading",
+              "props": {
+                "id": "b-heading-de",
+                "text": "B DE Produktgestaltung"
+              }
+            },
+            {
+              "type": "LanguageSwitcher",
+              "props": {
+                "id": "b-lang-de"
+              }
+            },
+            {
+              "type": "ProductDetail",
+              "props": {
+                "id": "b-detail-de",
+                "productId": "",
+                "layout": "split",
+                "showCustomFields": "yes"
+              }
+            },
+            {
+              "type": "ContentLoop",
+              "props": {
+                "id": "b-related-de",
+                "source": "entry",
+                "modelId": "accept-cases",
+                "relation": {
+                  "source": "product",
+                  "modelId": "b-goods",
+                  "fieldId": "b-cases"
+                },
+                "itemBlockId": "b-card",
+                "query": {
+                  "paginate": true,
+                  "pageSize": 1,
+                  "controls": true
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "c-business-template",
+        "name": "C business layout",
+        "description": "",
+        "kind": "page",
+        "sourcePath": "/extension-lab",
+        "data": {
+          "root": {
+            "props": {
+              "showChrome": "no"
+            }
+          },
+          "content": [
+            {
+              "type": "Container",
+              "props": {
+                "id": "c-stage",
+                "layout": "column",
+                "padding": 28,
+                "inset": 28,
+                "content": [
+                  {
+                    "type": "Heading",
+                    "props": {
+                      "id": "c-label",
+                      "text": "FORM STUDIO / DEVELOPER EDITION",
+                      "design": {
+                        "desktop": {
+                          "fontSize": 14,
+                          "letterSpacing": 2,
+                          "color": "#486b7a",
+                          "marginBottom": 16
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "type": "Heading",
+                    "props": {
+                      "id": "c-title",
+                      "text": "Design your own business tools.",
+                      "design": {
+                        "desktop": {
+                          "fontSize": 48,
+                          "maxWidth": 720,
+                          "marginBottom": 24
+                        },
+                        "mobile": {
+                          "fontSize": 30
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "type": "Text",
+                    "props": {
+                      "id": "c-badge",
+                      "text": "LOCAL EXTENSION",
+                      "design": {
+                        "desktop": {
+                          "position": "absolute",
+                          "top": 24,
+                          "right": 24,
+                          "zIndex": 2,
+                          "backgroundColor": "#e5f0f4",
+                          "color": "#16384c",
+                          "paddingTop": 8,
+                          "paddingBottom": 8,
+                          "paddingLeft": 12,
+                          "paddingRight": 12,
+                          "fontSize": 11,
+                          "borderRadius": 4
+                        },
+                        "tablet": {
+                          "position": "flow",
+                          "top": "auto",
+                          "right": "auto",
+                          "marginBottom": 16
+                        },
+                        "mobile": {
+                          "position": "flow"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "type": "studio/SpecificationTable",
+                    "props": {
+                      "id": "c-main-spec",
+                      "extensionVersion": 2,
+                      "title": "Project information",
+                      "caption": "Synthetic demonstration. Replace with verified customer information.",
+                      "rows": [
+                        {
+                          "label": "Purpose",
+                          "value": "Local business component acceptance"
+                        },
+                        {
+                          "label": "Reference",
+                          "value": "Synthetic C demonstration"
+                        }
+                      ],
+                      "productId": "pkg-99fe43f2ea2b-813f9f2fb7d59998aed2b5a5",
+                      "fileUrl": "/api/media/media-0d23fefb-5bc7-45a8-91c0-754ca7e8c2ee"
+                    }
+                  },
+                  {
+                    "type": "ActionButton",
+                    "props": {
+                      "id": "c-contact",
+                      "text": "Discuss a project",
+                      "href": "/contact",
+                      "kind": "theme"
+                    }
+                  }
+                ],
+                "design": {
+                  "desktop": {
+                    "maxWidth": 1120,
+                    "minHeight": 560,
+                    "marginLeft": "auto",
+                    "marginRight": "auto",
+                    "paddingTop": 72,
+                    "paddingBottom": 40,
+                    "overflow": "clip"
+                  },
+                  "tablet": {
+                    "paddingTop": 32
+                  },
+                  "mobile": {
+                    "paddingTop": 24,
+                    "paddingLeft": 16,
+                    "paddingRight": 16
+                  }
+                }
+              }
+            },
+            {
+              "type": "Container",
+              "props": {
+                "id": "c-sticky-section",
+                "layout": "column",
+                "content": [
+                  {
+                    "type": "Text",
+                    "props": {
+                      "id": "c-sticky-label",
+                      "text": "A reusable component, on every screen.",
+                      "design": {
+                        "desktop": {
+                          "position": "sticky",
+                          "top": 0,
+                          "zIndex": 1,
+                          "backgroundColor": "#f7fafb",
+                          "paddingTop": 12,
+                          "paddingBottom": 12,
+                          "fontSize": 18
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "type": "ContentLoop",
+                    "props": {
+                      "id": "c-loop",
+                      "source": "product",
+                      "itemBlockId": "c-spec-card",
+                      "columns": 1,
+                      "count": 1,
+                      "query": {
+                        "filters": [
+                          {
+                            "field": "builtin:id",
+                            "op": "eq",
+                            "value": "pkg-99fe43f2ea2b-813f9f2fb7d59998aed2b5a5"
+                          }
+                        ]
+                      }
+                    }
+                  }
+                ],
+                "design": {
+                  "desktop": {
+                    "maxWidth": 1120,
+                    "marginLeft": "auto",
+                    "marginRight": "auto",
+                    "minHeight": 360
+                  },
+                  "mobile": {
+                    "paddingLeft": 16,
+                    "paddingRight": 16
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "updated": "2026-11-07T10:16:19.015Z"
+      }
+    ],
+    "forms": [
+      {
+        "id": "pkg-99fe43f2ea2b-16d7c8fd6fb510e400f53224",
+        "name": "网站询盘",
+        "enabled": true,
+        "submitLabel": "Send inquiry",
+        "successMessage": "Thank you. Your inquiry has been received.",
+        "fields": [
+          {
+            "id": "pkg-99fe43f2ea2b-c9fecffbb5cc7daa4c49595b",
+            "label": "Name",
+            "type": "text",
+            "mapTo": "name",
+            "required": true,
+            "maxLength": 150
+          },
+          {
+            "id": "pkg-99fe43f2ea2b-780ee554e12077181ec8b7fc",
+            "label": "Email",
+            "type": "email",
+            "mapTo": "email",
+            "required": true,
+            "maxLength": 254
+          },
+          {
+            "id": "pkg-99fe43f2ea2b-5cf1d17e3b9e40dd1ca7b600",
+            "label": "Company",
+            "type": "text",
+            "mapTo": "company",
+            "required": false,
+            "maxLength": 150
+          },
+          {
+            "id": "pkg-99fe43f2ea2b-239099bbd34013ada091c414",
+            "label": "Message",
+            "type": "textarea",
+            "mapTo": "message",
+            "required": true,
+            "maxLength": 4000
+          }
+        ]
+      }
+    ],
+    "redirects": [],
+    "taxonomies": [
+      {
+        "id": "accept-tax",
+        "name": "Acceptance categories",
+        "source": "entry",
+        "modelId": "accept-cases",
+        "terms": [
+          {
+            "id": "accept-a",
+            "label": "Group A",
+            "slug": "group-a"
+          },
+          {
+            "id": "accept-b",
+            "label": "Group B",
+            "slug": "group-b"
+          }
+        ]
+      }
+    ],
+    "pages": [
+      {
+        "id": "pkg-99fe43f2ea2b-b70850a9caf2a04e6c964d55",
+        "title": "Home",
+        "slug": "/",
+        "type": "普通页面",
+        "status": "published",
+        "updated": "2026-11-07T09:40:15.981Z",
+        "locale": "en",
+        "translationGroupId": "translation-4b634a26-c76a-486e-a03a-d17cf4aea06b",
+        "translationState": "source"
+      },
+      {
+        "id": "pkg-99fe43f2ea2b-8241fb73d98914cec4d54527",
+        "title": "About",
+        "slug": "/about",
+        "type": "普通页面",
+        "status": "published",
+        "updated": "2026-11-07T00:00:00.000Z"
+      },
+      {
+        "id": "pkg-99fe43f2ea2b-90eee07a024585f6bab704ff",
+        "title": "Contact",
+        "slug": "/contact",
+        "type": "普通页面",
+        "status": "published",
+        "updated": "2026-11-07T00:00:00.000Z"
+      },
+      {
+        "id": "pkg-99fe43f2ea2b-4598ba4437f8c821564c47d0",
+        "title": "Product examples",
+        "slug": "/catalog",
+        "type": "普通页面",
+        "status": "published",
+        "updated": "2026-11-07T00:00:00.000Z"
+      },
+      {
+        "id": "pkg-99fe43f2ea2b-55bb449ad4f50a98547b18be",
+        "title": "Product details",
+        "slug": "/products/:slug",
+        "type": "普通页面",
+        "status": "published",
+        "updated": "2026-11-07T00:00:00.000Z"
+      },
+      {
+        "id": "accept-lab",
+        "title": "Acceptance blank-page design",
+        "slug": "/acceptance-lab",
+        "type": "普通页面",
+        "status": "published",
+        "updated": "2026-11-07T07:27:23.223Z",
+        "seoTitle": "manufacturing acceptance SEO",
+        "seoDescription": "Synthetic composed page, not customer claims."
+      },
+      {
+        "id": "accept-detail",
+        "title": "Acceptance case detail",
+        "slug": "/accept-cases/:slug",
+        "type": "内容详情模板",
+        "contentModelId": "accept-cases",
+        "status": "published",
+        "updated": "2026-11-07T07:27:23.223Z"
+      },
+      {
+        "title": "A UI empty composition",
+        "type": "普通页面",
+        "slug": "/ui-composition",
+        "id": "page-c587debf-7934-4e99-8c7e-f13ab897410e",
+        "status": "published",
+        "updated": "2026-11-07T07:38:02.000Z"
+      },
+      {
+        "id": "page-e000d28b-bea6-4cfc-b3d0-af9d811b9b70",
+        "title": "B Deutsche Startseite",
+        "slug": "/de",
+        "type": "普通页面",
+        "status": "published",
+        "updated": "2026-11-07T09:40:16.668Z",
+        "locale": "de",
+        "translationGroupId": "translation-4b634a26-c76a-486e-a03a-d17cf4aea06b",
+        "translationState": "reviewed"
+      },
+      {
+        "id": "c-layout",
+        "title": "Custom business components",
+        "slug": "/extension-lab",
+        "type": "普通页面",
+        "status": "published",
+        "updated": "2026-11-07T10:16:18.514Z"
+      },
+      {
+        "id": "c-template-copy",
+        "title": "Independent business copy",
+        "slug": "/extension-copy",
+        "type": "普通页面",
+        "status": "published",
+        "updated": "2026-11-07T10:16:19.045Z"
+      }
+    ],
+    "products": [
+      {
+        "id": "pkg-99fe43f2ea2b-813f9f2fb7d59998aed2b5a5",
+        "name": "Material sample A",
+        "sku": "DEMO-1",
+        "slug": "sample-1",
+        "category": "Demonstration products",
+        "status": "published",
+        "image": "",
+        "description": "Demonstration product only. Add verified specifications, materials and photography before customer delivery.",
+        "material": "To be supplied by the customer",
+        "modelId": "b-goods",
+        "customFields": {
+          "b-cases": [
+            "accept-entry-1",
+            "accept-entry-0"
+          ]
+        },
+        "locale": "en",
+        "translationGroupId": "translation-469d0889-6e27-4119-868b-056693fa39f6",
+        "translationState": "source"
+      },
+      {
+        "id": "pkg-99fe43f2ea2b-d57094d90f0b1880b29b7fb1",
+        "name": "Material sample B",
+        "sku": "DEMO-2",
+        "slug": "sample-2",
+        "category": "Demonstration products",
+        "status": "published",
+        "image": "",
+        "description": "Demonstration product only. Add verified specifications, materials and photography before customer delivery.",
+        "material": "To be supplied by the customer"
+      },
+      {
+        "id": "pkg-99fe43f2ea2b-b765ddb866c81a147edfc818",
+        "name": "Custom component example",
+        "sku": "DEMO-3",
+        "slug": "sample-3",
+        "category": "Demonstration products",
+        "status": "published",
+        "image": "",
+        "description": "Demonstration product only. Add verified specifications, materials and photography before customer delivery.",
+        "material": "To be supplied by the customer"
+      },
+      {
+        "id": "product-db8a7de1-cb0b-4d0d-84d7-787ac42006a9",
+        "name": "B Deutsches Produkt",
+        "sku": "DEMO-1-de",
+        "slug": "sample-1",
+        "category": "Demonstration products",
+        "status": "published",
+        "image": "",
+        "description": "Demonstration product only. Add verified specifications, materials and photography before customer delivery.",
+        "material": "To be supplied by the customer",
+        "modelId": "b-goods",
+        "customFields": {
+          "b-cases": [
+            "entry-6ae9cfb7-3ab6-40ce-94fc-36e88a07e9c1",
+            "entry-ec853de3-033d-4817-8f0a-5ee62b170ebb"
+          ]
+        },
+        "locale": "de",
+        "translationGroupId": "translation-469d0889-6e27-4119-868b-056693fa39f6",
+        "translationState": "reviewed"
+      }
+    ],
+    "contentModels": [
+      {
+        "id": "accept-cases",
+        "name": "Acceptance cases",
+        "description": "Synthetic acceptance records",
+        "target": "content",
+        "updated": "2026-11-07T07:27:23.223Z",
+        "fields": [
+          {
+            "id": "ac-summary",
+            "key": "summary",
+            "label": "Summary",
+            "type": "textarea",
+            "required": true
+          },
+          {
+            "id": "ac-score",
+            "key": "score",
+            "label": "Score",
+            "type": "number",
+            "unit": "kg",
+            "required": true
+          },
+          {
+            "id": "ac-active",
+            "key": "active",
+            "label": "Active",
+            "type": "boolean",
+            "required": true
+          }
+        ]
+      },
+      {
+        "id": "b-goods",
+        "name": "B Product relationships",
+        "target": "product",
+        "description": "Synthetic bilingual QA",
+        "updated": "2026-11-07T09:40:15.482Z",
+        "fields": [
+          {
+            "id": "b-cases",
+            "key": "cases",
+            "label": "Cases",
+            "type": "relation",
+            "required": false,
+            "relation": {
+              "source": "entry",
+              "modelId": "accept-cases",
+              "multiple": true,
+              "onDelete": "restrict"
+            }
+          }
+        ]
+      }
+    ],
+    "contentEntries": [
+      {
+        "id": "accept-entry-0",
+        "modelId": "accept-cases",
+        "title": "manufacturing Case 00",
+        "slug": "case-00",
+        "status": "published",
+        "updated": "2026-11-07T09:40:16.012Z",
+        "seoTitle": "manufacturing case SEO 0",
+        "seoDescription": "Synthetic record for acceptance only.",
+        "termIds": [
+          "accept-a"
+        ],
+        "sortOrder": 0,
+        "customFields": {
+          "ac-summary": "Synthetic case summary 0",
+          "ac-score": 0,
+          "ac-active": false
+        },
+        "locale": "en",
+        "translationGroupId": "translation-c7f881cd-ca7d-4b20-a508-3f0be96b8ab0",
+        "translationState": "source"
+      },
+      {
+        "id": "accept-entry-1",
+        "modelId": "accept-cases",
+        "title": "manufacturing Case 01",
+        "slug": "case-01",
+        "status": "published",
+        "updated": "2026-11-07T09:40:16.034Z",
+        "seoTitle": "manufacturing case SEO 1",
+        "seoDescription": "Synthetic record for acceptance only.",
+        "termIds": [
+          "accept-b"
+        ],
+        "sortOrder": 1,
+        "customFields": {
+          "ac-summary": "Synthetic case summary 1",
+          "ac-score": 1,
+          "ac-active": true
+        },
+        "locale": "en",
+        "translationGroupId": "translation-8f26eb63-b8f9-4e79-bea9-037f6e989d87",
+        "translationState": "source"
+      },
+      {
+        "id": "accept-entry-2",
+        "modelId": "accept-cases",
+        "title": "manufacturing Case 02",
+        "slug": "case-02",
+        "status": "published",
+        "updated": "2026-11-07T07:27:23.223Z",
+        "seoTitle": "manufacturing case SEO 2",
+        "seoDescription": "Synthetic record for acceptance only.",
+        "termIds": [
+          "accept-a"
+        ],
+        "sortOrder": 2,
+        "customFields": {
+          "ac-summary": "Synthetic case summary 2",
+          "ac-score": 2,
+          "ac-active": false
+        }
+      },
+      {
+        "id": "accept-entry-3",
+        "modelId": "accept-cases",
+        "title": "manufacturing Case 03",
+        "slug": "case-03",
+        "status": "published",
+        "updated": "2026-11-07T07:27:23.223Z",
+        "seoTitle": "manufacturing case SEO 3",
+        "seoDescription": "Synthetic record for acceptance only.",
+        "termIds": [
+          "accept-b"
+        ],
+        "sortOrder": 3,
+        "customFields": {
+          "ac-summary": "Synthetic case summary 3",
+          "ac-score": 3,
+          "ac-active": true
+        }
+      },
+      {
+        "id": "accept-entry-4",
+        "modelId": "accept-cases",
+        "title": "manufacturing Case 04",
+        "slug": "case-04",
+        "status": "published",
+        "updated": "2026-11-07T07:27:23.223Z",
+        "seoTitle": "manufacturing case SEO 4",
+        "seoDescription": "Synthetic record for acceptance only.",
+        "termIds": [
+          "accept-a"
+        ],
+        "sortOrder": 4,
+        "customFields": {
+          "ac-summary": "Synthetic case summary 4",
+          "ac-score": 4,
+          "ac-active": false
+        }
+      },
+      {
+        "id": "entry-ec853de3-033d-4817-8f0a-5ee62b170ebb",
+        "modelId": "accept-cases",
+        "title": "B Fall eins",
+        "slug": "case-00",
+        "status": "published",
+        "updated": "2026-11-07T09:40:16.668Z",
+        "seoTitle": "manufacturing case SEO 0",
+        "seoDescription": "Synthetic record for acceptance only.",
+        "termIds": [
+          "accept-a"
+        ],
+        "sortOrder": 0,
+        "customFields": {
+          "ac-summary": "Synthetisches Beispiel für die Abnahme.",
+          "ac-score": 0,
+          "ac-active": false
+        },
+        "locale": "de",
+        "translationGroupId": "translation-c7f881cd-ca7d-4b20-a508-3f0be96b8ab0",
+        "translationState": "reviewed"
+      },
+      {
+        "id": "entry-6ae9cfb7-3ab6-40ce-94fc-36e88a07e9c1",
+        "modelId": "accept-cases",
+        "title": "B Fall zwei",
+        "slug": "case-01",
+        "status": "published",
+        "updated": "2026-11-07T09:40:16.668Z",
+        "seoTitle": "manufacturing case SEO 1",
+        "seoDescription": "Synthetic record for acceptance only.",
+        "termIds": [
+          "accept-b"
+        ],
+        "sortOrder": 1,
+        "customFields": {
+          "ac-summary": "Synthetisches Beispiel für die Abnahme.",
+          "ac-score": 1,
+          "ac-active": true
+        },
+        "locale": "de",
+        "translationGroupId": "translation-8f26eb63-b8f9-4e79-bea9-037f6e989d87",
+        "translationState": "reviewed"
+      }
+    ],
+    "editorData": {
+      "pkg-99fe43f2ea2b-b70850a9caf2a04e6c964d55": {
+        "root": {
+          "props": {
+            "title": "Home",
+            "brand": "Atlas Works",
+            "showChrome": "yes"
+          }
+        },
+        "content": [
+          {
+            "type": "Container",
+            "props": {
+              "id": "pkg-99fe43f2ea2b-e2c4d4ab4b8bae7566546ffc",
+              "content": [
+                {
+                  "type": "Text",
+                  "props": {
+                    "id": "pkg-99fe43f2ea2b-83e2e9ee438b47491194026d",
+                    "text": "MANUFACTURING / DEMONSTRATION",
+                    "size": 16,
+                    "color": "#5e686d",
+                    "maxWidth": 760,
+                    "align": "left"
+                  }
+                },
+                {
+                  "type": "Heading",
+                  "props": {
+                    "id": "pkg-99fe43f2ea2b-0f6f32a87066b5f23329c164",
+                    "text": "Built around your next specification.",
+                    "size": 68,
+                    "mobileSize": 38,
+                    "color": "#1b2c32",
+                    "align": "left",
+                    "style": "sans",
+                    "spacing": 0,
+                    "design": {
+                      "desktop": {
+                        "fontWeight": 600,
+                        "lineHeight": 1.12
+                      },
+                      "mobile": {
+                        "fontSize": 38
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "id": "pkg-99fe43f2ea2b-53dd2ed27c3234eb1f44738a",
+                    "text": "A flexible starting point for a factory presentation: introduce capabilities, product families and project requirements using verified information.",
+                    "size": 16,
+                    "color": "#5e686d",
+                    "maxWidth": 760,
+                    "align": "left"
+                  }
+                },
+                {
+                  "type": "ActionButton",
+                  "props": {
+                    "id": "pkg-99fe43f2ea2b-d1e10d7387dd480c7509b79a",
+                    "text": "Explore sample products",
+                    "href": "/catalog",
+                    "kind": "theme",
+                    "align": "left",
+                    "design": {
+                      "desktop": {
+                        "color": "#ffffff"
+                      }
+                    }
+                  }
+                }
+              ],
+              "layout": "column",
+              "columns": 1,
+              "mobileColumns": 1,
+              "gap": 28,
+              "padding": 88,
+              "inset": 40,
+              "minHeight": 0,
+              "background": "#f7fafb",
+              "image": "",
+              "align": "start",
+              "design": {
+                "desktop": {
+                  "maxWidth": 1400,
+                  "marginLeft": "auto",
+                  "marginRight": "auto"
+                },
+                "mobile": {
+                  "paddingTop": 32,
+                  "paddingBottom": 32,
+                  "paddingLeft": 20,
+                  "paddingRight": 20,
+                  "gap": 20
+                }
+              }
+            }
+          },
+          {
+            "type": "Container",
+            "props": {
+              "id": "pkg-99fe43f2ea2b-1c1f00f78a635c4e252657ae",
+              "content": [
+                {
+                  "type": "Text",
+                  "props": {
+                    "id": "pkg-99fe43f2ea2b-6089e111c6c64fd4f98848f7",
+                    "text": "01 / PRODUCT SYSTEM",
+                    "size": 16,
+                    "color": "#5e686d",
+                    "maxWidth": 760,
+                    "align": "left"
+                  }
+                },
+                {
+                  "type": "Heading",
+                  "props": {
+                    "id": "pkg-99fe43f2ea2b-964a204547b26949aacdbed2",
+                    "text": "Product examples",
+                    "size": 40,
+                    "mobileSize": 38,
+                    "color": "#1b2c32",
+                    "align": "left",
+                    "style": "sans",
+                    "spacing": 0,
+                    "design": {
+                      "desktop": {
+                        "fontWeight": 600,
+                        "lineHeight": 1.12
+                      },
+                      "mobile": {
+                        "fontSize": 38
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "ContentLoop",
+                  "props": {
+                    "id": "pkg-99fe43f2ea2b-bd133ac9569a4ee1d87dcbd5",
+                    "source": "product",
+                    "itemBlockId": "pkg-99fe43f2ea2b-ea3a74823b6b7c112270a740",
+                    "title": "",
+                    "count": 6,
+                    "columns": 3,
+                    "mobileColumns": 1,
+                    "gap": 24,
+                    "padding": 0,
+                    "emptyText": "No examples yet."
+                  }
+                }
+              ],
+              "layout": "column",
+              "columns": 1,
+              "mobileColumns": 1,
+              "gap": 28,
+              "padding": 64,
+              "inset": 40,
+              "minHeight": 0,
+              "background": "#f7fafb",
+              "image": "",
+              "align": "start",
+              "design": {
+                "desktop": {
+                  "maxWidth": 1400,
+                  "marginLeft": "auto",
+                  "marginRight": "auto"
+                },
+                "mobile": {
+                  "paddingTop": 32,
+                  "paddingBottom": 32,
+                  "paddingLeft": 20,
+                  "paddingRight": 20,
+                  "gap": 20
+                }
+              }
+            }
+          },
+          {
+            "type": "Container",
+            "props": {
+              "id": "pkg-99fe43f2ea2b-e2df982920da03383079fa47",
+              "content": [
+                {
+                  "type": "Heading",
+                  "props": {
+                    "id": "pkg-99fe43f2ea2b-ec34d973ff687a4cce57c7e6",
+                    "text": "Tell us about your requirements.",
+                    "size": 40,
+                    "mobileSize": 38,
+                    "color": "#1b2c32",
+                    "align": "left",
+                    "style": "sans",
+                    "spacing": 0,
+                    "design": {
+                      "desktop": {
+                        "fontWeight": 600,
+                        "lineHeight": 1.12
+                      },
+                      "mobile": {
+                        "fontSize": 38
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "id": "pkg-99fe43f2ea2b-2e3eca6c4576a19dd383e09a",
+                    "text": "Use this editable section to explain the next step without inventing lead times, prices or outcomes.",
+                    "size": 16,
+                    "color": "#5e686d",
+                    "maxWidth": 760,
+                    "align": "left"
+                  }
+                },
+                {
+                  "type": "ActionButton",
+                  "props": {
+                    "id": "pkg-99fe43f2ea2b-bc3d8629ebeefbf06ac19acf",
+                    "text": "Contact",
+                    "href": "/contact",
+                    "kind": "theme",
+                    "align": "left",
+                    "design": {
+                      "desktop": {
+                        "color": "#ffffff"
+                      }
+                    }
+                  }
+                }
+              ],
+              "layout": "column",
+              "columns": 1,
+              "mobileColumns": 1,
+              "gap": 28,
+              "padding": 64,
+              "inset": 40,
+              "minHeight": 0,
+              "background": "#dce9ef",
+              "image": "",
+              "align": "start",
+              "design": {
+                "desktop": {
+                  "maxWidth": 1400,
+                  "marginLeft": "auto",
+                  "marginRight": "auto"
+                },
+                "mobile": {
+                  "paddingTop": 32,
+                  "paddingBottom": 32,
+                  "paddingLeft": 20,
+                  "paddingRight": 20,
+                  "gap": 20
+                }
+              }
+            }
+          }
+        ]
+      },
+      "pkg-99fe43f2ea2b-8241fb73d98914cec4d54527": {
+        "root": {
+          "props": {
+            "title": "About",
+            "brand": "Atlas Works",
+            "showChrome": "yes"
+          }
+        },
+        "content": [
+          {
+            "type": "Container",
+            "props": {
+              "id": "pkg-99fe43f2ea2b-f28070de7db7a404c06c51bb",
+              "content": [
+                {
+                  "type": "Text",
+                  "props": {
+                    "id": "pkg-99fe43f2ea2b-dd2f3af2864e9dbab56b12dd",
+                    "text": "ABOUT / DEMONSTRATION",
+                    "size": 16,
+                    "color": "#5e686d",
+                    "maxWidth": 760,
+                    "align": "left"
+                  }
+                },
+                {
+                  "type": "Heading",
+                  "props": {
+                    "id": "pkg-99fe43f2ea2b-54655e23cdb6173a04ab9fd8",
+                    "text": "About Atlas Works",
+                    "size": 60,
+                    "mobileSize": 38,
+                    "color": "#1b2c32",
+                    "align": "left",
+                    "style": "sans",
+                    "spacing": 0,
+                    "design": {
+                      "desktop": {
+                        "fontWeight": 600,
+                        "lineHeight": 1.12
+                      },
+                      "mobile": {
+                        "fontSize": 38
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "id": "pkg-99fe43f2ea2b-ad403d7a434d1840c5357522",
+                    "text": "This company and its story are demonstration content. Add your actual history, team, facilities and working process.",
+                    "size": 16,
+                    "color": "#5e686d",
+                    "maxWidth": 760,
+                    "align": "left"
+                  }
+                },
+                {
+                  "type": "Container",
+                  "props": {
+                    "id": "pkg-99fe43f2ea2b-be17774dc5d6957b90dc0943",
+                    "content": [
+                      {
+                        "type": "Heading",
+                        "props": {
+                          "id": "pkg-99fe43f2ea2b-16718ca7e8897163c1d4b600",
+                          "text": "Your approach",
+                          "size": 28,
+                          "mobileSize": 28,
+                          "color": "#1b2c32",
+                          "align": "left",
+                          "style": "sans",
+                          "spacing": 0,
+                          "design": {
+                            "desktop": {
+                              "fontWeight": 600,
+                              "lineHeight": 1.12
+                            },
+                            "mobile": {
+                              "fontSize": 28
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "type": "Text",
+                        "props": {
+                          "id": "pkg-99fe43f2ea2b-dba335487d045820ded897c8",
+                          "text": "Describe the way you work using facts that the customer can verify.",
+                          "size": 16,
+                          "color": "#5e686d",
+                          "maxWidth": 760,
+                          "align": "left"
+                        }
+                      },
+                      {
+                        "type": "Heading",
+                        "props": {
+                          "id": "pkg-99fe43f2ea2b-b34f35e7783228f1997c78f2",
+                          "text": "Your people",
+                          "size": 28,
+                          "mobileSize": 28,
+                          "color": "#1b2c32",
+                          "align": "left",
+                          "style": "sans",
+                          "spacing": 0,
+                          "design": {
+                            "desktop": {
+                              "fontWeight": 600,
+                              "lineHeight": 1.12
+                            },
+                            "mobile": {
+                              "fontSize": 28
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "type": "Text",
+                        "props": {
+                          "id": "pkg-99fe43f2ea2b-51fdda0a99273c9ed03b3a45",
+                          "text": "Add authorized biographies and photography. No fictional customer testimonials are included.",
+                          "size": 16,
+                          "color": "#5e686d",
+                          "maxWidth": 760,
+                          "align": "left"
+                        }
+                      }
+                    ],
+                    "layout": "grid",
+                    "columns": 2,
+                    "mobileColumns": 1,
+                    "gap": 28,
+                    "padding": 64,
+                    "inset": 40,
+                    "minHeight": 0,
+                    "background": "#ffffff",
+                    "image": "",
+                    "align": "start",
+                    "design": {
+                      "desktop": {
+                        "maxWidth": 1400,
+                        "marginLeft": "auto",
+                        "marginRight": "auto"
+                      },
+                      "mobile": {
+                        "paddingTop": 32,
+                        "paddingBottom": 32,
+                        "paddingLeft": 20,
+                        "paddingRight": 20,
+                        "gap": 20
+                      }
+                    }
+                  }
+                }
+              ],
+              "layout": "column",
+              "columns": 1,
+              "mobileColumns": 1,
+              "gap": 28,
+              "padding": 64,
+              "inset": 40,
+              "minHeight": 0,
+              "background": "#f7fafb",
+              "image": "",
+              "align": "start",
+              "design": {
+                "desktop": {
+                  "maxWidth": 1400,
+                  "marginLeft": "auto",
+                  "marginRight": "auto"
+                },
+                "mobile": {
+                  "paddingTop": 32,
+                  "paddingBottom": 32,
+                  "paddingLeft": 20,
+                  "paddingRight": 20,
+                  "gap": 20
+                }
+              }
+            }
+          }
+        ]
+      },
+      "pkg-99fe43f2ea2b-90eee07a024585f6bab704ff": {
+        "root": {
+          "props": {
+            "title": "Contact",
+            "brand": "Atlas Works",
+            "showChrome": "yes"
+          }
+        },
+        "content": [
+          {
+            "type": "Container",
+            "props": {
+              "id": "pkg-99fe43f2ea2b-38ed14824b5aeeb262940687",
+              "content": [
+                {
+                  "type": "Text",
+                  "props": {
+                    "id": "pkg-99fe43f2ea2b-7d5b030bc366a8d3303123bd",
+                    "text": "CONTACT / DEMONSTRATION",
+                    "size": 16,
+                    "color": "#5e686d",
+                    "maxWidth": 760,
+                    "align": "left"
+                  }
+                },
+                {
+                  "type": "Heading",
+                  "props": {
+                    "id": "pkg-99fe43f2ea2b-fb78152f5b2fd020e2832f3c",
+                    "text": "Let’s start a conversation.",
+                    "size": 58,
+                    "mobileSize": 38,
+                    "color": "#1b2c32",
+                    "align": "left",
+                    "style": "sans",
+                    "spacing": 0,
+                    "design": {
+                      "desktop": {
+                        "fontWeight": 600,
+                        "lineHeight": 1.12
+                      },
+                      "mobile": {
+                        "fontSize": 38
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "id": "pkg-99fe43f2ea2b-428b79d86c057900d862e60e",
+                    "text": "This is a functional inquiry form. Configure your own contact details, privacy wording and notification settings before public use.",
+                    "size": 16,
+                    "color": "#5e686d",
+                    "maxWidth": 760,
+                    "align": "left"
+                  }
+                },
+                {
+                  "type": "Form",
+                  "props": {
+                    "id": "pkg-99fe43f2ea2b-b78ba6e3a70d9fbca67ad06a",
+                    "formId": "pkg-99fe43f2ea2b-16d7c8fd6fb510e400f53224",
+                    "wideFields": [
+                      "pkg-99fe43f2ea2b-239099bbd34013ada091c414"
+                    ],
+                    "design": {
+                      "desktop": {
+                        "display": "grid",
+                        "columns": 2,
+                        "gap": 20
+                      },
+                      "mobile": {
+                        "columns": 1
+                      }
+                    },
+                    "fieldDesign": {
+                      "desktop": {
+                        "borderWidth": 1,
+                        "borderColor": "#cbd4d8",
+                        "borderRadius": 6
+                      }
+                    },
+                    "submitDesign": {
+                      "desktop": {
+                        "borderRadius": 6
+                      }
+                    }
+                  }
+                }
+              ],
+              "layout": "column",
+              "columns": 1,
+              "mobileColumns": 1,
+              "gap": 28,
+              "padding": 64,
+              "inset": 40,
+              "minHeight": 0,
+              "background": "#f7fafb",
+              "image": "",
+              "align": "start",
+              "design": {
+                "desktop": {
+                  "maxWidth": 1400,
+                  "marginLeft": "auto",
+                  "marginRight": "auto"
+                },
+                "mobile": {
+                  "paddingTop": 32,
+                  "paddingBottom": 32,
+                  "paddingLeft": 20,
+                  "paddingRight": 20,
+                  "gap": 20
+                }
+              }
+            }
+          }
+        ]
+      },
+      "pkg-99fe43f2ea2b-4598ba4437f8c821564c47d0": {
+        "root": {
+          "props": {
+            "title": "Product examples",
+            "brand": "Atlas Works",
+            "showChrome": "yes"
+          }
+        },
+        "content": [
+          {
+            "type": "Container",
+            "props": {
+              "id": "pkg-99fe43f2ea2b-4cf36b53eafdca298252edb4",
+              "content": [
+                {
+                  "type": "Heading",
+                  "props": {
+                    "id": "pkg-99fe43f2ea2b-2bcdf17c304a9910c0adddf9",
+                    "text": "Product examples",
+                    "size": 58,
+                    "mobileSize": 38,
+                    "color": "#1b2c32",
+                    "align": "left",
+                    "style": "sans",
+                    "spacing": 0,
+                    "design": {
+                      "desktop": {
+                        "fontWeight": 600,
+                        "lineHeight": 1.12
+                      },
+                      "mobile": {
+                        "fontSize": 38
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "id": "pkg-99fe43f2ea2b-62108cfe98e40f4ee5a22157",
+                    "text": "All examples are editable content records, not hardcoded industry components.",
+                    "size": 16,
+                    "color": "#5e686d",
+                    "maxWidth": 760,
+                    "align": "left"
+                  }
+                },
+                {
+                  "type": "ContentLoop",
+                  "props": {
+                    "id": "pkg-99fe43f2ea2b-025297a92f933b62936a1670",
+                    "source": "product",
+                    "itemBlockId": "pkg-99fe43f2ea2b-ea3a74823b6b7c112270a740",
+                    "title": "",
+                    "count": 6,
+                    "columns": 3,
+                    "mobileColumns": 1,
+                    "gap": 24,
+                    "padding": 0,
+                    "emptyText": "No examples yet."
+                  }
+                }
+              ],
+              "layout": "column",
+              "columns": 1,
+              "mobileColumns": 1,
+              "gap": 28,
+              "padding": 64,
+              "inset": 40,
+              "minHeight": 0,
+              "background": "#f7fafb",
+              "image": "",
+              "align": "start",
+              "design": {
+                "desktop": {
+                  "maxWidth": 1400,
+                  "marginLeft": "auto",
+                  "marginRight": "auto"
+                },
+                "mobile": {
+                  "paddingTop": 32,
+                  "paddingBottom": 32,
+                  "paddingLeft": 20,
+                  "paddingRight": 20,
+                  "gap": 20
+                }
+              }
+            }
+          }
+        ]
+      },
+      "pkg-99fe43f2ea2b-55bb449ad4f50a98547b18be": {
+        "root": {
+          "props": {
+            "title": "Product details",
+            "brand": "Atlas Works",
+            "showChrome": "yes"
+          }
+        },
+        "content": [
+          {
+            "type": "Container",
+            "props": {
+              "id": "pkg-99fe43f2ea2b-9ea61df9b1a99f49e3825642",
+              "content": [
+                {
+                  "type": "Text",
+                  "props": {
+                    "id": "pkg-99fe43f2ea2b-b3d2a4ca13511cf721addfad",
+                    "text": "DEMONSTRATION DETAIL",
+                    "size": 16,
+                    "color": "#5e686d",
+                    "maxWidth": 760,
+                    "align": "left"
+                  }
+                },
+                {
+                  "type": "Heading",
+                  "props": {
+                    "id": "pkg-99fe43f2ea2b-49d7d02e50966df90ff3df49",
+                    "text": "Example title",
+                    "size": 58,
+                    "mobileSize": 34,
+                    "color": "#1b2c32",
+                    "style": "sans",
+                    "bindings": {
+                      "text": {
+                        "source": "product",
+                        "mode": "current",
+                        "field": "builtin:name"
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "id": "pkg-99fe43f2ea2b-c94004722de5183af376447d",
+                    "text": "Example details",
+                    "size": 18,
+                    "color": "#5e686d",
+                    "maxWidth": 800,
+                    "bindings": {
+                      "text": {
+                        "source": "product",
+                        "mode": "current",
+                        "field": "builtin:description"
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "ActionButton",
+                  "props": {
+                    "id": "pkg-99fe43f2ea2b-ea14c733d34b1b80be6f04cf",
+                    "text": "Discuss your requirements",
+                    "href": "/contact",
+                    "kind": "theme",
+                    "align": "left",
+                    "design": {
+                      "desktop": {
+                        "color": "#ffffff"
+                      }
+                    }
+                  }
+                }
+              ],
+              "layout": "column",
+              "columns": 1,
+              "mobileColumns": 1,
+              "gap": 28,
+              "padding": 64,
+              "inset": 40,
+              "minHeight": 0,
+              "background": "#f7fafb",
+              "image": "",
+              "align": "start",
+              "design": {
+                "desktop": {
+                  "maxWidth": 1400,
+                  "marginLeft": "auto",
+                  "marginRight": "auto"
+                },
+                "mobile": {
+                  "paddingTop": 32,
+                  "paddingBottom": 32,
+                  "paddingLeft": 20,
+                  "paddingRight": 20,
+                  "gap": 20
+                }
+              }
+            }
+          }
+        ]
+      },
+      "accept-lab": {
+        "root": {
+          "props": {
+            "brand": "",
+            "showChrome": "yes"
+          }
+        },
+        "content": [
+          {
+            "type": "Container",
+            "props": {
+              "id": "accept-hero",
+              "content": [
+                {
+                  "type": "Heading",
+                  "props": {
+                    "id": "accept-title",
+                    "text": "manufacturing · Composed from an empty page",
+                    "size": 52,
+                    "mobileSize": 30,
+                    "style": "sans"
+                  }
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "id": "accept-copy",
+                    "text": "Synthetic page for layout, dynamic content and inquiry acceptance."
+                  }
+                }
+              ],
+              "layout": "column",
+              "gap": 20,
+              "padding": 48,
+              "inset": 32,
+              "background": "#f7fafb",
+              "design": {
+                "mobile": {
+                  "paddingTop": 24,
+                  "paddingBottom": 24,
+                  "paddingLeft": 20,
+                  "paddingRight": 20
+                }
+              }
+            }
+          },
+          {
+            "type": "ContentLoop",
+            "props": {
+              "id": "accept-loop",
+              "source": "entry",
+              "modelId": "accept-cases",
+              "itemBlockId": "accept-card",
+              "title": "Acceptance records",
+              "count": 6,
+              "columns": 3,
+              "mobileColumns": 1,
+              "gap": 24,
+              "padding": 24,
+              "emptyText": "No acceptance records.",
+              "query": {
+                "paginate": true,
+                "controls": true,
+                "pageSize": 2,
+                "sort": "builtin:sortOrder",
+                "direction": "asc"
+              }
+            }
+          },
+          {
+            "type": "Form",
+            "props": {
+              "id": "accept-form",
+              "formId": "pkg-99fe43f2ea2b-16d7c8fd6fb510e400f53224",
+              "title": "Acceptance inquiry",
+              "columns": 2,
+              "mobileColumns": 1,
+              "padding": 24
+            }
+          }
+        ]
+      },
+      "accept-detail": {
+        "root": {
+          "props": {
+            "brand": "",
+            "showChrome": "yes"
+          }
+        },
+        "content": [
+          {
+            "type": "Heading",
+            "props": {
+              "id": "accept-detail-title",
+              "text": "",
+              "bindings": {
+                "text": {
+                  "source": "entry",
+                  "mode": "current",
+                  "modelId": "accept-cases",
+                  "field": "builtin:title",
+                  "fallback": ""
+                }
+              }
+            }
+          },
+          {
+            "type": "Text",
+            "props": {
+              "id": "accept-summary",
+              "text": "",
+              "bindings": {
+                "text": {
+                  "source": "entry",
+                  "mode": "current",
+                  "modelId": "accept-cases",
+                  "field": "field:ac-summary",
+                  "fallback": ""
+                }
+              }
+            }
+          },
+          {
+            "type": "Text",
+            "props": {
+              "id": "accept-score",
+              "text": "",
+              "bindings": {
+                "text": {
+                  "source": "entry",
+                  "mode": "current",
+                  "modelId": "accept-cases",
+                  "field": "field:ac-score",
+                  "fallback": ""
+                }
+              }
+            }
+          },
+          {
+            "type": "Text",
+            "props": {
+              "id": "accept-active",
+              "text": "",
+              "bindings": {
+                "text": {
+                  "source": "entry",
+                  "mode": "current",
+                  "modelId": "accept-cases",
+                  "field": "field:ac-active",
+                  "fallback": ""
+                }
+              }
+            }
+          }
+        ]
+      },
+      "page-c587debf-7934-4e99-8c7e-f13ab897410e": {
+        "root": {
+          "props": {
+            "title": "新页面",
+            "brand": "",
+            "showChrome": "no"
+          }
+        },
+        "content": [
+          {
+            "type": "Heading",
+            "props": {
+              "text": "Designed freely · A acceptance",
+              "size": 44,
+              "mobileSize": 34,
+              "color": "#222a25",
+              "align": "left",
+              "style": "serif",
+              "spacing": 0,
+              "id": "Heading-085cfe3e-f283-4128-bf50-a7fad2c8b0ae",
+              "design": {
+                "desktop": {
+                  "fontSize": 64
+                },
+                "mobile": {
+                  "fontSize": 28
+                }
+              }
+            }
+          }
+        ],
+        "zones": {}
+      },
+      "page-e000d28b-bea6-4cfc-b3d0-af9d811b9b70": {
+        "root": {
+          "props": {
+            "showChrome": "no"
+          }
+        },
+        "content": [
+          {
+            "type": "Heading",
+            "props": {
+              "id": "b-start",
+              "text": "Willkommen bei unserem Unternehmen"
+            }
+          },
+          {
+            "type": "LanguageSwitcher",
+            "props": {
+              "id": "b-switch"
+            }
+          }
+        ]
+      },
+      "c-layout": {
+        "root": {
+          "props": {
+            "showChrome": "no"
+          }
+        },
+        "content": [
+          {
+            "type": "Container",
+            "props": {
+              "id": "c-stage",
+              "layout": "column",
+              "padding": 28,
+              "inset": 28,
+              "content": [
+                {
+                  "type": "Heading",
+                  "props": {
+                    "id": "c-label",
+                    "text": "FORM STUDIO / DEVELOPER EDITION",
+                    "design": {
+                      "desktop": {
+                        "fontSize": 14,
+                        "letterSpacing": 2,
+                        "color": "#486b7a",
+                        "marginBottom": 16
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "Heading",
+                  "props": {
+                    "id": "c-title",
+                    "text": "Design your own business tools.",
+                    "design": {
+                      "desktop": {
+                        "fontSize": 48,
+                        "maxWidth": 720,
+                        "marginBottom": 24
+                      },
+                      "mobile": {
+                        "fontSize": 30
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "id": "c-badge",
+                    "text": "LOCAL EXTENSION",
+                    "design": {
+                      "desktop": {
+                        "position": "absolute",
+                        "top": 24,
+                        "right": 24,
+                        "zIndex": 2,
+                        "backgroundColor": "#e5f0f4",
+                        "color": "#16384c",
+                        "paddingTop": 8,
+                        "paddingBottom": 8,
+                        "paddingLeft": 12,
+                        "paddingRight": 12,
+                        "fontSize": 11,
+                        "borderRadius": 4
+                      },
+                      "tablet": {
+                        "position": "flow",
+                        "top": "auto",
+                        "right": "auto",
+                        "marginBottom": 16
+                      },
+                      "mobile": {
+                        "position": "flow"
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "studio/SpecificationTable",
+                  "props": {
+                    "id": "c-main-spec",
+                    "extensionVersion": 2,
+                    "title": "Project information",
+                    "caption": "Synthetic demonstration. Replace with verified customer information.",
+                    "rows": [
+                      {
+                        "label": "Purpose",
+                        "value": "Local business component acceptance"
+                      },
+                      {
+                        "label": "Reference",
+                        "value": "Synthetic C demonstration"
+                      }
+                    ],
+                    "productId": "pkg-99fe43f2ea2b-813f9f2fb7d59998aed2b5a5",
+                    "fileUrl": "/api/media/media-0d23fefb-5bc7-45a8-91c0-754ca7e8c2ee"
+                  }
+                },
+                {
+                  "type": "ActionButton",
+                  "props": {
+                    "id": "c-contact",
+                    "text": "Discuss a project",
+                    "href": "/contact",
+                    "kind": "theme"
+                  }
+                }
+              ],
+              "design": {
+                "desktop": {
+                  "maxWidth": 1120,
+                  "minHeight": 560,
+                  "marginLeft": "auto",
+                  "marginRight": "auto",
+                  "paddingTop": 72,
+                  "paddingBottom": 40,
+                  "overflow": "clip"
+                },
+                "tablet": {
+                  "paddingTop": 32
+                },
+                "mobile": {
+                  "paddingTop": 24,
+                  "paddingLeft": 16,
+                  "paddingRight": 16
+                }
+              }
+            }
+          },
+          {
+            "type": "Container",
+            "props": {
+              "id": "c-sticky-section",
+              "layout": "column",
+              "content": [
+                {
+                  "type": "Text",
+                  "props": {
+                    "id": "c-sticky-label",
+                    "text": "A reusable component, on every screen.",
+                    "design": {
+                      "desktop": {
+                        "position": "sticky",
+                        "top": 0,
+                        "zIndex": 1,
+                        "backgroundColor": "#f7fafb",
+                        "paddingTop": 12,
+                        "paddingBottom": 12,
+                        "fontSize": 18
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "ContentLoop",
+                  "props": {
+                    "id": "c-loop",
+                    "source": "product",
+                    "itemBlockId": "c-spec-card",
+                    "columns": 1,
+                    "count": 1,
+                    "query": {
+                      "filters": [
+                        {
+                          "field": "builtin:id",
+                          "op": "eq",
+                          "value": "pkg-99fe43f2ea2b-813f9f2fb7d59998aed2b5a5"
+                        }
+                      ]
+                    }
+                  }
+                }
+              ],
+              "design": {
+                "desktop": {
+                  "maxWidth": 1120,
+                  "marginLeft": "auto",
+                  "marginRight": "auto",
+                  "minHeight": 360
+                },
+                "mobile": {
+                  "paddingLeft": 16,
+                  "paddingRight": 16
+                }
+              }
+            }
+          }
+        ]
+      },
+      "c-template-copy": {
+        "root": {
+          "props": {
+            "showChrome": "no",
+            "title": "Independent business copy"
+          }
+        },
+        "content": [
+          {
+            "type": "Container",
+            "props": {
+              "id": "c-stage",
+              "layout": "column",
+              "padding": 28,
+              "inset": 28,
+              "content": [
+                {
+                  "type": "Heading",
+                  "props": {
+                    "id": "c-label",
+                    "text": "FORM STUDIO / DEVELOPER EDITION",
+                    "design": {
+                      "desktop": {
+                        "fontSize": 14,
+                        "letterSpacing": 2,
+                        "color": "#486b7a",
+                        "marginBottom": 16
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "Heading",
+                  "props": {
+                    "id": "c-title",
+                    "text": "Design your own business tools.",
+                    "design": {
+                      "desktop": {
+                        "fontSize": 48,
+                        "maxWidth": 720,
+                        "marginBottom": 24
+                      },
+                      "mobile": {
+                        "fontSize": 30
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "Text",
+                  "props": {
+                    "id": "c-badge",
+                    "text": "LOCAL EXTENSION",
+                    "design": {
+                      "desktop": {
+                        "position": "absolute",
+                        "top": 24,
+                        "right": 24,
+                        "zIndex": 2,
+                        "backgroundColor": "#e5f0f4",
+                        "color": "#16384c",
+                        "paddingTop": 8,
+                        "paddingBottom": 8,
+                        "paddingLeft": 12,
+                        "paddingRight": 12,
+                        "fontSize": 11,
+                        "borderRadius": 4
+                      },
+                      "tablet": {
+                        "position": "flow",
+                        "top": "auto",
+                        "right": "auto",
+                        "marginBottom": 16
+                      },
+                      "mobile": {
+                        "position": "flow"
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "studio/SpecificationTable",
+                  "props": {
+                    "id": "c-main-spec",
+                    "extensionVersion": 2,
+                    "title": "Project information",
+                    "caption": "Synthetic demonstration. Replace with verified customer information.",
+                    "rows": [
+                      {
+                        "label": "Purpose",
+                        "value": "Local business component acceptance"
+                      },
+                      {
+                        "label": "Reference",
+                        "value": "Synthetic C demonstration"
+                      }
+                    ],
+                    "productId": "pkg-99fe43f2ea2b-813f9f2fb7d59998aed2b5a5",
+                    "fileUrl": "/api/media/media-0d23fefb-5bc7-45a8-91c0-754ca7e8c2ee"
+                  }
+                },
+                {
+                  "type": "ActionButton",
+                  "props": {
+                    "id": "c-contact",
+                    "text": "Discuss a project",
+                    "href": "/contact",
+                    "kind": "theme"
+                  }
+                }
+              ],
+              "design": {
+                "desktop": {
+                  "maxWidth": 1120,
+                  "minHeight": 560,
+                  "marginLeft": "auto",
+                  "marginRight": "auto",
+                  "paddingTop": 72,
+                  "paddingBottom": 40,
+                  "overflow": "clip"
+                },
+                "tablet": {
+                  "paddingTop": 32
+                },
+                "mobile": {
+                  "paddingTop": 24,
+                  "paddingLeft": 16,
+                  "paddingRight": 16
+                }
+              }
+            }
+          },
+          {
+            "type": "Container",
+            "props": {
+              "id": "c-sticky-section",
+              "layout": "column",
+              "content": [
+                {
+                  "type": "Text",
+                  "props": {
+                    "id": "c-sticky-label",
+                    "text": "A reusable component, on every screen.",
+                    "design": {
+                      "desktop": {
+                        "position": "sticky",
+                        "top": 0,
+                        "zIndex": 1,
+                        "backgroundColor": "#f7fafb",
+                        "paddingTop": 12,
+                        "paddingBottom": 12,
+                        "fontSize": 18
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "ContentLoop",
+                  "props": {
+                    "id": "c-loop",
+                    "source": "product",
+                    "itemBlockId": "c-spec-card",
+                    "columns": 1,
+                    "count": 1,
+                    "query": {
+                      "filters": [
+                        {
+                          "field": "builtin:id",
+                          "op": "eq",
+                          "value": "pkg-99fe43f2ea2b-813f9f2fb7d59998aed2b5a5"
+                        }
+                      ]
+                    }
+                  }
+                }
+              ],
+              "design": {
+                "desktop": {
+                  "maxWidth": 1120,
+                  "marginLeft": "auto",
+                  "marginRight": "auto",
+                  "minHeight": 360
+                },
+                "mobile": {
+                  "paddingLeft": 16,
+                  "paddingRight": 16
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "media": [
+      {
+        "id": "media-0d23fefb-5bc7-45a8-91c0-754ca7e8c2ee",
+        "name": "c-demo-catalog.pdf",
+        "url": "/api/media/media-0d23fefb-5bc7-45a8-91c0-754ca7e8c2ee",
+        "kind": "document",
+        "folder": "C synthetic",
+        "size": "1 KB",
+        "bytes": 874,
+        "pages": 1,
+        "alt": ""
+      }
+    ],
+    "sharedBlocks": [
+      {
+        "id": "pkg-99fe43f2ea2b-816f62fc1486dbf14ba3a11c",
+        "name": "全站页眉",
+        "updated": "",
+        "data": {
+          "root": {
+            "props": {
+              "title": "Header",
+              "brand": "Atlas Works",
+              "showChrome": "no"
+            }
+          },
+          "content": [
+            {
+              "type": "Container",
+              "props": {
+                "id": "pkg-99fe43f2ea2b-7652048f73c6de6aa322bdb0",
+                "content": [
+                  {
+                    "type": "Heading",
+                    "props": {
+                      "id": "pkg-99fe43f2ea2b-9d15ad66e2266bf845020574",
+                      "text": "Atlas Works",
+                      "size": 26,
+                      "mobileSize": 26,
+                      "color": "#1b2c32",
+                      "align": "left",
+                      "style": "sans",
+                      "spacing": 0,
+                      "design": {
+                        "desktop": {
+                          "fontWeight": 600,
+                          "lineHeight": 1.12
+                        },
+                        "mobile": {
+                          "fontSize": 26
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "type": "Navigation",
+                    "props": {
+                      "id": "pkg-99fe43f2ea2b-979a46fbe1b5cd094273a378",
+                      "menuId": "pkg-99fe43f2ea2b-5c0ab096aa7cb0824f3a2cfc"
+                    }
+                  }
+                ],
+                "layout": "grid",
+                "columns": 2,
+                "mobileColumns": 1,
+                "gap": 28,
+                "padding": 24,
+                "inset": 40,
+                "minHeight": 0,
+                "background": "#ffffff",
+                "image": "",
+                "align": "start",
+                "design": {
+                  "desktop": {
+                    "maxWidth": 1400,
+                    "marginLeft": "auto",
+                    "marginRight": "auto"
+                  },
+                  "mobile": {
+                    "paddingTop": 32,
+                    "paddingBottom": 32,
+                    "paddingLeft": 20,
+                    "paddingRight": 20,
+                    "gap": 20
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "pkg-99fe43f2ea2b-4004e0f93b3ec7a4138d92c4",
+        "name": "全站页脚",
+        "updated": "",
+        "data": {
+          "root": {
+            "props": {
+              "title": "Footer",
+              "brand": "Atlas Works",
+              "showChrome": "no"
+            }
+          },
+          "content": [
+            {
+              "type": "Container",
+              "props": {
+                "id": "pkg-99fe43f2ea2b-6a6b06207d7f93aded4d5ff5",
+                "content": [
+                  {
+                    "type": "Text",
+                    "props": {
+                      "id": "pkg-99fe43f2ea2b-e7fe52215a2fb36b5591b3da",
+                      "text": "Atlas Works · Demonstration website. Replace all example content with verified customer information.",
+                      "size": 16,
+                      "color": "#5e686d",
+                      "maxWidth": 760,
+                      "align": "left"
+                    }
+                  },
+                  {
+                    "type": "Navigation",
+                    "props": {
+                      "id": "pkg-99fe43f2ea2b-ddd5c029b2da5831a1c85569",
+                      "menuId": "pkg-99fe43f2ea2b-5c0ab096aa7cb0824f3a2cfc"
+                    }
+                  }
+                ],
+                "layout": "column",
+                "columns": 1,
+                "mobileColumns": 1,
+                "gap": 28,
+                "padding": 28,
+                "inset": 40,
+                "minHeight": 0,
+                "background": "#ffffff",
+                "image": "",
+                "align": "start",
+                "design": {
+                  "desktop": {
+                    "maxWidth": 1400,
+                    "marginLeft": "auto",
+                    "marginRight": "auto"
+                  },
+                  "mobile": {
+                    "paddingTop": 32,
+                    "paddingBottom": 32,
+                    "paddingLeft": 20,
+                    "paddingRight": 20,
+                    "gap": 20
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "pkg-99fe43f2ea2b-ea3a74823b6b7c112270a740",
+        "name": "可自由编辑的列表卡片",
+        "updated": "",
+        "data": {
+          "root": {
+            "props": {
+              "title": "Editable list card",
+              "brand": "Atlas Works",
+              "showChrome": "no"
+            }
+          },
+          "content": [
+            {
+              "type": "Container",
+              "props": {
+                "id": "pkg-99fe43f2ea2b-61bfceee445e566e47354408",
+                "content": [
+                  {
+                    "type": "Text",
+                    "props": {
+                      "id": "pkg-99fe43f2ea2b-9b5f70523d0ec4128a9db839",
+                      "text": "PRODUCT DEMO",
+                      "size": 16,
+                      "color": "#5e686d",
+                      "maxWidth": 760,
+                      "align": "left"
+                    }
+                  },
+                  {
+                    "type": "Heading",
+                    "props": {
+                      "id": "pkg-99fe43f2ea2b-b7c3d5b086aacd85800b0cd5",
+                      "text": "Example title",
+                      "size": 26,
+                      "mobileSize": 24,
+                      "color": "#1b2c32",
+                      "style": "sans",
+                      "align": "left",
+                      "bindings": {
+                        "text": {
+                          "source": "product",
+                          "mode": "current",
+                          "field": "builtin:name"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "type": "Text",
+                    "props": {
+                      "id": "pkg-99fe43f2ea2b-a99653b5165fc15d6927f4e4",
+                      "text": "Example description",
+                      "size": 15,
+                      "color": "#5e686d",
+                      "maxWidth": 500,
+                      "bindings": {
+                        "text": {
+                          "source": "product",
+                          "mode": "current",
+                          "field": "builtin:description"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "type": "ActionButton",
+                    "props": {
+                      "id": "pkg-99fe43f2ea2b-ee013f47d0830b05c2ce71ce",
+                      "text": "Explore example",
+                      "href": "",
+                      "kind": "outline",
+                      "align": "left",
+                      "design": {
+                        "desktop": {
+                          "color": "#1b2c32",
+                          "borderColor": "#a9b09f"
+                        }
+                      },
+                      "bindings": {
+                        "href": {
+                          "source": "product",
+                          "mode": "current",
+                          "field": "builtin:url"
+                        }
+                      }
+                    }
+                  }
+                ],
+                "layout": "column",
+                "columns": 1,
+                "mobileColumns": 1,
+                "gap": 28,
+                "padding": 28,
+                "inset": 40,
+                "minHeight": 0,
+                "background": "#ffffff",
+                "image": "",
+                "align": "start",
+                "design": {
+                  "desktop": {
+                    "maxWidth": 1400,
+                    "marginLeft": "auto",
+                    "marginRight": "auto"
+                  },
+                  "mobile": {
+                    "paddingTop": 32,
+                    "paddingBottom": 32,
+                    "paddingLeft": 20,
+                    "paddingRight": 20,
+                    "gap": 20
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "accept-card",
+        "name": "Acceptance free card",
+        "updated": "2026-11-07T07:27:23.223Z",
+        "data": {
+          "root": {
+            "props": {
+              "brand": "",
+              "showChrome": "no"
+            }
+          },
+          "content": [
+            {
+              "type": "Heading",
+              "props": {
+                "id": "accept-card-heading",
+                "text": "",
+                "size": 24,
+                "bindings": {
+                  "text": {
+                    "source": "entry",
+                    "mode": "current",
+                    "modelId": "accept-cases",
+                    "field": "builtin:title",
+                    "fallback": ""
+                  }
+                }
+              }
+            },
+            {
+              "type": "Text",
+              "props": {
+                "id": "accept-card-summary",
+                "text": "",
+                "bindings": {
+                  "text": {
+                    "source": "entry",
+                    "mode": "current",
+                    "modelId": "accept-cases",
+                    "field": "field:ac-summary",
+                    "fallback": ""
+                  }
+                }
+              }
+            },
+            {
+              "type": "ActionButton",
+              "props": {
+                "id": "accept-card-link",
+                "text": "View synthetic case",
+                "href": "",
+                "bindings": {
+                  "href": {
+                    "source": "entry",
+                    "mode": "current",
+                    "modelId": "accept-cases",
+                    "field": "builtin:url",
+                    "fallback": ""
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "b-card",
+        "name": "B freie Karte",
+        "updated": "2026-11-07T09:40:16.074Z",
+        "data": {
+          "root": {
+            "props": {
+              "showChrome": "no"
+            }
+          },
+          "content": [
+            {
+              "type": "Heading",
+              "props": {
+                "id": "b-card-title",
+                "text": "",
+                "bindings": {
+                  "text": {
+                    "source": "entry",
+                    "mode": "current",
+                    "modelId": "accept-cases",
+                    "field": "builtin:title"
+                  }
+                }
+              }
+            },
+            {
+              "type": "ActionButton",
+              "props": {
+                "id": "b-card-link",
+                "text": "Details",
+                "href": "",
+                "bindings": {
+                  "href": {
+                    "source": "entry",
+                    "mode": "current",
+                    "modelId": "accept-cases",
+                    "field": "builtin:url"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "c-spec-card",
+        "name": "C specification card",
+        "updated": "2026-11-07T10:16:18.514Z",
+        "data": {
+          "root": {
+            "props": {
+              "showChrome": "no"
+            }
+          },
+          "content": [
+            {
+              "type": "studio/SpecificationTable",
+              "props": {
+                "id": "c-card-spec",
+                "extensionVersion": 1,
+                "title": "Card specifications",
+                "caption": "Synthetic demonstration. Replace with verified customer information.",
+                "items": [
+                  {
+                    "name": "Document",
+                    "value": "Synthetic card data"
+                  }
+                ],
+                "productId": "pkg-99fe43f2ea2b-813f9f2fb7d59998aed2b5a5",
+                "fileUrl": "/api/media/media-0d23fefb-5bc7-45a8-91c0-754ca7e8c2ee"
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "siteLayout": {
+      "header": {
+        "mode": "block",
+        "blockId": "pkg-99fe43f2ea2b-816f62fc1486dbf14ba3a11c",
+        "menuId": "pkg-99fe43f2ea2b-5c0ab096aa7cb0824f3a2cfc"
+      },
+      "footer": {
+        "mode": "block",
+        "blockId": "pkg-99fe43f2ea2b-4004e0f93b3ec7a4138d92c4"
+      },
+      "menus": [
+        {
+          "id": "pkg-99fe43f2ea2b-5c0ab096aa7cb0824f3a2cfc",
+          "name": "Main navigation",
+          "items": [
+            {
+              "id": "pkg-99fe43f2ea2b-cce057ad39670add2c63035d",
+              "label": "Home",
+              "target": {
+                "kind": "page",
+                "id": "pkg-99fe43f2ea2b-b70850a9caf2a04e6c964d55"
+              }
+            },
+            {
+              "id": "pkg-99fe43f2ea2b-477776878aba3effab5f8988",
+              "label": "Products",
+              "target": {
+                "kind": "page",
+                "id": "pkg-99fe43f2ea2b-4598ba4437f8c821564c47d0"
+              }
+            },
+            {
+              "id": "pkg-99fe43f2ea2b-793fbd72e242b83a94b9cb79",
+              "label": "About",
+              "target": {
+                "kind": "page",
+                "id": "pkg-99fe43f2ea2b-8241fb73d98914cec4d54527"
+              }
+            },
+            {
+              "id": "pkg-99fe43f2ea2b-65cdfe1cd8e2b398fcedf6a8",
+              "label": "Contact",
+              "target": {
+                "kind": "page",
+                "id": "pkg-99fe43f2ea2b-90eee07a024585f6bab704ff"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "customCode": {
+      "global": {
+        "css": "",
+        "js": "",
+        "cssEnabled": false,
+        "jsEnabled": false
+      },
+      "pages": {
+        "pkg-99fe43f2ea2b-b70850a9caf2a04e6c964d55": {
+          "css": "",
+          "js": "",
+          "cssEnabled": false,
+          "jsEnabled": false
+        },
+        "pkg-99fe43f2ea2b-8241fb73d98914cec4d54527": {
+          "css": "",
+          "js": "",
+          "cssEnabled": false,
+          "jsEnabled": false
+        },
+        "pkg-99fe43f2ea2b-90eee07a024585f6bab704ff": {
+          "css": "",
+          "js": "",
+          "cssEnabled": false,
+          "jsEnabled": false
+        },
+        "pkg-99fe43f2ea2b-4598ba4437f8c821564c47d0": {
+          "css": "",
+          "js": "",
+          "cssEnabled": false,
+          "jsEnabled": false
+        },
+        "pkg-99fe43f2ea2b-55bb449ad4f50a98547b18be": {
+          "css": "",
+          "js": "",
+          "cssEnabled": false,
+          "jsEnabled": false
+        },
+        "page-e000d28b-bea6-4cfc-b3d0-af9d811b9b70": {
+          "css": "",
+          "js": "",
+          "cssEnabled": false,
+          "jsEnabled": false
+        }
+      }
+    },
+    "theme": {
+      "primary": "#16384c",
+      "background": "#f7fafb",
+      "text": "#1b2c32",
+      "radius": 2,
+      "font": "Arial",
+      "headingFont": "Arial"
+    },
+    "settings": {
+      "name": "Atlas Works",
+      "description": "Atlas Works: demonstration website. Replace all sample information before delivery.",
+      "email": "",
+      "language": "en",
+      "locales": [
+        {
+          "code": "en",
+          "label": "English"
+        },
+        {
+          "code": "de",
+          "label": "Deutsch"
+        }
+      ],
+      "publicUrl": "http://127.0.0.1:3224"
+    }
+  },
+  "files": [
+    {
+      "mediaId": "media-0d23fefb-5bc7-45a8-91c0-754ca7e8c2ee",
+      "path": "assets/42bccaf46b09222499c803b29c1a81db4f5f9f7407984bf2a09ccb0474470fdc.pdf",
+      "mime": "application/pdf",
+      "bytes": 874,
+      "sha256": "42bccaf46b09222499c803b29c1a81db4f5f9f7407984bf2a09ccb0474470fdc",
+      "content": "JVBERi0xLjcKJYGBgYEKCjYgMCBvYmoKPDwKL0ZpbHRlciAvRmxhdGVEZWNvZGUKL0xlbmd0aCAxMTgKPj4Kc3RyZWFtCnicJYpBCgIxFEP3OUXXgvg7bfNbEBdKxYUb4V9AZBQHXSji+W1HQh5JyAtbg7iu9w2rw/j4jp/75bxUKTlm0VzcEJ1d0XmEn69/2hPrFLSwamRmaiwMg8RmeoampNJWz9pzWwP93HfcUzfOJtgC1XDCD063HcIKZW5kc3RyZWFtCmVuZG9iagoKNyAwIG9iago8PAovRmlsdGVyIC9GbGF0ZURlY29kZQovVHlwZSAvT2JqU3RtCi9OIDUKL0ZpcnN0IDI2Ci9MZW5ndGggMzYxCj4+CnN0cmVhbQp4nNVSTUvDQBC976+Yox5kP5JmEymFtkkUpCitoCge0mQpkbIryUbqv3cmSS09iGcJj92ZebP7NvMkCFAQhhCAjiGESaBgAlpKmE4Zf/z6MMAfip1pGb+rqxZekSNgDW+ML11nPUg2m7ETd1n4Yu92bGgCSeQj46FxVVeaBqZ5ludCaCFEFCIiIVSK6xKRIBTGWFMx7hE6HIE5HQgRzLGWD4j00EP1njsZ+zNckRsRJx24YTzEP/fSXdlwhvpLTzJjfOWqtPAGLtJrJVQkpdBSyEhGL5f4OxpTePd/H9frr5399YVnc6bx0pAbQx7op8zXpnVdU+LYiZc7rNDm1uw/ja/L4kqLJEadOk7QY6Mx+PP99t2UPZXC7OBvNp40DAnKrUxVFwt3QPcJ/PDlgKrJg3NrnSdX9n60HtVQFI0ePZNMghjfdFvfh5SUjC+K1vRSTzpRhC1dVdsd8Kfazm1bHxN04jcJMMXOCmVuZHN0cmVhbQplbmRvYmoKCjggMCBvYmoKPDwKL1NpemUgOQovUm9vdCAyIDAgUgovSW5mbyAzIDAgUgovRmlsdGVyIC9GbGF0ZURlY29kZQovVHlwZSAvWFJlZgovTGVuZ3RoIDQxCi9XIFsgMSAyIDIgXQovSW5kZXggWyAwIDkgXQo+PgpzdHJlYW0KeJwVxLERACAMA7G3wx0t+xesxEgJViGg22xISk6Vljgg3s8XBmH0A7gKZW5kc3RyZWFtCmVuZG9iagoKc3RhcnR4cmVmCjY3MAolJUVPRg=="
+    }
+  ]
+}
