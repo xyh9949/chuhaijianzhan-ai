@@ -14,14 +14,13 @@ import type { PageItem, ScreenProps } from "../lib/types";
 import { createPageData } from "../lib/page-data";
 import "./access.css";
 import { request, RequestError } from "@/lib/studio-client";
+import { PRODUCT_NAME } from "@/lib/product-brand";
+import ProductLogo from "./ProductLogo";
 
 const { Text } = Typography;
 
 export function AccessBrand({ light = false }: { light?: boolean }) {
-  return <div className={`as-brand${light ? " is-light" : ""}`} aria-label="Form Studio">
-    <span className="as-brand-symbol" aria-hidden="true"><i /><i /><i /><i /></span>
-    <span>Form Studio</span>
-  </div>;
+  return <ProductLogo onDark={light} />;
 }
 
 export function LoginScreen({ onLoggedIn, onForgotPassword }: { onLoggedIn: () => Promise<void>; onForgotPassword?: () => void }) {
@@ -51,7 +50,7 @@ export function LoginScreen({ onLoggedIn, onForgotPassword }: { onLoggedIn: () =
     <section className="as-login-visual" aria-label="网站管理工作区介绍">
       <div className="as-login-visual-top"><AccessBrand light /><span className="as-edition">网站管理工作区</span></div>
       <div className="as-login-story">
-        <span className="as-light-eyebrow">FORM STUDIO</span>
+        <span className="as-light-eyebrow">外贸独立站</span>
         <h1>网站运营，<br />从这里开始。</h1>
         <p>集中维护页面、产品与站点信息，<br />让日常内容更新有条不紊。</p>
         <div className="as-login-flow">
@@ -60,12 +59,12 @@ export function LoginScreen({ onLoggedIn, onForgotPassword }: { onLoggedIn: () =
           <div><span className="as-login-flow-icon"><CheckCircleFilled /></span><div><strong>检查草稿</strong><p>确认变更范围，再进入发布流程</p></div></div>
         </div>
       </div>
-      <div className="as-login-visual-bottom"><span>FORM STUDIO</span><span>独立网站管理</span></div>
+      <div className="as-login-visual-bottom"><span>用中文对话搭建外贸独立站</span><span>独立网站管理</span></div>
     </section>
     <section className="as-login-panel">
       <div className="as-login-panel-top"><span>工作空间</span><Tag>安全登录</Tag></div>
       <div className="as-login-form-wrap">
-        <div className="as-login-greeting">WELCOME BACK</div>
+        <div className="as-login-greeting">工作区登录</div>
         <h2>欢迎回到工作区</h2>
         <p className="as-login-intro">继续维护内容与网站设计。</p>
         <div className="as-login-demo-note"><SafetyOutlined /><p>使用管理员为你创建的账号登录。网站草稿仅对已授权成员开放。</p></div>
@@ -80,7 +79,7 @@ export function LoginScreen({ onLoggedIn, onForgotPassword }: { onLoggedIn: () =
         </Form>
         <p className="as-login-start">首次安装请在服务器运行初始化命令。{onForgotPassword && <Button type="link" disabled={submitting} onClick={onForgotPassword}>忘记密码？</Button>}</p>
       </div>
-      <div className="as-login-panel-bottom"><span>仅授权成员可以访问工作区。</span><span>FORM STUDIO</span></div>
+      <div className="as-login-panel-bottom"><span>仅授权成员可以访问工作区。</span><span>{PRODUCT_NAME}</span></div>
     </section>
   </main>;
 }
@@ -224,6 +223,6 @@ export function SetupScreen({ state, update, navigate }: ScreenProps) {
       </Card>}
     </div>
     <div className="as-setup-actions"><Button disabled={submitting || undefined} type="text" onClick={() => step === 0 ? navigate("overview") : setStep(step - 1)} icon={step > 0 ? <ArrowLeftOutlined /> : undefined}>{step === 0 ? "取消创建" : "上一步"}</Button><div className="as-step-counter">STEP {step + 1} OF 3</div>{step < 2 ? <Button type="primary" size="large" onClick={nextStep}>下一步 <ArrowRightOutlined /></Button> : <Button type="primary" size="large" loading={submitting} onClick={createDrafts}>创建站点草稿 <ArrowRightOutlined /></Button>}</div>
-    <footer className="as-setup-footer"><span>FORM STUDIO</span><span>创建后保存到数据库；发布前仅成员可预览。</span><span>草稿工作区</span></footer>
+    <footer className="as-setup-footer"><span>{PRODUCT_NAME}</span><span>创建后保存到数据库；发布前仅成员可预览。</span><span>草稿工作区</span></footer>
   </main>;
 }

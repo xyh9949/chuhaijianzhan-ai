@@ -1,0 +1,12 @@
+.product-logo {
+  display: block;
+  max-width: 100%;
+  min-width: 0;
+  height: auto;
+  object-fit: contain;
+}
+
+/* 从确认原图得到浅色字标及蓝帆，在深色后台背景上保持对比度。 */
+.product-logo--on-dark {
+  filter: invert(1) hue-rotate(180deg);
+}

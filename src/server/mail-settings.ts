@@ -13,6 +13,7 @@ import { isMemberDisabled, requirePermission, type Actor, type MemberRow } from 
 import { object, revision } from './validation';
 import { recordAudit } from './audit';
 import { captureServiceTestConfiguration, recordServiceTestEvidence } from './service-test-evidence';
+import { PRODUCT_NAME } from '../lib/product-brand';
 
 type Config = Pick<MailSettingsInput, 'enabled' | 'host' | 'port' | 'security' | 'username' | 'from' | 'to' | 'allowLocal'>;
 type Row = { revision: number; config_json: string; secret_cipher: string; updated_at: string };
@@ -145,7 +146,7 @@ export async function testMailSettings(value: unknown, actor: Actor, signal?: Ab
   try {
     // 关闭自动通知仍可验证已保存SMTP；测试从不取询盘、公司私有内容或其他收件人。
     const testConfig = { ...config, mode: config.mode === 'mock' ? 'mock' as const : 'smtp' as const, configured: true };
-    await deliverConfiguredMail(testConfig, { from: config.mode === 'mock' ? 'local-mock@example.invalid' : config.from, to: [recipient], subject: '[Form Studio] 邮件配置测试', text: '这是一封邮件配置测试邮件。\n若收到此邮件，说明当前邮件服务已接受并投递本次测试。\n本邮件不包含客户询盘或网站私有资料。', disableFileAccess: true, disableUrlAccess: true }, signal, check);
+    await deliverConfiguredMail(testConfig, { from: config.mode === 'mock' ? 'local-mock@example.invalid' : config.from, to: [recipient], subject: `[${PRODUCT_NAME}] 邮件配置测试`, text: '这是一封邮件配置测试邮件。\n若收到此邮件，说明当前邮件服务已接受并投递本次测试。\n本邮件不包含客户询盘或网站私有资料。', disableFileAccess: true, disableUrlAccess: true }, signal, check);
     recordAudit(actor, 'mail.test', 'success', { revision: expected });
     recordServiceTestEvidence(evidence, actor, { mode: config.mode === 'mock' ? 'mock' : 'smtp', status: config.mode === 'mock' ? 'mock_sent' : 'sent' });
     return config.mode === 'mock' ? { mode: 'mock', status: 'mock_sent', message: '本机模拟测试完成，没有向真实邮箱发送邮件。' } : { mode: 'smtp', status: 'sent', message: '邮件服务已接受测试邮件，请到收件邮箱核对；这不等于保证已进入收件箱。' };

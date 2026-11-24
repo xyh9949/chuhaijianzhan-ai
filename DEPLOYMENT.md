@@ -1,6 +1,6 @@
 # 独立部署、备份与升级
 
-Form Studio 0.42.0 Beta 使用发布快照及渲染协议 28，支持读取协议 1–28。当前 SQLite 迁移版本为 19，代码中的版本值见 [protocol.json](src/lib/protocol.json)。
+出海建站 AI 0.42.0 Beta 使用发布快照及渲染协议 28，支持读取协议 1–28。当前 SQLite 迁移版本为 19，代码中的版本值见 [protocol.json](src/lib/protocol.json)。
 
 ## 部署独立实例
 
@@ -8,7 +8,7 @@ Form Studio 0.42.0 Beta 使用发布快照及渲染协议 28，支持读取协�
 
 正式域名需要与 `BETTER_AUTH_URL` 的协议和主机匹配。反向代理应覆盖转发头，公开入口使用 HTTPS。管理后台的站点域名字段属于网站配置，DNS 和证书由部署方维护。
 
-本地开发可使用 Node.js 22.15 或更新的 Node 22，安装和启动见[快速开始](README.zh-CN.md)。邮件通知和账号恢复按需配置。[邮件设置](docs/MAIL_SETTINGS.md) · [账号恢复](docs/ACCOUNT_RECOVERY.md)
+本地开发可使用 Node.js 22.15 或更新的 Node 22，安装和启动见[快速开始](README.md#快速开始)。邮件通知和账号恢复按需配置。[邮件设置](docs/MAIL_SETTINGS.md) · [账号恢复](docs/ACCOUNT_RECOVERY.md)
 
 ## 发布和公开版本切换
 

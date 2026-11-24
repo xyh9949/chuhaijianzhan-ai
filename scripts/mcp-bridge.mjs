@@ -30,4 +30,4 @@ async function main() {
 async function close() { await local?.close(); await remote.close(); }
 process.on('SIGINT', () => { void close().finally(() => process.exit(0)); });
 process.on('SIGTERM', () => { void close().finally(() => process.exit(0)); });
-main().catch(async () => { try { await close(); } catch { /* 失败退出也不输出上游认证或请求正文。 */ } process.stderr.write('Form Studio连接失败：请核对FORM_STUDIO_MCP_URL和FORM_STUDIO_MCP_TOKEN，以及网站是否已启动。\n'); process.exitCode = 1; });
+main().catch(async () => { try { await close(); } catch { /* 失败退出也不输出上游认证或请求正文。 */ } process.stderr.write('出海建站 AI 连接失败：请核对FORM_STUDIO_MCP_URL和FORM_STUDIO_MCP_TOKEN，以及网站是否已启动。\n'); process.exitCode = 1; });

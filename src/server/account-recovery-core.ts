@@ -5,6 +5,7 @@ import { getDataDirectory } from './database';
 import { deliverConfiguredMail, loadMailConfiguration, mailRuntimeSummary, validMailAddress } from './mail-settings';
 import { ApiError } from './http';
 import { recordAudit } from './audit';
+import { PRODUCT_NAME } from '../lib/product-brand';
 
 type Verification = { value: string; expiresAt: Date };
 /** 只使用认证库公开配置钩子及原生verification适配器，不接触密码哈希写入。 */
@@ -59,7 +60,7 @@ export async function deliverRecoveryToken(db: Database.Database, adapter: Recov
     if (config.mode !== 'mock' && (!config.host || !Number.isInteger(config.port) || config.port < 1 || config.port > 65535 || !validMailAddress(config.from) || config.username && !config.password)) throw new ApiError(422, '恢复邮件服务未配置');
     const check = () => { if (getDataDirectory() !== directory) throw invalid(); const current = recoveryMember(db, member.id), mail = mailRuntimeSummary(); if (!current || disabled(current) || JSON.stringify(stamp(db, current)) !== JSON.stringify(issued) || mail.revision !== config.revision || mail.source !== config.source) throw invalid(); };
     // 询盘自动通知可关闭；恢复邮件只发给已登记邮箱，不使用询盘收件人或客户资料。
-    await deliverConfiguredMail({ ...config, mode: config.mode === 'mock' ? 'mock' : 'smtp', configured: true, to: [member.email] }, { from: config.mode === 'mock' ? 'local-mock@example.invalid' : config.from, to: [member.email], subject: '[Form Studio] 重置登录密码', text: `你收到了一次登录密码恢复申请。\n\n请在15分钟内打开以下链接设置新密码：\n${url.href}\n\n若不是你申请的，请忽略此邮件。链接只能使用一次，重置成功后旧登录会话将失效。`, disableFileAccess: true, disableUrlAccess: true }, undefined, check);
+    await deliverConfiguredMail({ ...config, mode: config.mode === 'mock' ? 'mock' : 'smtp', configured: true, to: [member.email] }, { from: config.mode === 'mock' ? 'local-mock@example.invalid' : config.from, to: [member.email], subject: `[${PRODUCT_NAME}] 重置登录密码`, text: `你收到了一次登录密码恢复申请。\n\n请在15分钟内打开以下链接设置新密码：\n${url.href}\n\n若不是你申请的，请忽略此邮件。链接只能使用一次，重置成功后旧登录会话将失效。`, disableFileAccess: true, disableUrlAccess: true }, undefined, check);
     safeAudit(member, 'success', [config.mode === 'mock' ? 'mock-delivery' : 'smtp-delivery']);
   } catch {
     await adapter.deleteVerificationByIdentifier(`reset-password:${data.token}`).catch(() => {}); await adapter.deleteVerificationByIdentifier(metaId(data.token)).catch(() => {});

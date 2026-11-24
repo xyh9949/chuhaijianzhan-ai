@@ -29,7 +29,7 @@
 
 ## 初始化和迁移命令
 
-以下命令在 Form Studio 源码根目录执行。服务器使用锁文件安装依赖，确保 better-sqlite3 原生模块与目标系统和 Node 版本匹配。
+以下命令在出海建站 AI 源码根目录执行。服务器使用锁文件安装依赖，确保 better-sqlite3 原生模块与目标系统和 Node 版本匹配。
 
 ```powershell
 npm ci

@@ -36,6 +36,8 @@ import { ProductsScreen, MediaScreen, InquiriesScreen } from '@/components/Conte
 import { TemplatesScreen, ThemeScreen, SettingsScreen } from '@/components/SystemScreens';
 import { LoginScreen, SetupScreen } from '@/components/AccessScreens';
 import AccountRecovery, { consumeAccountRecoveryLocation, type AccountRecoveryEntry } from '@/components/AccountRecovery';
+import ProductLogo from '@/components/ProductLogo';
+import { PRODUCT_NAME } from '@/lib/product-brand';
 import '@/components/shell.css';
 
 const EditorScreen = dynamic(() => import('@/components/EditorScreen').then((module) => module.EditorScreen), { ssr: false, loading: () => <div className="shell-loading"><Spin /><span>正在准备创作画布…</span></div> });
@@ -417,7 +419,7 @@ function Studio({ actor, initial, onLoggedOut }: { actor: ClientActor; initial: 
     onClick: ({ key }: { key: string }) => key === 'logout' ? void logout() : key === 'account' ? setAccountOpen(true) : navigate(key as Screen),
   };
   const sidebar = <ConfigProvider theme={sidebarTheme}><div className="shell-sidebar-content flex h-full min-h-0 flex-col">
-    <Button type="text" className="shell-brand" onClick={() => navigate('overview')} aria-label="Form Studio 工作台"><span className="shell-brand-mark" aria-hidden="true"><i /><i /><i /><i /></span><span>Form Studio</span></Button>
+    <Button type="text" className="shell-brand" onClick={() => navigate('overview')} aria-label={`${PRODUCT_NAME} 工作台`}><ProductLogo onDark decorative /></Button>
     {/* 点击Wave会插入临时首节点；文字布局使用具名容器，不依赖子节点位置。 */}
     <Dropdown trigger={['click']} menu={workspaceMenu}><Button className="shell-current-site"><Flex component="span" vertical gap={5} className="shell-site-copy"><strong className="shell-site-name" title={state.settings.name || '未命名站点'}>{state.settings.name || '未命名站点'}</strong><span className="shell-site-domain" title={state.settings.domain || '尚未设置域名'}>{state.settings.domain || '尚未设置域名'}</span></Flex><DownOutlined className="shell-site-chevron" /></Button></Dropdown>
     <Menu className="shell-nav-menu" theme="dark" mode="inline" selectedKeys={[screen]} items={navigation} onClick={({ key }) => navigate(key as Screen)} />
@@ -471,7 +473,7 @@ function Studio({ actor, initial, onLoggedOut }: { actor: ClientActor; initial: 
           {screen === 'seo' && actor.role === 'admin' && <SeoWorkspace {...props} />}
           {screen === 'releases' && <ServerReleases onPublish={openPublish} />}
           {screen === 'settings' && actor.role === 'admin' && <SettingsScreen {...props} />}</ConfigProvider>
-          <footer className="shell-footer flex flex-wrap items-center justify-between gap-2"><span>Form Studio</span><span>修改先保存，发布后客户才能看到</span></footer>
+          <footer className="shell-footer flex flex-wrap items-center justify-between gap-2"><span>{PRODUCT_NAME}</span><span>修改先保存，发布后客户才能看到</span></footer>
         </main>
       </div>
     </div>}
@@ -480,7 +482,7 @@ function Studio({ actor, initial, onLoggedOut }: { actor: ClientActor; initial: 
       <Input autoFocus size="large" prefix={<SearchOutlined />} placeholder="搜索功能或页面名称…" value={query} onChange={(event) => setQuery(event.target.value)} aria-label="工作空间搜索" />
       <div className="shell-command-list">{searchResults.length ? searchResults.map((result, index) => <Button type="text" key={index} onClick={() => { result.action(); setSearchOpen(false); setQuery(''); }}><FileTextOutlined /><span><strong>{result.title}</strong><span>{result.description}</span></span><ArrowRightOutlined /></Button>) : <Empty image={Empty.PRESENTED_IMAGE_SIMPLE} description="没有匹配的页面" />}</div>
     </Modal>
-    <Modal rootClassName="admin-app shell-modal" open={helpOpen} title="使用 Form Studio" onCancel={() => setHelpOpen(false)} footer={<Button type="primary" onClick={() => setHelpOpen(false)}>知道了</Button>}>
+    <Modal rootClassName="admin-app shell-modal" open={helpOpen} title={`使用 ${PRODUCT_NAME}`} onCancel={() => setHelpOpen(false)} footer={<Button type="primary" onClick={() => setHelpOpen(false)}>知道了</Button>}>
       <div className="shell-help-content"><p>在这里编辑页面、管理产品与素材。内容保存在本实例数据库中，登录权限由服务器验证。</p>
         <div className="shell-help-step"><span>01</span><div><strong>编辑页面内容</strong><p>进入网站页面，打开已有页面或新建空白页，在画布中调整内容。</p></div></div>
         <div className="shell-help-step"><span>02</span><div><strong>管理设计与资料</strong><p>产品和素材集中维护。全站样式只控制客户网站，模板与区块当前创建独立草稿。</p></div></div>

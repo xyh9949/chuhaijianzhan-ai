@@ -5,6 +5,7 @@ import { Alert, App, Button, Form, Input, Space, Tag, Typography } from 'antd';
 import { ArrowLeftOutlined, LockOutlined, MailOutlined, SafetyCertificateOutlined } from '@ant-design/icons';
 import { request, RequestError } from '@/lib/studio-client';
 import type { AccountRecoveryAccepted, AccountRecoveryCompleted } from '@/lib/account-recovery-types';
+import { PRODUCT_NAME } from '@/lib/product-brand';
 import { AccessBrand } from './AccessScreens';
 import './access.css';
 
@@ -64,7 +65,7 @@ export default function AccountRecovery({ entry, onBack, onForgot }: { entry: Ac
     <section className="as-login-visual" aria-label="账号恢复说明">
       <div className="as-login-visual-top"><AccessBrand light /><span className="as-edition">网站管理工作区</span></div>
       <div className="as-login-story"><span className="as-light-eyebrow">ACCOUNT RECOVERY</span><h1>重新连接，<br />继续你的工作。</h1><p>通过账号邮箱重置密码。<br />网站页面、产品和询盘保持原状。</p></div>
-      <div className="as-login-visual-bottom"><span>FORM STUDIO</span><span>独立网站管理</span></div>
+      <div className="as-login-visual-bottom"><span>出海建站工作区</span><span>独立网站管理</span></div>
     </section>
     <section className="as-login-panel">
       <div className="as-login-panel-top"><span>账号恢复</span><Tag>安全验证</Tag></div>
@@ -86,7 +87,7 @@ export default function AccountRecovery({ entry, onBack, onForgot }: { entry: Ac
           {!receipt && <Button icon={<ArrowLeftOutlined />} disabled={busy} onClick={back}>返回登录</Button>}
         </Space>
       </div>
-      <div className="as-login-panel-bottom"><span>请勿转发密码恢复邮件。</span><span>FORM STUDIO</span></div>
+      <div className="as-login-panel-bottom"><span>请勿转发密码恢复邮件。</span><span>{PRODUCT_NAME}</span></div>
     </section>
   </main>;
 }

@@ -1,12 +1,12 @@
-# Contributing to Form Studio
+# Contributing to 出海建站 AI
 
 ## Report an issue
 
-Include the Form Studio version, operating system or container, Node.js version, and steps to reproduce. Describe what you expected and what happened. Use fictional site content in examples and share redacted logs or screenshots. For security issues, follow the [security policy](SECURITY.md).
+Include the 出海建站 AI version, operating system or container, Node.js version, and steps to reproduce. Describe what you expected and what happened. Use fictional site content in examples and share redacted logs or screenshots. For security issues, follow the [security policy](SECURITY.md).
 
 ## Verify a change
 
-Use Node.js 22.15 or a later version in the 22.x line. Follow the [quick start](README.md#quick-start) to create a local development instance if you need one. Run the relevant checks from the repository root.
+Use Node.js 22.15 or a later version in the 22.x line. Follow the [quick start](README.en.md#quick-start) to create a local development instance if you need one. Run the relevant checks from the repository root.
 
 ```sh
 npm ci

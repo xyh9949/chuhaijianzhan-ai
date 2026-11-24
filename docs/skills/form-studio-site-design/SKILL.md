@@ -1,9 +1,9 @@
 ---
 name: form-studio-site-design
-description: 通过 Form Studio MCP 理解企业与买家需求，设计可自由拖拽的网站，创作文章和产品介绍，并依据真实搜索资料优化SEO。生成可核对的候选和预览，继续调整后交由用户在后台确认保存或撤销。适用于已连接 Form Studio 的建站、改版、内容创作及搜索优化任务。
+description: 通过出海建站 AI 的 MCP 接口理解企业与买家需求，设计可自由拖拽的网站，创作文章和产品介绍，并依据真实搜索资料优化SEO。生成可核对的候选和预览，继续调整后交由用户在后台确认保存或撤销。适用于已连接出海建站 AI 的建站、改版、内容创作及搜索优化任务。
 ---
 
-需要已配置的 Form Studio MCP 连接。设计、详情模板、文案、SEO和全站设计约定分别授权，旧设计连接不会自动获得详情模板、产品、文章、搜索资料或私有设计约定权限。模型由用户的 AI 客户端提供。
+需要已配置的出海建站 AI MCP 连接。设计、详情模板、文案、SEO和全站设计约定分别授权，旧设计连接不会自动获得详情模板、产品、文章、搜索资料或私有设计约定权限。模型由用户的 AI 客户端提供。
 
 设计使用 `site_overview`、`site_capabilities`、`site_design_context`、`site_design_propose`、`site_design_status`、`site_design_select`、`site_design_review`。文案使用 `site_content_overview`、`site_content_capabilities`、`site_content_context`、`site_content_propose`、`site_content_status`、`site_content_review`。SEO使用 `site_seo_overview`、`site_seo_context`、`site_seo_propose`、`site_seo_status`、`site_seo_review`。多个站点同时连接时先确定目标站点。工具列表、能力、输入结构与限制以本次服务器返回为准；不要根据其他 CMS 的经验猜字段。
 

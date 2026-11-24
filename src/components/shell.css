@@ -1,12 +1,7 @@
 .admin-app .shell-layout { background: var(--bg); color: var(--text); }
 .admin-app .shell-sidebar { background: #13263b; color: #e9eff8; border-right: 1px solid #20374d; }
 .admin-app .shell-sidebar-content { background: #13263b; }
-.admin-app .shell-brand.ant-btn { display: flex; align-items: center; justify-content: flex-start; gap: 12px; height: 72px; min-height: 72px; width: 100%; padding: 0 24px; border: 0; border-radius: 0; color: #fff; font-size: 20px; font-weight: 600; letter-spacing: -.2px; }
-.admin-app .shell-brand-mark { width: 28px; height: 28px; display: grid; grid-template-columns: 1fr 1fr; gap: 3px; flex-shrink: 0; }
-.admin-app .shell-brand-mark > i { display: block; background: var(--primary); border-radius: 1px; }
-.admin-app .shell-brand-mark > i:first-child { border-top-left-radius: 10px; }
-.admin-app .shell-brand-mark > i:nth-child(2) { background: #f6f9ff; border-bottom-right-radius: 9px; }
-.admin-app .shell-brand-mark > i:nth-child(3) { background: #9ec5ff; border-top-left-radius: 9px; }
+.admin-app .shell-brand.ant-btn { display: flex; align-items: center; justify-content: flex-start; height: 72px; min-height: 72px; width: 100%; padding: 0 14px; border: 0; border-radius: 0; }
 .admin-app .shell-current-site.ant-btn { display: flex; justify-content: flex-start; align-items: center; gap: 10px; width: calc(100% - 32px); height: auto; min-height: 69px; padding: 11px 13px; margin: 0 16px 9px; border: 1px solid #39516a; border-radius: 6px; color: #f4f7fc; background: #162b41; text-align: left; }
 /* Wave节点增删不影响具名文字容器；两行各自截断，箭头保留固定空间。 */
 .admin-app .shell-current-site .shell-site-copy { min-width: 0; flex: 1; overflow: hidden; }

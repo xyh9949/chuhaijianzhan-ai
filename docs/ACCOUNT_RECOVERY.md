@@ -26,7 +26,7 @@
 
 本机恢复只接受已经存在且未停用的 `admin`，不会创建账号、提权或解禁。必须停止网站实际 Node 服务，核对该实例数据目录、固定认证密钥和**应用实际监听端口**。端口探测只能辅助检查当前本机端口；填写错误端口、容器/远程实例或其他进程行为不能由该探测证明安全，操作者必须完成真正的维护窗口。
 
-在 Form Studio 源码根目录运行。以下路径和邮箱请替换为实际维护配置。
+在出海建站 AI 源码根目录运行。以下路径和邮箱请替换为实际维护配置。
 
 ```powershell
 npx tsx scripts/auth-recover.ts --env-file "C:\path\to\instance.env" --email "admin@example.invalid" --port 3200 --backup-dir "C:\path\to\new-recovery-backup" --acknowledge-stopped

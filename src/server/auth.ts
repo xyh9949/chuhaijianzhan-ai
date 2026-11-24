@@ -3,6 +3,7 @@ import { admin } from "better-auth/plugins";
 import { adminAc, userAc } from "better-auth/plugins/admin/access";
 import { getDatabase } from "./database";
 import { getAuthEnvironment } from "./env";
+import { PRODUCT_NAME } from '../lib/product-brand';
 import { APIError, createAuthMiddleware } from 'better-auth/api';
 import { assertRecoveryToken, deliverRecoveryToken, RECOVERY_LIFETIME_SECONDS, type RecoveryContext, type RecoveryDelivery } from './account-recovery-core';
 
@@ -15,7 +16,7 @@ export function createRecoveryAuth(options: { delivery?: RecoveryDelivery } = {}
     try { await assertRecoveryToken(db, adapter, token, nativeRequired); } catch { throw new APIError('BAD_REQUEST', { message: '恢复链接无效或已过期，请重新申请', code: 'INVALID_TOKEN' }); }
   };
   const auth = betterAuth({
-    appName: "Form Studio",
+    appName: PRODUCT_NAME,
     baseURL: env.baseURL,
     secret: env.secret,
     // 认证库可能把端点上下文带入异常；只记录固定类别，不让恢复链接或账号进入日志。
