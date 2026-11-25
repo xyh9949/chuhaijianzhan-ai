@@ -14,6 +14,10 @@ export const BUNDLED_IMAGES: readonly BundledImage[] = [
   { url: '/images/studio.jpg', mime: 'image/jpeg', label: '演示 · 工作室', width: 900, height: 601 },
   { url: '/images/showcase-factory.png', mime: 'image/png', label: '演示 · 制造工厂', width: 1672, height: 941 },
   { url: '/images/showcase-components.png', mime: 'image/png', label: '演示 · 工业零部件', width: 1672, height: 941 },
+  { url: '/images/helioform-hero.jpg', mime: 'image/jpeg', label: '演示 · 建筑光影廊道', width: 1376, height: 768 },
+  { url: '/images/helioform-optics.jpg', mime: 'image/jpeg', label: '演示 · 精密光学模块', width: 1376, height: 768 },
+  { url: '/images/helioform-before.jpg', mime: 'image/jpeg', label: '演示 · 照明改造前大堂', width: 1376, height: 768 },
+  { url: '/images/helioform-after.jpg', mime: 'image/jpeg', label: '演示 · 照明改造后大堂', width: 1376, height: 768 },
 ];
 
 export function bundledImage(value: unknown): BundledImage | undefined {

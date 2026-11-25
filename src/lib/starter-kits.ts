@@ -1,12 +1,14 @@
 import type { SiteSnapshot } from '../server/types';
 import { createManufacturingStarter } from './starters/manufacturing';
+import { createOemSolutionsStarter } from './starters/oem-solutions';
 import { createServicesStarter } from './starters/services';
 import { createPortfolioStarter } from './starters/portfolio';
 
 /** 案例资料仅用于选用与预览；网站内容仍由普通可编辑快照生成，不增加专用渲染器。 */
 export const STARTER_KITS = [
   { id: 'manufacturing', name: '制造企业 · Atlas Works', industry: '工业制造', style: '工业编辑风', recommended: true, pageCount: 10, cover: '/showcase/manufacturing.png', description: '暖白、深海蓝与铜橙。完整呈现产品、制造能力、质量流程和工程案例，适合作为外贸企业的起点。', features: ['产品目录与详情', '能力与质量流程', '工程案例', 'FAQ 与询盘'], color: '#173443', accent: '#f4f1eb' },
-  { id: 'services', name: '空间设计 · North Atelier', industry: '专业服务', style: '克制的空间杂志', recommended: false, pageCount: 8, cover: '/showcase/services.png', description: '象牙白、酒红与衬线标题。大幅空间插画与安静的留白，展示服务、项目与合作方式。', features: ['服务与详情', '空间项目', '合作流程', '联系表单'], color: '#6c333b', accent: '#f3eee6' },
+  { id: 'oem-solutions', name: '建筑照明 OEM · HELIOFORM', industry: '高端照明 / OEM', style: '暗夜光影瑞士网格', recommended: false, pageCount: 9, cover: '/showcase/oem-solutions.png', description: '极黑曜石暗夜、建筑暖石白与熔金琥珀。融合全屏光影首屏、12列不对称网格、同机位前后对比、型号矩阵与多产品询价。', features: ['暗夜光影首屏', '同机位前后对比', '型号矩阵与时间线', '多产品询价单'], color: '#090b0f', accent: '#e5a93c' },
+  { id: 'services', name: '空间设计 · North Atelier', industry: '专业服务', style: '克制的空间杂志', recommended: false, pageCount: 8, cover: '/showcase/services.png', description: '象牙白、酒红与衬线标题。大幅空间摄影与安静的留白，展示服务、项目与合作方式。', features: ['服务与详情', '空间项目', '合作流程', '联系表单'], color: '#6c333b', accent: '#f3eee6' },
   { id: 'portfolio', name: '创意工作室 · Field Studio', industry: '品牌与数字设计', style: '大胆的创意排版', recommended: false, pageCount: 8, cover: '/showcase/portfolio.png', description: '深森林绿、荧光绿与大字。用不对称版式、可编辑图形和项目叙事展示创作能力。', features: ['项目列表与详情', '品牌与数字服务', '工作方式', '项目咨询'], color: '#c4f76a', accent: '#202723' },
 ] as const;
 export type StarterKind = typeof STARTER_KITS[number]['id'];
@@ -15,6 +17,7 @@ export type StarterKind = typeof STARTER_KITS[number]['id'];
 export function createStarterSnapshot(kind: StarterKind): SiteSnapshot {
   switch (kind) {
     case 'manufacturing': return createManufacturingStarter();
+    case 'oem-solutions': return createOemSolutionsStarter();
     case 'services': return createServicesStarter();
     case 'portfolio': return createPortfolioStarter();
     default: throw new Error('未知演示套件');

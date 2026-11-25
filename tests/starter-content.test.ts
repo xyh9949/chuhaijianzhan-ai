@@ -82,3 +82,19 @@ for (const kit of STARTER_KITS) {
     }
   });
 }
+
+test('oem-solutions：完整覆盖型号对比表、前后对比、交付时间线、选型详情、多产品询价与可复用页面模板', () => {
+  const snapshot = createStarterSnapshot('oem-solutions');
+  const allPageNodes = nodesIn(Object.values(snapshot.editorData));
+  assert.ok(allPageNodes.some(node => node.type === 'ComparisonTable' && Array.isArray(node.props.modelColumns) && node.props.modelColumns.length === 3));
+  assert.ok(allPageNodes.some(node => node.type === 'ImageComparison' && node.props.mode === 'toggle'));
+  assert.ok(allPageNodes.some(node => node.type === 'ImageComparison' && node.props.mode === 'split'));
+  assert.ok(allPageNodes.some(node => node.type === 'ProjectTimeline' && Array.isArray(node.props.items) && node.props.items.length >= 4));
+  assert.ok(allPageNodes.some(node => node.type === 'ProductDetail' && node.props.mobileOrder === 'specifications-first'));
+  assert.ok(snapshot.forms?.some(form => form.enabled && form.multiProduct === true));
+  assert.ok(snapshot.pageTemplates && snapshot.pageTemplates.length >= 1);
+  // 校验页面与页面模板资产的节点 ID 各自唯一，不发生共享引用或冲突
+  const pageIds = new Set(nodesIn(snapshot.editorData['hf-solutions']).map(node => node.props.id));
+  const templateIds = nodesIn(snapshot.pageTemplates[0].data).map(node => node.props.id);
+  assert.ok(templateIds.length > 0 && templateIds.every(id => !pageIds.has(id)));
+});

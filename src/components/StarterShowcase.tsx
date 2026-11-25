@@ -26,9 +26,9 @@ export default function StarterShowcase({ onChoose, busy }: { onChoose: (kind: S
   return <div className="starter-showcase">
     <Flex justify="space-between" gap={16} wrap className="starter-showcase-intro">
       <div><Typography.Title level={4}>从一套完整网站开始</Typography.Title><Typography.Paragraph type="secondary">先看整站效果，再按自己的品牌自由调整。首页、内页、动态内容和全站页眉页脚都能编辑。</Typography.Paragraph></div>
-      <Tag>3 种行业方向 · 26 个页面与模板</Tag>
+      <Tag>{STARTER_KITS.length} 种行业方向 · {STARTER_KITS.reduce((sum, item) => sum + item.pageCount, 0)} 个页面与模板</Tag>
     </Flex>
-    <Row gutter={[24, 24]}>{STARTER_KITS.map(item => <Col xs={24} lg={8} key={item.id}>
+    <Row gutter={[24, 24]}>{STARTER_KITS.map(item => <Col xs={24} md={12} xxl={6} key={item.id}>
       <Card className="starter-showcase-card" styles={{ body: { padding: 20 } }} cover={<Button type="text" block className="starter-showcase-cover" onClick={() => open(item.id)} aria-label={`预览${item.name}`}><img src={item.cover} alt={`${item.name}实际首页效果`} /><span><EyeOutlined /> 浏览完整网站</span></Button>}>
         <Flex gap={8} wrap className="starter-showcase-labels"><Tag color={item.recommended ? 'blue' : undefined}>{item.recommended ? '推荐默认主题' : item.industry}</Tag><Typography.Text type="secondary">{item.pageCount} 个页面与模板</Typography.Text></Flex>
         <Typography.Title level={4}>{item.name}</Typography.Title><Typography.Text className="starter-showcase-style">{item.style}</Typography.Text>

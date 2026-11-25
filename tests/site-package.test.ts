@@ -125,7 +125,7 @@ test('旧JPEG与新增案例PNG通过同一分发协议保留字节及MIME，导
 });
 
 
-test('三个starter均走真实分发导入与整站发布，模型/列表/详情/全站头尾/表单可编辑且没有硬编码行业渲染',async()=>{
+test('全部starter均走真实分发导入与整站发布，模型/列表/详情/全站头尾/表单可编辑且没有硬编码行业渲染',async()=>{
   const designs:string[]=[];
   const textValues=(value:unknown):string[]=>Array.isArray(value)?value.flatMap(textValues):value&&typeof value==='object'?Object.entries(value).flatMap(([key,item])=>['text','title','label'].includes(key)&&typeof item==='string'?[item]:textValues(item)):[];
   for(const kit of STARTER_KITS){
@@ -140,7 +140,7 @@ test('三个starter均走真实分发导入与整站发布，模型/列表/详�
     for(const page of snapshot.pages){const imported=active.pages.find(item=>item.slug===page.slug)!;assert.equal((active.editorData[imported.id] as {root:{props:{brand?:string}}}).root.props.brand,(snapshot.editorData[page.id] as {root:{props:{brand?:string}}}).root.props.brand);}
     assert.match(active.settings.description,/\bfictional\b/i);designs.push(JSON.stringify({theme:active.theme,data:active.editorData}));
   }
-  assert.equal(new Set(designs).size,3);
+  assert.equal(new Set(designs).size,STARTER_KITS.length);
 });
 
 
